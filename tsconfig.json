@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "outDir": "./build",
+        "allowJs": true,
+        "target": "ES5",
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "baseUrl": "./",
+        "allowSyntheticDefaultImports": true,
+        "lib": [ "es2015" ],
+    },
+    "include": [
+        "./src/**/*",
+        "./lib/**/*"
+    ],
+    "exclude": [
+        "./lib/typescript-eslint-parser/tests/**/*"
+    ]
+}
