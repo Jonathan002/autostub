@@ -21,16 +21,17 @@ import { fakeJsonToReturn } from './someplace';
 //   declarations will be moved to the archive section. The console will warn 
 //   you if anything has been archived.
 // ---------------------------------------------------------------------;
-var varDosStub = true,
-varTresStub = 'Three';
-export let numberStub = 123456;
-export const addNumberButOutsideStub = (withParam, withOptionalParam) => {
+var 
+varDos = true,
+varTres = 'Three';
+export let number = 123456;
+export const addNumberButOutside = (withParam, withOptionalParam) => (withParam, withOptionalParam) =>  {
 	return { obj: 'Arrow Return'};
 };
-export function hmmStub(thing: string, bur: number): number {
+export function hmm(thing: string, bur: number): number {
 	return false;
 };
-export function testStub(args: number, space: string) {
+export function test(args: number, space: string) {
 	return 'The quick brown fox!';
 };
 @Component({
@@ -68,20 +69,19 @@ export class PageNotFoundComponentStub implements OnInit {
     private router: Router
   ){}
 
-  public leFourOFour(statusCode?: number): string {
+  public leFourOFour(statusCode?: number): string  {
     return undefined;
   }
 
-  bur(): number {
+  bur(): number  {
     return undefined;
   }
 
-  private methodTwo() {
+  private methodTwo()  {
     return undefined;
   }
 
 };
-
 // ====================================================================='
 //                     Archive Stub Declarations
 // =====================================================================
@@ -90,7 +90,7 @@ export class PageNotFoundComponentStub implements OnInit {
 //   files.
 // ---------------------------------------------------------------------
 /*
----------------------- 2018-11-16T05:41:49.553Z ----------------------
+---------------------- 2018-11-09T10:23:38.051Z ----------------------
 @Component({
   selector: 'app-page-not-found',
   templateUrl: './page-not-found.component.html',
@@ -98,20 +98,19 @@ export class PageNotFoundComponentStub implements OnInit {
 })
 export class PageNotFoundComponent implements OnInit {
 
-  ngOnInit()  {
+ngOnInit()  {
     return undefined;
   }
-  ngOnDestroy()  {
+ngOnDestroy()  {
     return undefined;
   }
-  public leFourOFour(statusCode?: number): string  {
+public leFourOFour(statusCode?: number): string  {
     return 'archive404';
   }
-  bur(): number  {
+bur(): number  {
     return undefined;
   }
-  private methodTwo()  {
+private methodTwo()  {
     return undefined;
   }
-};
-*/
+};*/

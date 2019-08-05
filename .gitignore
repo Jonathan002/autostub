@@ -70,3 +70,10 @@ dll/
 *.ngsummary.json
 *.shim.ngstyle.ts
 
+
+## Compiled JavaScript files
+**/*.js
+**/*.js.map
+
+# Test Generated Output
+/jasmine-tests/tests/**/*

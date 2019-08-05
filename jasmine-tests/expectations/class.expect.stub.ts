@@ -1,10 +1,6 @@
 // =====================================================================;
 //                            Sync Imports                              
 // =====================================================================
-import 'fs';
-import * as Events from 'events';
-import { APP_CONFIG } from '../../app-model/app-config';
-import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 // =====================================================================
 //                            Extra Code
 // =====================================================================
@@ -20,3 +16,59 @@ import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 //   declarations will be moved to the archive section. The console will warn 
 //   you if anything has been archived.
 // ---------------------------------------------------------------------;
+@Component({
+  selector: 'app-page-not-found',
+  templateUrl: './page-not-found.component.html',
+  styleUrls: ['./page-not-found.component.scss']
+})
+export class PageNotFoundComponentStub implements OnInit {
+
+  @complicatedDecorator(' css classes passed in with space ')
+  public static extraSpaces = undefined;
+  static classInfo() {
+    return undefined;
+  }
+
+  protected static abc = undefined;
+  private static abcdefg = undefined;
+  private static set lostUrl(thing) {
+    return undefined;
+  }
+
+  private static get test(): string {
+    return undefined;
+  }
+
+  public testPublic = undefined;
+  @public('publicHmm')
+  public publicHmm: publicHmm = undefined;
+  readonly readOnlyProperty = undefined;
+  private hmmm = undefined;
+  constructor(
+    nakedDependency: Router,
+    @Inject(APP_CONFIG) 
+    public appConfig: AppConfig,
+    private router: Router
+  ){}
+
+  ngOnInit() {
+    return undefined;
+  }
+
+  ngOnDestroy() {
+    return undefined;
+  }
+
+  public leFourOFour(statusCode?: number): string {
+    return undefined;
+  }
+
+  get bur(): number {
+    return undefined;
+  }
+
+  private methodTwo() {
+    return undefined;
+  }
+
+};
