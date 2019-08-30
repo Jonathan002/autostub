@@ -144,6 +144,7 @@ var TaskStubStringGenerator = /** @class */ (function () {
                 var modifyerChecker = classItem.accessibility ? classItem.accessibility + ' ' : '';
                 var staticChecker = classItem.static ? 'static ' : '';
                 var readonlyChecker = classItem.readonly ? 'readonly ' : '';
+                var getterSetterChecker = (classItem.kind === 'set' || classItem.kind === 'get') ? classItem.kind + " " : '';
                 var name = classItem.key.name;
                 var stubImplementation = classItem.stubImplementation;
                 if (archiveMode) {
@@ -151,7 +152,8 @@ var TaskStubStringGenerator = /** @class */ (function () {
                     return;
                 }
                 result += decoratorsStr ? tabSpace + decoratorsStr : '';
-                result += tabSpace + modifyerChecker + staticChecker + readonlyChecker + name;
+                result += tabSpace + modifyerChecker + staticChecker + getterSetterChecker + readonlyChecker + name;
+                // console.log('log name..', name);
                 switch (classItem.type) {
                     case 'ClassProperty':
                         // TODO: add arrow function support later.. 
@@ -162,7 +164,6 @@ var TaskStubStringGenerator = /** @class */ (function () {
                         break;
                     case 'MethodDefinition':
                         var returnType = checkAndExtractReturnType(classItem.value, contentStr);
-                        // get // set
                         var params = void 0;
                         if (classItem.kind === 'constructor') {
                             params = createParamsString(classItem.value.params, contentStr, tabSpace);

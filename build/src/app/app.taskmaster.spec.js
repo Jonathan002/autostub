@@ -47,6 +47,7 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 return [2 /*return*/];
             });
         }); });
+        // Failing.. setters and getters not yet implemented
         it("should be able to stub a class from new-class.test.ts to new-class.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
             var expectation, result;
             return tslib_1.__generator(this, function (_a) {
@@ -74,11 +75,16 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 return [2 /*return*/];
             });
         }); });
-        // it(`should be able to copy enum values from new-enum.test.ts to new-enum.test.stub.ts`, async () => {
-        //     const expectation = fs.readFileSync(jasminePath + 'expectations/enum.expect.stub.ts', 'utf-8');
-        //     const result = fs.readFileSync(jasminePath + 'tests/enum.test.stub.ts', 'utf-8');
-        //     expect(result).toEqual(expectation);
-        // });
+        // Failing.. Enum does not get a Stub prefix at the end..
+        it("should be able to copy enum values from new-enum.test.ts to new-enum.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
+            var expectation, result;
+            return tslib_1.__generator(this, function (_a) {
+                expectation = fs.readFileSync(jasminePath + 'expectations/enum.expect.stub.ts', 'utf-8');
+                result = fs.readFileSync(jasminePath + 'tests/enum.test.stub.ts', 'utf-8');
+                expect(result).toEqual(expectation);
+                return [2 /*return*/];
+            });
+        }); });
         // Failing.. Can't test yet as stub-template time-stamp is dynamic..
         // it(`should be able to retain existing stub implementations and archive unsynced stubs`, async () => {
         //     const expectationOriginal = fs.readFileSync(path + 'expectations/retain-state.expect.stub.ts', 'utf-8');

@@ -78,5 +78,8 @@ dll/
 # Test Generated Output
 /jasmine-tests/tests/**/*
 
+# Angular Test Project Node Modules
+/angular-project-tester/node_modules/
+
 # Genrated Angular Project
-/angular-project/**/*
+/angular-project/

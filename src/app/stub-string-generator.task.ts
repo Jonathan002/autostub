@@ -22,7 +22,7 @@ export class TaskStubStringGenerator {
     constructor(
         private stubTemplate: StubTemplate,
         private appState: AppState,
-    ) {}
+    ) { }
     /* =====================================================
      	                Main Methods
     ======================================================== */
@@ -78,7 +78,7 @@ export class TaskStubStringGenerator {
                     decNamesAndValues += ',\n';
                     return;
                 }
-                
+
                 const name = archiveMode ? oneDeclarationNameData.id.name : (oneDeclarationNameData.id.name + this.appState.userConfig.stubPrefix);
                 const typing = checkAndExtractTyping(oneDeclarationNameData, contentStr);
                 let stubImplementation = oneDeclarationNameData.stubImplementation;
@@ -96,7 +96,7 @@ export class TaskStubStringGenerator {
                 } else {
                     stubImplementation = stubImplementation ? stubImplementation : this.stubTemplate.variableDefaultImplementation;
                 }
-                       
+
                 decNamesAndValues += stubImplementation + ',\n';
             });
 
@@ -125,7 +125,7 @@ export class TaskStubStringGenerator {
         const classStringFactory = (declarationData, contentStr, archiveMode?: boolean) => {
             let result = '';
             let implementsChecker = '';
-            const name = archiveMode ? declarationData.id.name : (declarationData.id.name + this.appState.userConfig.stubPrefix);            
+            const name = archiveMode ? declarationData.id.name : (declarationData.id.name + this.appState.userConfig.stubPrefix);
             result += 'class ';
             result += name + ' ';
 
@@ -148,6 +148,7 @@ export class TaskStubStringGenerator {
                 const modifyerChecker = classItem.accessibility ? classItem.accessibility + ' ' : '';
                 const staticChecker = classItem.static ? 'static ' : '';
                 const readonlyChecker = classItem.readonly ? 'readonly ' : '';
+                const getterSetterChecker = (classItem.kind === 'set' || classItem.kind === 'get') ? `${classItem.kind} ` : '';
                 const name = classItem.key.name;
                 let stubImplementation = classItem.stubImplementation;
 
@@ -157,7 +158,8 @@ export class TaskStubStringGenerator {
                 }
 
                 result += decoratorsStr ? tabSpace + decoratorsStr : '';
-                result += tabSpace + modifyerChecker + staticChecker + readonlyChecker + name;
+                result += tabSpace + modifyerChecker + staticChecker + getterSetterChecker + readonlyChecker + name;
+                // console.log('log name..', name);
                 switch (classItem.type) {
                     case 'ClassProperty':
                         // TODO: add arrow function support later.. 
@@ -168,7 +170,6 @@ export class TaskStubStringGenerator {
                         break;
                     case 'MethodDefinition':
                         const returnType = checkAndExtractReturnType(classItem.value, contentStr);
-                        // get // set
                         let params;
                         if (classItem.kind === 'constructor') {
                             params = createParamsString(classItem.value.params, contentStr, tabSpace);
@@ -208,7 +209,7 @@ export class TaskStubStringGenerator {
             const restOfStr = split.join(enumName); // in the rare event the name is within the enum..
             enumBegining = enumBegining + enumName + stubPrefixChecker;
             result = enumBegining + restOfStr;
-            return result; 
+            return result;
         }
 
         const declarationStringFactory = (declarationArr, contentStr: string, archiveMode?: boolean) => {
@@ -288,7 +289,7 @@ export class TaskStubStringGenerator {
                 }
                 this.stubTemplate.createArchiveStr(stubArchiveCodeStr, newArchiveStr);
             }
-            
+
             fileMeta.stubContentStrAfterUpdate = this.stubTemplate.fullTemplate;
         });
 
