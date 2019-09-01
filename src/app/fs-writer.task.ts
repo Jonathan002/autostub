@@ -70,7 +70,8 @@ export class TaskFSWriter {
         const M_backupEntryFolder = this.backupEntryFolder();
         const M_fsWriteToFiles = this.fsWriteToFiles(fileMetaArr);
 
-        // fs.writeJSONSync('./test-autostub.json', M_fsWriteToFiles, {spaces:2});
+        console.log('fs writing??');
+        fs.writeJSONSync('./test-autostub.json', fileMetaArr, {spaces:2});
         return M_fsWriteToFiles;
     }
 }

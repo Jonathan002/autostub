@@ -272,32 +272,43 @@ var TaskParser = /** @class */ (function () {
                         };
                         updateRealDeclarationWithStubImplementationHelper_1 = function (stubDeclration, realDeclaration, stubSyncDeclarationsStr, classOrDeclarationParent) {
                             // VariableDeclaration type finding is already handled at updateRealDeclarationWithStubImplementationAndReturnArchive()
-                            switch (stubDeclration.type) {
-                                case 'ClassDeclaration':
-                                    var stubClassBody = stubDeclration.body.body;
-                                    var realClassBody = realDeclaration.body.body;
-                                    return updateRealDeclarationWithStubImplementationAndReturnArchive_1(stubClassBody, realClassBody, stubSyncDeclarationsStr, classOrDeclarationParent);
-                                case 'VariableDeclarator':
-                                    // checks if arrowFunction so it won't include parameters in stub implementation
-                                    if (stubDeclration.init && stubDeclration.init.type === 'ArrowFunctionExpression') {
-                                        // gets both => "{ return 'abc' }" block statement and literal => "'abc'"
-                                        realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.init.body.range[0], stubDeclration.init.body.range[1]);
+                            var declarationName;
+                            try {
+                                switch (stubDeclration.type) {
+                                    case 'ClassDeclaration':
+                                        declarationName = stubDeclration.id.name;
+                                        var stubClassBody = stubDeclration.body.body;
+                                        var realClassBody = realDeclaration.body.body;
+                                        return updateRealDeclarationWithStubImplementationAndReturnArchive_1(stubClassBody, realClassBody, stubSyncDeclarationsStr, classOrDeclarationParent);
+                                    case 'VariableDeclarator':
+                                        declarationName = stubDeclration.id.name;
+                                        // checks if arrowFunction so it won't include parameters in stub implementation
+                                        if (stubDeclration.init && stubDeclration.init.type === 'ArrowFunctionExpression') {
+                                            // gets both => "{ return 'abc' }" block statement and literal => "'abc'"
+                                            realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.init.body.range[0], stubDeclration.init.body.range[1]);
+                                            break;
+                                        }
+                                        realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.init.range[0], stubDeclration.init.range[1]);
                                         break;
-                                    }
-                                    realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.init.range[0], stubDeclration.init.range[1]);
-                                    break;
-                                case 'FunctionDeclaration':
-                                    realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.body.range[0], stubDeclration.body.range[1]);
-                                    break;
-                                case 'MethodDefinition':
-                                    realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.body.range[0], stubDeclration.value.body.range[1]);
-                                    break;
-                                case 'ClassProperty':
-                                    realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.range[0], stubDeclration.value.range[1]);
-                                    break;
-                                default:
-                                    // Other Types such as Enums and Interface will just get copied over (without stub prefix) at Class StubStringGeneratorTask().createNewStubContentString()#declarationStringFactory()...
-                                    break;
+                                    case 'FunctionDeclaration':
+                                        declarationName = stubDeclration.id.name;
+                                        realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.body.range[0], stubDeclration.body.range[1]);
+                                        break;
+                                    case 'MethodDefinition':
+                                        declarationName = stubDeclration.key.name;
+                                        realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.body.range[0], stubDeclration.value.body.range[1]);
+                                        break;
+                                    case 'ClassProperty':
+                                        declarationName = stubDeclration.key.name;
+                                        realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.range[0], stubDeclration.value.range[1]);
+                                        break;
+                                    default:
+                                        // Other Types such as Enums and Interface will just get copied over (without stub prefix) at Class StubStringGeneratorTask().createNewStubContentString()#declarationStringFactory()...
+                                        break;
+                                }
+                            }
+                            catch (e) {
+                                throw Error("There was a problem parsing the declaration name or class key of \"" + declarationName + "\". Please note that all declarations in an existing stub file must always be initialized with a value even if the value itself is undefined. \n" + e);
                             }
                             return null;
                         };
@@ -376,17 +387,22 @@ var TaskParser = /** @class */ (function () {
                         _b.label = 2;
                     case 2:
                         _b.trys.push([2, 4, , 5]);
+                        console.log('start parse');
                         _a = fileMeta;
                         return [4 /*yield*/, this.esLintParser.parse(stubSyncDeclarationsStr)];
                     case 3:
                         _a.stubSyncDeclarationsParsed = _b.sent();
+                        console.log('parse happened');
                         fileMeta.stubSyncDeclarationsParsed.content = stubSyncDeclarationsStr;
+                        console.log('stubSyncDeclarationsStr happened');
                         fileMeta.stubDeclarations = fileMeta.stubSyncDeclarationsParsed.body.filter(this.declarationFilter); // TODO: do test and try to find errors to handle - (e.g. import statement placed in the Sync Stub Declarations area..)
+                        console.log('filter happened');
                         fileMeta.stubArchiveDeclarations = updateRealDeclarationWithStubImplementationAndReturnArchive_1(fileMeta.stubDeclarations, fileMeta.declarations, stubSyncDeclarationsStr);
+                        console.log('updateRealDeclarationWithStubImplementationAndReturnArchive happened');
                         return [3 /*break*/, 5];
                     case 4:
                         e_2 = _b.sent();
-                        throw Error("The file \"" + fileMeta.stubPath + "\" could not be parsed correctly. Please check to see if the code is formated correctly. \nError: " + e_2);
+                        throw Error("The file \"" + fileMeta.stubPath + "\" could not be parsed correctly. Please check to see if the code is formated correctly. \n" + e_2);
                     case 5: return [2 /*return*/];
                 }
             });

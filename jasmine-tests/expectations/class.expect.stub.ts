@@ -29,6 +29,12 @@ export class PageNotFoundComponentStub implements OnInit {
     return undefined;
   }
 
+  leArrowFunc = (arg1: boolean, arg2: string = 'string', ...args): string => {
+    return undefined;
+  };
+  public static leStaticArrowFunc = (value) => {
+    return undefined;
+  };
   protected static abc = undefined;
   private static abcdefg = undefined;
   private static set lostUrl(thing) {

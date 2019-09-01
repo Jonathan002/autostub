@@ -12,6 +12,19 @@ export class PageNotFoundComponent implements OnInit {
   static classInfo() {
     console.log('This class helps manage the page-not found view');
   }
+
+  leArrowFunc = (arg1: boolean, arg2: string = 'string', ...args): string => {
+    return '=>';
+  }
+
+  public static leStaticArrowFunc = (value) => {
+    return 'static =>';
+  }
+
+  arrowFuncWithStubImplementation = (value) => {
+    return { implemented: true };
+  }
+
   protected static abc = 13;
   private static abcdefg = 13;
   private static set lostUrl(thing) {

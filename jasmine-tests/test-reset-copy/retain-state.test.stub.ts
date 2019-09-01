@@ -25,6 +25,9 @@ import { fakeJsonToReturn } from './someplace';
 var 
 varDos = true,
 varTres = 'Three';
+var four;
+var five = 25;
+
 export let number = 123456;
 export const addNumberButOutside = (withParam, withOptionalParam) =>  {
 	return { obj: 'Arrow Return'};
@@ -57,7 +60,7 @@ export class PageNotFoundComponent implements OnInit {
   private static test(): string  {
     return 'testStr';
   }
-
+  // arrowFuncWithStubImplementation
   public testPublic = undefined;
   @public('publicHmm')
   public publicHmm: publicHmm = undefined;

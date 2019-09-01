@@ -39,7 +39,7 @@ export class TaskParser {
         private stubTemplate: StubTemplate,
         private utils: typeof Utils,
         private appState: AppState
-    ) {}
+    ) { }
 
     /* ===============================
         Basic helper module methods
@@ -48,11 +48,11 @@ export class TaskParser {
         // 'ExportNamedDeclaration' may have null declaration with this statement which interfeers with declaration.type logic below..
         // (declaration.declaration !== null) filters this out - "export { AppServerModule } from './app/app.server.module';" 
         return (declaration.type === 'ExportNamedDeclaration' && declaration.declaration !== null)
-        || declaration.type === 'VariableDeclaration'
-        || declaration.type === 'FunctionDeclaration'
-        || declaration.type === 'ClassDeclaration'
-        || declaration.type === 'TSEnumDeclaration'
-        || declaration.type === 'TSInterfaceDeclaration'
+            || declaration.type === 'VariableDeclaration'
+            || declaration.type === 'FunctionDeclaration'
+            || declaration.type === 'ClassDeclaration'
+            || declaration.type === 'TSEnumDeclaration'
+            || declaration.type === 'TSInterfaceDeclaration'
     }
 
     // TODO: create a class tracer to handle error logging..
@@ -139,7 +139,7 @@ export class TaskParser {
         // - decorators: []
         // - accessibility: ['public', 'private', 'etc']
         // - type: TSInterfaceDeclaration
-        
+
         fileMetaArr.map(fileMeta => {
             const parsedCodeBody = fileMeta.originalParsed.body;
             const importsDeclared = [];
@@ -276,34 +276,43 @@ export class TaskParser {
                 }
                 const updateRealDeclarationWithStubImplementationHelper = (stubDeclration, realDeclaration, stubSyncDeclarationsStr, classOrDeclarationParent?) => {
                     // VariableDeclaration type finding is already handled at updateRealDeclarationWithStubImplementationAndReturnArchive()
-                    switch (stubDeclration.type) {
-                        case 'ClassDeclaration':
-                            const stubClassBody = stubDeclration.body.body;
-                            const realClassBody = realDeclaration.body.body;
-                            return updateRealDeclarationWithStubImplementationAndReturnArchive(stubClassBody, realClassBody, stubSyncDeclarationsStr, classOrDeclarationParent);
-                        case 'VariableDeclarator':
-                            // checks if arrowFunction so it won't include parameters in stub implementation
-                            if (stubDeclration.init && stubDeclration.init.type === 'ArrowFunctionExpression') {
-                                // gets both => "{ return 'abc' }" block statement and literal => "'abc'"
-                                realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.init.body.range[0], stubDeclration.init.body.range[1]);
+                    let declarationName: string;
+                    try {
+                        switch (stubDeclration.type) {
+                            case 'ClassDeclaration':
+                                declarationName = stubDeclration.id.name;
+                                const stubClassBody = stubDeclration.body.body;
+                                const realClassBody = realDeclaration.body.body;
+                                return updateRealDeclarationWithStubImplementationAndReturnArchive(stubClassBody, realClassBody, stubSyncDeclarationsStr, classOrDeclarationParent);
+                            case 'VariableDeclarator':
+                                declarationName = stubDeclration.id.name;
+                                // checks if arrowFunction so it won't include parameters in stub implementation
+                                if (stubDeclration.init && stubDeclration.init.type === 'ArrowFunctionExpression') {
+                                    // gets both => "{ return 'abc' }" block statement and literal => "'abc'"
+                                    realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.init.body.range[0], stubDeclration.init.body.range[1]);
+                                    break;
+                                }
+                                realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.init.range[0], stubDeclration.init.range[1]);
                                 break;
-                            }
-                            realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.init.range[0], stubDeclration.init.range[1]);
-                            break;
-                        case 'FunctionDeclaration':
-                            realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.body.range[0], stubDeclration.body.range[1]);
-                            break;
-                        case 'MethodDefinition':
-                            realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.body.range[0], stubDeclration.value.body.range[1]);
-                            break;
-                        case 'ClassProperty':
-                            realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.range[0], stubDeclration.value.range[1]);
-                            break;
-                        default:
-                            // Other Types such as Enums and Interface will just get copied over (without stub prefix) at Class StubStringGeneratorTask().createNewStubContentString()#declarationStringFactory()...
-                            break;
+                            case 'FunctionDeclaration':
+                                declarationName = stubDeclration.id.name;
+                                realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.body.range[0], stubDeclration.body.range[1]);
+                                break;
+                            case 'MethodDefinition':
+                                declarationName = stubDeclration.key.name;
+                                realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.body.range[0], stubDeclration.value.body.range[1]);
+                                break;
+                            case 'ClassProperty':
+                                declarationName = stubDeclration.key.name;
+                                realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.range[0], stubDeclration.value.range[1]);
+                                break;
+                            default:
+                                // Other Types such as Enums and Interface will just get copied over (without stub prefix) at Class StubStringGeneratorTask().createNewStubContentString()#declarationStringFactory()...
+                                break;
+                        }
+                    } catch (e) {
+                        throw Error(`There was a problem parsing the declaration name or class key of "${declarationName}". Please note that all declarations in an existing stub file must always be initialized with a value even if the value itself is undefined. \n${e}`)
                     }
-
                     return null;
                 }
                 const updateRealDeclarationWithStubImplementationAndReturnArchive = (stubDeclrations, realDeclarations, stubSyncDeclarationsStr, classOrDeclarationParent?) => {
@@ -339,7 +348,7 @@ export class TaskParser {
                                 }
 
                             }
-                            
+
                             if (!foundMatch) {
                                 archiveArr.push(oneStubDec);
                             }
@@ -361,7 +370,7 @@ export class TaskParser {
                                     archiveArr.push(deepCopy);
                                 }
                             }
-                         }
+                        }
                     } else {
                         throw Error('Arguments Passed in are not Arrays! @ensureStubFileAndParseItForMetadata() - loopDeclarations()')
                     }
@@ -379,21 +388,26 @@ export class TaskParser {
                 // checkArrParsing not needed as archive split may or may not exist and is checked below..
                 const archiveSplit: string[] = restOfTheCodeStr.split(this.stubTemplate.header_archiveDeclarations);
                 const stubSyncDeclarationsStr: string = archiveSplit[0];
-                const archiveStr: string = archiveSplit[1] ? archiveSplit[1] : '';           
+                const archiveStr: string = archiveSplit[1] ? archiveSplit[1] : '';
                 fileMeta.stubArchiveCodeStr = archiveStr;
                 fileMeta.stubExtraCodeStr = extraCodeStr;
                 fileMeta.stubSyncDeclarationsStr = stubSyncDeclarationsStr;
                 try {
+                    console.log('start parse');
                     fileMeta.stubSyncDeclarationsParsed = await this.esLintParser.parse(stubSyncDeclarationsStr);
+                    console.log('parse happened');
                     fileMeta.stubSyncDeclarationsParsed.content = stubSyncDeclarationsStr;
+                    console.log('stubSyncDeclarationsStr happened');
                     fileMeta.stubDeclarations = fileMeta.stubSyncDeclarationsParsed.body.filter(this.declarationFilter); // TODO: do test and try to find errors to handle - (e.g. import statement placed in the Sync Stub Declarations area..)
+                    console.log('filter happened');
                     fileMeta.stubArchiveDeclarations = updateRealDeclarationWithStubImplementationAndReturnArchive(fileMeta.stubDeclarations, fileMeta.declarations, stubSyncDeclarationsStr);
+                    console.log('updateRealDeclarationWithStubImplementationAndReturnArchive happened');
                 } catch (e) {
-                    throw Error(`The file "${fileMeta.stubPath}" could not be parsed correctly. Please check to see if the code is formated correctly. \nError: ${e}`);
+                    throw Error(`The file "${fileMeta.stubPath}" could not be parsed correctly. Please check to see if the code is formated correctly. \n${e}`);
                 }
             }
         });
-        
+
         return fileMetaArr;
     }
 
@@ -407,7 +421,7 @@ export class TaskParser {
                 const MT_sortImportsAndDeclarationsAndUpdateFileMetaArr = this.sortImportsAndDeclarationsAndUpdateFileMetaArr(MT_parseOriginalAndGenerateFileMetadata);
                 const MT_ensureStubSyncCommentsInOriginalContentStr = this.ensureStubNameCommentsInOriginalContentStr(MT_sortImportsAndDeclarationsAndUpdateFileMetaArr);
                 const MT_ensureStubFileAndParseItForMetadata = await this.ensureStubFileAndParseItForMetadata(MT_sortImportsAndDeclarationsAndUpdateFileMetaArr);
-                fs.writeJSONSync('./json-test.json', MT_ensureStubFileAndParseItForMetadata, {spaces: 2});
+                fs.writeJSONSync('./json-test.json', MT_ensureStubFileAndParseItForMetadata, { spaces: 2 });
                 resolve(MT_ensureStubFileAndParseItForMetadata);
             }).catch(error => {
                 reject(error);

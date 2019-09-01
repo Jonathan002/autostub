@@ -67,6 +67,10 @@ export class TaskStubStringGenerator {
             result += singleTabWithNewLineChecker + ')';
             return result;
         }
+        // const handleArrowFunction = (paramArray, originalContentStr: string, tabSpaceForNewLine?: string) => {
+        //     decNamesAndValues += createParamsString(oneDeclarationNameData.init.params, contentStr);
+        //     decNamesAndValues += ' => ';
+        // }
         const variableStringFactory = (declarationData, contentStr, archiveMode?: boolean) => {
             let result;
             let decNamesAndValues = '';
@@ -159,12 +163,18 @@ export class TaskStubStringGenerator {
 
                 result += decoratorsStr ? tabSpace + decoratorsStr : '';
                 result += tabSpace + modifyerChecker + staticChecker + getterSetterChecker + readonlyChecker + name;
-                // console.log('log name..', name);
                 switch (classItem.type) {
                     case 'ClassProperty':
-                        // TODO: add arrow function support later.. 
+                        // TODO: make arrow functions in properties update arguments and return typing.. 
+                        // (property is considered implemented if there is an = sign present)
                         const typing = checkAndExtractTyping(classItem, contentStr);
-                        stubImplementation = stubImplementation ? stubImplementation : this.stubTemplate.variableDefaultImplementation;
+                        if (classItem.value.type === 'ArrowFunctionExpression') {
+                            const arrowArguments = `${createParamsString(classItem.value.params, contentStr)} => `;
+                            stubImplementation = stubImplementation ? stubImplementation : (arrowArguments + this.stubTemplate.functionDefaultImplementation(tabSpace));
+                        } else {
+                            stubImplementation = stubImplementation ? stubImplementation : this.stubTemplate.variableDefaultImplementation;
+                        }
+
                         result += typing + ' = ' + stubImplementation;
                         result += ';';
                         break;

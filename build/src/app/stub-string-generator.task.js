@@ -68,6 +68,10 @@ var TaskStubStringGenerator = /** @class */ (function () {
             result += singleTabWithNewLineChecker + ')';
             return result;
         };
+        // const handleArrowFunction = (paramArray, originalContentStr: string, tabSpaceForNewLine?: string) => {
+        //     decNamesAndValues += createParamsString(oneDeclarationNameData.init.params, contentStr);
+        //     decNamesAndValues += ' => ';
+        // }
         var variableStringFactory = function (declarationData, contentStr, archiveMode) {
             var result;
             var decNamesAndValues = '';
@@ -153,12 +157,18 @@ var TaskStubStringGenerator = /** @class */ (function () {
                 }
                 result += decoratorsStr ? tabSpace + decoratorsStr : '';
                 result += tabSpace + modifyerChecker + staticChecker + getterSetterChecker + readonlyChecker + name;
-                // console.log('log name..', name);
                 switch (classItem.type) {
                     case 'ClassProperty':
-                        // TODO: add arrow function support later.. 
+                        // TODO: make arrow functions in properties update arguments and return typing.. 
+                        // (property is considered implemented if there is an = sign present)
                         var typing = checkAndExtractTyping(classItem, contentStr);
-                        stubImplementation = stubImplementation ? stubImplementation : _this.stubTemplate.variableDefaultImplementation;
+                        if (classItem.value.type === 'ArrowFunctionExpression') {
+                            var arrowArguments = createParamsString(classItem.value.params, contentStr) + " => ";
+                            stubImplementation = stubImplementation ? stubImplementation : (arrowArguments + _this.stubTemplate.functionDefaultImplementation(tabSpace));
+                        }
+                        else {
+                            stubImplementation = stubImplementation ? stubImplementation : _this.stubTemplate.variableDefaultImplementation;
+                        }
                         result += typing + ' = ' + stubImplementation;
                         result += ';';
                         break;

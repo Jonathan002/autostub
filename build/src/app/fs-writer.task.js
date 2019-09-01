@@ -52,7 +52,8 @@ var TaskFSWriter = /** @class */ (function () {
     TaskFSWriter.prototype.tmStart = function (fileMetaArr) {
         var M_backupEntryFolder = this.backupEntryFolder();
         var M_fsWriteToFiles = this.fsWriteToFiles(fileMetaArr);
-        // fs.writeJSONSync('./test-autostub.json', M_fsWriteToFiles, {spaces:2});
+        console.log('fs writing??');
+        fs.writeJSONSync('./test-autostub.json', fileMetaArr, { spaces: 2 });
         return M_fsWriteToFiles;
     };
     return TaskFSWriter;

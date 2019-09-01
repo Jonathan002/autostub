@@ -6,6 +6,8 @@ import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 var 
 varDos = 12 /*varDos*/
 , varTres = 14; /*varTres*/
+var four; /*four*/
+
 export let number = 12; /*number*/
 export const addNumberButOutside = (withParam,withOptionalParam?):boolean => {
   let five = 5;
@@ -42,7 +44,9 @@ export class PageNotFoundComponent implements OnInit {
   private static get test(): string {
     return 'the getdocumentation() getter ....'
   } /*test*/
-
+  arrowFuncWithStubImplementation = (value: string, ...args) => {
+    return { implemented: true, realImplementation: true };
+  } /*arrowFuncWithStubImplementation*/
   // Instance
   public testPublic = 'test public'; /*testPublic*/
   @public('publicHmm')
