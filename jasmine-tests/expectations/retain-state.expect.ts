@@ -11,7 +11,9 @@ export const addNumberButOutside = (withParam,withOptionalParam?):boolean => {
   let five = 5;
   return true;
 }; /*addNumberButOutsideStub*/
-
+export const updateArrowFunArgs = (one: number, two?: number):any => {
+  return true;
+}; /*addNumberButOutside*/
 export function hmm(thing: string, bur: number): number {
   return 
 } /*hmmStub*/

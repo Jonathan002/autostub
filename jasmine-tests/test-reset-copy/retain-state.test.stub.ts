@@ -22,18 +22,20 @@ import { fakeJsonToReturn } from './someplace';
 //   declarations will be moved to the archive section. The console will warn 
 //   you if anything has been archived.
 // ---------------------------------------------------------------------;
-var 
-varDos = true,
-varTres = 'Three';
+var varDosStub = true,
+varTresStub = 'Three';
 
-export let number = 123456;
-export const addNumberButOutside = (withParam, withOptionalParam) =>  {
+export let numberStub = 123456;
+export const addNumberButOutsideStub = (withParam, withOptionalParam) =>  {
 	return { obj: 'Arrow Return'};
 };
-export function hmm(thing: string, bur: number): number  {
+export const updateArrowFunArgsStub = (one: string):boolean => {
+  return true;
+};
+export function hmmStub(thing: string, bur: number): number  {
 	return false;
 };
-export function test(args: number, space: string)  {
+export function testStub(args: number, space: string)  {
 	return 'The quick brown fox!';
 };
 @Component({
@@ -41,7 +43,7 @@ export function test(args: number, space: string)  {
   templateUrl: './page-not-found.component.html',
   styleUrls: ['./page-not-found.component.scss']
 })
-export class PageNotFoundComponent implements OnInit {
+export class PageNotFoundComponentStub implements OnInit {
 
   @complicatedDecorator(' css classes passed in with space ')
   public static extraSpaces = undefined;
@@ -96,6 +98,6 @@ export class PageNotFoundComponent implements OnInit {
   }
 
   argumentsShouldUpdate(one: string) {
-    return undefined;
+    return { test: 'ok' };
   }
 };

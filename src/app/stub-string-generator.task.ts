@@ -170,6 +170,9 @@ export class TaskStubStringGenerator {
                         const typing = checkAndExtractTyping(classItem, contentStr);
                         if (classItem.value.type === 'ArrowFunctionExpression') {
                             const arrowArguments = `${createParamsString(classItem.value.params, contentStr)} => `;
+                            console.log('log stubImplementation', stubImplementation);
+                            console.log('log arrow arguments', arrowArguments);
+
                             stubImplementation = stubImplementation ? stubImplementation : (arrowArguments + this.stubTemplate.functionDefaultImplementation(tabSpace));
                         } else {
                             stubImplementation = stubImplementation ? stubImplementation : this.stubTemplate.variableDefaultImplementation;

@@ -12,6 +12,12 @@ export const addNumberButOutside = (withParam,withOptionalParam?):boolean => {
   return true;
 }; /*addNumberButOutside*/
 
+// Typing and args updated
+export const updateArrowFunArgs = (one: number, two?: number):any => {
+  let five = 5;
+  return {};
+}; /*updateArrowFunArgsStub*/
+
 export function hmm(thing: string, bur: number): number {
   return 
 } /*hmm*/
@@ -85,5 +91,5 @@ export class PageNotFoundComponent implements OnInit {
   // Type and arguments should update the stub implementation..
   argumentsShouldUpdate(one: number, two: number) {
     return one + two;
-  }
+  } /*argumentsShouldUpdate*/
 } /*PageNotFoundComponent*/

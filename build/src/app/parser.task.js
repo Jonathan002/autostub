@@ -387,18 +387,13 @@ var TaskParser = /** @class */ (function () {
                         _b.label = 2;
                     case 2:
                         _b.trys.push([2, 4, , 5]);
-                        console.log('start parse');
                         _a = fileMeta;
                         return [4 /*yield*/, this.esLintParser.parse(stubSyncDeclarationsStr)];
                     case 3:
                         _a.stubSyncDeclarationsParsed = _b.sent();
-                        console.log('parse happened');
                         fileMeta.stubSyncDeclarationsParsed.content = stubSyncDeclarationsStr;
-                        console.log('stubSyncDeclarationsStr happened');
                         fileMeta.stubDeclarations = fileMeta.stubSyncDeclarationsParsed.body.filter(this.declarationFilter); // TODO: do test and try to find errors to handle - (e.g. import statement placed in the Sync Stub Declarations area..)
-                        console.log('filter happened');
                         fileMeta.stubArchiveDeclarations = updateRealDeclarationWithStubImplementationAndReturnArchive_1(fileMeta.stubDeclarations, fileMeta.declarations, stubSyncDeclarationsStr);
-                        console.log('updateRealDeclarationWithStubImplementationAndReturnArchive happened');
                         return [3 /*break*/, 5];
                     case 4:
                         e_2 = _b.sent();
