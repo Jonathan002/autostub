@@ -16,7 +16,7 @@
 //   declarations will be moved to the archive section. The console will warn 
 //   you if anything has been archived.
 // ---------------------------------------------------------------------;
-export enum NgxLegendItemColorStub {
+export enum NgxLegendItemColor {
   GREEN = 'green',
   PURPLE = 'purple',
   LIGHT_PURPLE = 'light-purple',

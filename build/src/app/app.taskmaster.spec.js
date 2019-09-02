@@ -47,7 +47,6 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 return [2 /*return*/];
             });
         }); });
-        // Failing.. setters and getters not yet implemented
         it("should be able to stub a class from new-class.test.ts to new-class.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
             var expectation, result;
             return tslib_1.__generator(this, function (_a) {
