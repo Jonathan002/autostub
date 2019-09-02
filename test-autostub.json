@@ -27579,7 +27579,7 @@
         "source": null
       }
     ],
-    "stubContentStrAfterUpdate": "// =====================================================================;\n//                            Sync Imports                              \n// =====================================================================\nimport 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n// =====================================================================\n//                            Extra Code\n// =====================================================================\n// - Write Extra File Code Here (e.g. Import { fakeJsonToReturn } from './someplace' )\n// ---------------------------------------------------------------------\nimport { fakeJsonToReturn } from './someplace';\n\n// =====================================================================\n//                      Sync Stub Declarations\n// =====================================================================\n// - Feel free to define values for any synced declaration logic. \n// - DO NOT RENAME ANY DECLARATION NAME BELOW inside here. The name itself\n//   is synced with the original file's /*StubNameComments*/ and all unmatched \n//   declarations will be moved to the archive section. The console will warn \n//   you if anything has been archived.\n// ---------------------------------------------------------------------;\ninterface TypicalObj {\n  properties: boolean\n}\nvar varDosStub = true,\nvarTresStub = 'Three';\nexport let numberStub = 123456;\nexport const addNumberButOutsideStub = (withParam, withOptionalParam) => {\n\treturn { obj: 'Arrow Return'};\n};\nexport const updateArrowFunArgsStub = (one: number, two?: number) => {\n  return true;\n};\nexport function hmmStub(thing: string, bur: number): number {\n\treturn false;\n};\nexport function testStub(args: number, space: string) {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponentStub implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo() {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static set lostUrl(thing) {\n    return '404';\n  }\n\n  private static get test(): string {\n    return 'testStr';\n  }\n\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: number, two: number): number => {\n    return 'one';\n  };\n  arrowFuncWithoutBody = () => 42;\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm: string = 'testPropState';\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  public leFourOFour(statusCode?: number): string {\n    return undefined;\n  }\n\n  get bur(): number {\n    return undefined;\n  }\n\n  private methodTwo() {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: number, two: number) {\n    return { test: 'ok' };\n  }\n\n};\n\n// ====================================================================='\n//                     Archive Stub Declarations\n// =====================================================================\n// - The code below is archived.\n// - Use the --cleanStubTrash to remove all archive code from your stub\n//   files.\n// ---------------------------------------------------------------------\n/*\n---------------------- 2019-09-02T05:05:35.849Z ----------------------\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponentStub implements OnInit {\n\n  ngOnInit()  {\n    return undefined;\n  }\n  ngOnDestroy()  {\n    return undefined;\n  }\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n};\n*/\n"
+    "stubContentStrAfterUpdate": "// =====================================================================;\n//                            Sync Imports                              \n// =====================================================================\nimport 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n// =====================================================================\n//                            Extra Code\n// =====================================================================\n// - Write Extra File Code Here (e.g. Import { fakeJsonToReturn } from './someplace' )\n// ---------------------------------------------------------------------\nimport { fakeJsonToReturn } from './someplace';\n\n// =====================================================================\n//                      Sync Stub Declarations\n// =====================================================================\n// - Feel free to define values for any synced declaration logic. \n// - DO NOT RENAME ANY DECLARATION NAME BELOW inside here. The name itself\n//   is synced with the original file's /*StubNameComments*/ and all unmatched \n//   declarations will be moved to the archive section. The console will warn \n//   you if anything has been archived.\n// ---------------------------------------------------------------------;\ninterface TypicalObj {\n  properties: boolean\n}\nvar varDosStub = true,\nvarTresStub = 'Three';\nexport let numberStub = 123456;\nexport const addNumberButOutsideStub = (withParam, withOptionalParam):boolean => {\n\treturn { obj: 'Arrow Return'};\n};\nexport const updateArrowFunArgsStub = (one: number, two?: number):any => {\n  return true;\n};\nexport function hmmStub(thing: string, bur: number): number {\n\treturn false;\n};\nexport function testStub(args: number, space: string) {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponentStub implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo() {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static set lostUrl(thing) {\n    return '404';\n  }\n\n  private static get test(): string {\n    return 'testStr';\n  }\n\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: number, two: number): number => {\n    return 'one';\n  };\n  arrowFuncWithoutBody = () => 42;\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm: string = 'testPropState';\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  public leFourOFour(statusCode?: number): string {\n    return undefined;\n  }\n\n  get bur(): number {\n    return undefined;\n  }\n\n  private methodTwo() {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: number, two: number) {\n    return { test: 'ok' };\n  }\n\n};\n\n// ====================================================================='\n//                     Archive Stub Declarations\n// =====================================================================\n// - The code below is archived.\n// - Use the --cleanStubTrash to remove all archive code from your stub\n//   files.\n// ---------------------------------------------------------------------\n/*\n---------------------- 2019-09-02T05:35:42.774Z ----------------------\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponentStub implements OnInit {\n\n  ngOnInit()  {\n    return undefined;\n  }\n  ngOnDestroy()  {\n    return undefined;\n  }\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n};\n*/\n"
   },
   {
     "stubPath": "jasmine-tests/tests/variables.test.stub.ts",
@@ -27588,7 +27588,7 @@
       "type": "Program",
       "range": [
         56,
-        225
+        363
       ],
       "loc": {
         "start": {
@@ -27596,7 +27596,7 @@
           "column": 0
         },
         "end": {
-          "line": 9,
+          "line": 13,
           "column": 2
         }
       },
@@ -27827,13 +27827,13 @@
           "declaration": {
             "type": "VariableDeclaration",
             "range": [
-              120,
-              225
+              122,
+              258
             ],
             "loc": {
               "start": {
                 "line": 6,
-                "column": 7
+                "column": 9
               },
               "end": {
                 "line": 9,
@@ -27844,13 +27844,13 @@
               {
                 "type": "VariableDeclarator",
                 "range": [
-                  126,
-                  224
+                  128,
+                  257
                 ],
                 "loc": {
                   "start": {
                     "line": 6,
-                    "column": 13
+                    "column": 15
                   },
                   "end": {
                     "line": 9,
@@ -27860,17 +27860,17 @@
                 "id": {
                   "type": "Identifier",
                   "range": [
-                    126,
-                    145
+                    128,
+                    147
                   ],
                   "loc": {
                     "start": {
                       "line": 6,
-                      "column": 13
+                      "column": 15
                     },
                     "end": {
                       "line": 6,
-                      "column": 32
+                      "column": 34
                     }
                   },
                   "name": "addNumberButOutside"
@@ -27878,13 +27878,13 @@
                 "init": {
                   "type": "ArrowFunctionExpression",
                   "range": [
-                    148,
-                    224
+                    150,
+                    257
                   ],
                   "loc": {
                     "start": {
                       "line": 6,
-                      "column": 35
+                      "column": 37
                     },
                     "end": {
                       "line": 9,
@@ -27897,51 +27897,190 @@
                     {
                       "type": "Identifier",
                       "range": [
-                        149,
-                        158
+                        151,
+                        168
                       ],
                       "loc": {
                         "start": {
                           "line": 6,
-                          "column": 36
+                          "column": 38
                         },
                         "end": {
                           "line": 6,
-                          "column": 45
+                          "column": 55
                         }
                       },
-                      "name": "withParam"
+                      "name": "withParam",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 47
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 55
+                          }
+                        },
+                        "range": [
+                          160,
+                          168
+                        ],
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "range": [
+                            162,
+                            168
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 6,
+                              "column": 49
+                            },
+                            "end": {
+                              "line": 6,
+                              "column": 55
+                            }
+                          }
+                        }
+                      }
                     },
                     {
-                      "type": "Identifier",
+                      "type": "AssignmentPattern",
                       "range": [
-                        159,
-                        176
+                        170,
+                        198
                       ],
                       "loc": {
                         "start": {
                           "line": 6,
-                          "column": 46
+                          "column": 57
                         },
                         "end": {
                           "line": 6,
-                          "column": 63
+                          "column": 85
                         }
                       },
-                      "name": "withOptionalParam",
-                      "optional": true
+                      "left": {
+                        "type": "Identifier",
+                        "range": [
+                          170,
+                          193
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 57
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 80
+                          }
+                        },
+                        "name": "withOptionalParam",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "loc": {
+                            "start": {
+                              "line": 6,
+                              "column": 75
+                            },
+                            "end": {
+                              "line": 6,
+                              "column": 80
+                            }
+                          },
+                          "range": [
+                            188,
+                            193
+                          ],
+                          "typeAnnotation": {
+                            "type": "TSAnyKeyword",
+                            "range": [
+                              190,
+                              193
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 6,
+                                "column": 77
+                              },
+                              "end": {
+                                "line": 6,
+                                "column": 80
+                              }
+                            }
+                          }
+                        },
+                        "optional": true
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "range": [
+                          196,
+                          198
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 83
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 85
+                          }
+                        },
+                        "value": 20,
+                        "raw": "20"
+                      }
+                    },
+                    {
+                      "type": "RestElement",
+                      "range": [
+                        200,
+                        209
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 87
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 96
+                        }
+                      },
+                      "argument": {
+                        "type": "Identifier",
+                        "range": [
+                          203,
+                          209
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 90
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 96
+                          }
+                        },
+                        "name": "others"
+                      }
                     }
                   ],
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      190,
-                      224
+                      223,
+                      257
                     ],
                     "loc": {
                       "start": {
                         "line": 6,
-                        "column": 77
+                        "column": 110
                       },
                       "end": {
                         "line": 9,
@@ -27952,8 +28091,8 @@
                       {
                         "type": "VariableDeclaration",
                         "range": [
-                          194,
-                          207
+                          227,
+                          240
                         ],
                         "loc": {
                           "start": {
@@ -27969,8 +28108,8 @@
                           {
                             "type": "VariableDeclarator",
                             "range": [
-                              198,
-                              206
+                              231,
+                              239
                             ],
                             "loc": {
                               "start": {
@@ -27985,8 +28124,8 @@
                             "id": {
                               "type": "Identifier",
                               "range": [
-                                198,
-                                202
+                                231,
+                                235
                               ],
                               "loc": {
                                 "start": {
@@ -28003,8 +28142,8 @@
                             "init": {
                               "type": "Literal",
                               "range": [
-                                205,
-                                206
+                                238,
+                                239
                               ],
                               "loc": {
                                 "start": {
@@ -28026,8 +28165,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          210,
-                          222
+                          243,
+                          255
                         ],
                         "loc": {
                           "start": {
@@ -28042,8 +28181,8 @@
                         "argument": {
                           "type": "Literal",
                           "range": [
-                            217,
-                            221
+                            250,
+                            254
                           ],
                           "loc": {
                             "start": {
@@ -28068,31 +28207,31 @@
                     "loc": {
                       "start": {
                         "line": 6,
-                        "column": 65
+                        "column": 97
                       },
                       "end": {
                         "line": 6,
-                        "column": 73
+                        "column": 106
                       }
                     },
                     "range": [
-                      178,
-                      186
+                      210,
+                      219
                     ],
                     "typeAnnotation": {
                       "type": "TSBooleanKeyword",
                       "range": [
-                        179,
-                        186
+                        212,
+                        219
                       ],
                       "loc": {
                         "start": {
                           "line": 6,
-                          "column": 66
+                          "column": 99
                         },
                         "end": {
                           "line": 6,
-                          "column": 73
+                          "column": 106
                         }
                       }
                     }
@@ -28103,16 +28242,279 @@
             "kind": "const"
           },
           "range": [
-            113,
-            225
+            115,
+            258
           ],
           "loc": {
             "start": {
               "line": 6,
-              "column": 0
+              "column": 2
             },
             "end": {
               "line": 9,
+              "column": 2
+            }
+          },
+          "specifiers": [],
+          "source": null
+        },
+        {
+          "type": "ExportNamedDeclaration",
+          "declaration": {
+            "type": "VariableDeclaration",
+            "range": [
+              266,
+              363
+            ],
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 7
+              },
+              "end": {
+                "line": 13,
+                "column": 2
+              }
+            },
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "range": [
+                  272,
+                  362
+                ],
+                "loc": {
+                  "start": {
+                    "line": 10,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 1
+                  }
+                },
+                "id": {
+                  "type": "Identifier",
+                  "range": [
+                    272,
+                    291
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 13
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 32
+                    }
+                  },
+                  "name": "noReturnTypingCheck"
+                },
+                "init": {
+                  "type": "ArrowFunctionExpression",
+                  "range": [
+                    294,
+                    362
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 35
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 1
+                    }
+                  },
+                  "generator": false,
+                  "id": null,
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "range": [
+                        295,
+                        304
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 36
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 45
+                        }
+                      },
+                      "name": "withParam"
+                    },
+                    {
+                      "type": "Identifier",
+                      "range": [
+                        305,
+                        322
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 46
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 63
+                        }
+                      },
+                      "name": "withOptionalParam",
+                      "optional": true
+                    }
+                  ],
+                  "body": {
+                    "type": "BlockStatement",
+                    "range": [
+                      328,
+                      362
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 10,
+                        "column": 69
+                      },
+                      "end": {
+                        "line": 13,
+                        "column": 1
+                      }
+                    },
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "range": [
+                          332,
+                          345
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 11,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 11,
+                            "column": 15
+                          }
+                        },
+                        "declarations": [
+                          {
+                            "type": "VariableDeclarator",
+                            "range": [
+                              336,
+                              344
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 11,
+                                "column": 6
+                              },
+                              "end": {
+                                "line": 11,
+                                "column": 14
+                              }
+                            },
+                            "id": {
+                              "type": "Identifier",
+                              "range": [
+                                336,
+                                340
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 11,
+                                  "column": 6
+                                },
+                                "end": {
+                                  "line": 11,
+                                  "column": 10
+                                }
+                              },
+                              "name": "five"
+                            },
+                            "init": {
+                              "type": "Literal",
+                              "range": [
+                                343,
+                                344
+                              ],
+                              "loc": {
+                                "start": {
+                                  "line": 11,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "line": 11,
+                                  "column": 14
+                                }
+                              },
+                              "value": 5,
+                              "raw": "5"
+                            }
+                          }
+                        ],
+                        "kind": "let"
+                      },
+                      {
+                        "type": "ReturnStatement",
+                        "range": [
+                          348,
+                          360
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 14
+                          }
+                        },
+                        "argument": {
+                          "type": "Literal",
+                          "range": [
+                            355,
+                            359
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 12,
+                              "column": 9
+                            },
+                            "end": {
+                              "line": 12,
+                              "column": 13
+                            }
+                          },
+                          "value": true,
+                          "raw": "true"
+                        }
+                      }
+                    ]
+                  },
+                  "async": false,
+                  "expression": false
+                }
+              }
+            ],
+            "kind": "const"
+          },
+          "range": [
+            259,
+            363
+          ],
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 0
+            },
+            "end": {
+              "line": 13,
               "column": 2
             }
           },
@@ -28123,7 +28525,7 @@
       "sourceType": "module"
     },
     "originalPath": "jasmine-tests/tests/variables.test.ts",
-    "originalContentStr": "// ------- Test New Declarations Not Yet Synced -------\nvar \nvarDos = 12\n, varTres = 14;\nexport let number = 12;\nexport const addNumberButOutside = (withParam,withOptionalParam?):boolean => {\n  let five = 5;\n  return true;\n};",
+    "originalContentStr": "// ------- Test New Declarations Not Yet Synced -------\nvar \nvarDos = 12\n, varTres = 14;\nexport let number = 12;\n  export const addNumberButOutside = (withParam: string, withOptionalParam?: any = 20, ...others): boolean => {\n  let five = 5;\n  return true;\n};\nexport const noReturnTypingCheck = (withParam,withOptionalParam?) => {\n  let five = 5;\n  return true;\n};",
     "imports": [],
     "declarations": [
       {
@@ -28352,13 +28754,13 @@
         "declaration": {
           "type": "VariableDeclaration",
           "range": [
-            120,
-            225
+            122,
+            258
           ],
           "loc": {
             "start": {
               "line": 6,
-              "column": 7
+              "column": 9
             },
             "end": {
               "line": 9,
@@ -28369,13 +28771,13 @@
             {
               "type": "VariableDeclarator",
               "range": [
-                126,
-                224
+                128,
+                257
               ],
               "loc": {
                 "start": {
                   "line": 6,
-                  "column": 13
+                  "column": 15
                 },
                 "end": {
                   "line": 9,
@@ -28385,17 +28787,17 @@
               "id": {
                 "type": "Identifier",
                 "range": [
-                  126,
-                  145
+                  128,
+                  147
                 ],
                 "loc": {
                   "start": {
                     "line": 6,
-                    "column": 13
+                    "column": 15
                   },
                   "end": {
                     "line": 6,
-                    "column": 32
+                    "column": 34
                   }
                 },
                 "name": "addNumberButOutside"
@@ -28403,13 +28805,13 @@
               "init": {
                 "type": "ArrowFunctionExpression",
                 "range": [
-                  148,
-                  224
+                  150,
+                  257
                 ],
                 "loc": {
                   "start": {
                     "line": 6,
-                    "column": 35
+                    "column": 37
                   },
                   "end": {
                     "line": 9,
@@ -28422,51 +28824,190 @@
                   {
                     "type": "Identifier",
                     "range": [
-                      149,
-                      158
+                      151,
+                      168
                     ],
                     "loc": {
                       "start": {
                         "line": 6,
-                        "column": 36
+                        "column": 38
                       },
                       "end": {
                         "line": 6,
-                        "column": 45
+                        "column": 55
                       }
                     },
-                    "name": "withParam"
+                    "name": "withParam",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 47
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 55
+                        }
+                      },
+                      "range": [
+                        160,
+                        168
+                      ],
+                      "typeAnnotation": {
+                        "type": "TSStringKeyword",
+                        "range": [
+                          162,
+                          168
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 49
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 55
+                          }
+                        }
+                      }
+                    }
                   },
                   {
-                    "type": "Identifier",
+                    "type": "AssignmentPattern",
                     "range": [
-                      159,
-                      176
+                      170,
+                      198
                     ],
                     "loc": {
                       "start": {
                         "line": 6,
-                        "column": 46
+                        "column": 57
                       },
                       "end": {
                         "line": 6,
-                        "column": 63
+                        "column": 85
                       }
                     },
-                    "name": "withOptionalParam",
-                    "optional": true
+                    "left": {
+                      "type": "Identifier",
+                      "range": [
+                        170,
+                        193
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 57
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 80
+                        }
+                      },
+                      "name": "withOptionalParam",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 75
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 80
+                          }
+                        },
+                        "range": [
+                          188,
+                          193
+                        ],
+                        "typeAnnotation": {
+                          "type": "TSAnyKeyword",
+                          "range": [
+                            190,
+                            193
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 6,
+                              "column": 77
+                            },
+                            "end": {
+                              "line": 6,
+                              "column": 80
+                            }
+                          }
+                        }
+                      },
+                      "optional": true
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "range": [
+                        196,
+                        198
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 83
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 85
+                        }
+                      },
+                      "value": 20,
+                      "raw": "20"
+                    }
+                  },
+                  {
+                    "type": "RestElement",
+                    "range": [
+                      200,
+                      209
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 87
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 96
+                      }
+                    },
+                    "argument": {
+                      "type": "Identifier",
+                      "range": [
+                        203,
+                        209
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 90
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 96
+                        }
+                      },
+                      "name": "others"
+                    }
                   }
                 ],
                 "body": {
                   "type": "BlockStatement",
                   "range": [
-                    190,
-                    224
+                    223,
+                    257
                   ],
                   "loc": {
                     "start": {
                       "line": 6,
-                      "column": 77
+                      "column": 110
                     },
                     "end": {
                       "line": 9,
@@ -28477,8 +29018,8 @@
                     {
                       "type": "VariableDeclaration",
                       "range": [
-                        194,
-                        207
+                        227,
+                        240
                       ],
                       "loc": {
                         "start": {
@@ -28494,8 +29035,8 @@
                         {
                           "type": "VariableDeclarator",
                           "range": [
-                            198,
-                            206
+                            231,
+                            239
                           ],
                           "loc": {
                             "start": {
@@ -28510,8 +29051,8 @@
                           "id": {
                             "type": "Identifier",
                             "range": [
-                              198,
-                              202
+                              231,
+                              235
                             ],
                             "loc": {
                               "start": {
@@ -28528,8 +29069,8 @@
                           "init": {
                             "type": "Literal",
                             "range": [
-                              205,
-                              206
+                              238,
+                              239
                             ],
                             "loc": {
                               "start": {
@@ -28551,8 +29092,8 @@
                     {
                       "type": "ReturnStatement",
                       "range": [
-                        210,
-                        222
+                        243,
+                        255
                       ],
                       "loc": {
                         "start": {
@@ -28567,8 +29108,8 @@
                       "argument": {
                         "type": "Literal",
                         "range": [
-                          217,
-                          221
+                          250,
+                          254
                         ],
                         "loc": {
                           "start": {
@@ -28593,31 +29134,31 @@
                   "loc": {
                     "start": {
                       "line": 6,
-                      "column": 65
+                      "column": 97
                     },
                     "end": {
                       "line": 6,
-                      "column": 73
+                      "column": 106
                     }
                   },
                   "range": [
-                    178,
-                    186
+                    210,
+                    219
                   ],
                   "typeAnnotation": {
                     "type": "TSBooleanKeyword",
                     "range": [
-                      179,
-                      186
+                      212,
+                      219
                     ],
                     "loc": {
                       "start": {
                         "line": 6,
-                        "column": 66
+                        "column": 99
                       },
                       "end": {
                         "line": 6,
-                        "column": 73
+                        "column": 106
                       }
                     }
                   }
@@ -28628,13 +29169,13 @@
           "kind": "const"
         },
         "range": [
-          113,
-          225
+          115,
+          258
         ],
         "loc": {
           "start": {
             "line": 6,
-            "column": 0
+            "column": 2
           },
           "end": {
             "line": 9,
@@ -28643,11 +29184,274 @@
         },
         "specifiers": [],
         "source": null
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "declaration": {
+          "type": "VariableDeclaration",
+          "range": [
+            266,
+            363
+          ],
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 7
+            },
+            "end": {
+              "line": 13,
+              "column": 2
+            }
+          },
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "range": [
+                272,
+                362
+              ],
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 13
+                },
+                "end": {
+                  "line": 13,
+                  "column": 1
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "range": [
+                  272,
+                  291
+                ],
+                "loc": {
+                  "start": {
+                    "line": 10,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 10,
+                    "column": 32
+                  }
+                },
+                "name": "noReturnTypingCheck"
+              },
+              "init": {
+                "type": "ArrowFunctionExpression",
+                "range": [
+                  294,
+                  362
+                ],
+                "loc": {
+                  "start": {
+                    "line": 10,
+                    "column": 35
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 1
+                  }
+                },
+                "generator": false,
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "range": [
+                      295,
+                      304
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 10,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 10,
+                        "column": 45
+                      }
+                    },
+                    "name": "withParam"
+                  },
+                  {
+                    "type": "Identifier",
+                    "range": [
+                      305,
+                      322
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 10,
+                        "column": 46
+                      },
+                      "end": {
+                        "line": 10,
+                        "column": 63
+                      }
+                    },
+                    "name": "withOptionalParam",
+                    "optional": true
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "range": [
+                    328,
+                    362
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 69
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 1
+                    }
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "range": [
+                        332,
+                        345
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 11,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 11,
+                          "column": 15
+                        }
+                      },
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "range": [
+                            336,
+                            344
+                          ],
+                          "loc": {
+                            "start": {
+                              "line": 11,
+                              "column": 6
+                            },
+                            "end": {
+                              "line": 11,
+                              "column": 14
+                            }
+                          },
+                          "id": {
+                            "type": "Identifier",
+                            "range": [
+                              336,
+                              340
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 11,
+                                "column": 6
+                              },
+                              "end": {
+                                "line": 11,
+                                "column": 10
+                              }
+                            },
+                            "name": "five"
+                          },
+                          "init": {
+                            "type": "Literal",
+                            "range": [
+                              343,
+                              344
+                            ],
+                            "loc": {
+                              "start": {
+                                "line": 11,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 11,
+                                "column": 14
+                              }
+                            },
+                            "value": 5,
+                            "raw": "5"
+                          }
+                        }
+                      ],
+                      "kind": "let"
+                    },
+                    {
+                      "type": "ReturnStatement",
+                      "range": [
+                        348,
+                        360
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 12,
+                          "column": 14
+                        }
+                      },
+                      "argument": {
+                        "type": "Literal",
+                        "range": [
+                          355,
+                          359
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 9
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 13
+                          }
+                        },
+                        "value": true,
+                        "raw": "true"
+                      }
+                    }
+                  ]
+                },
+                "async": false,
+                "expression": false
+              }
+            }
+          ],
+          "kind": "const"
+        },
+        "range": [
+          259,
+          363
+        ],
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 0
+          },
+          "end": {
+            "line": 13,
+            "column": 2
+          }
+        },
+        "specifiers": [],
+        "source": null
       }
     ],
-    "originalContentStrAfterUpdate": "// ------- Test New Declarations Not Yet Synced -------\nvar \nvarDos = 12 /*varDosStub*/\n, varTres = 14; /*varTresStub*/\nexport let number = 12; /*numberStub*/\nexport const addNumberButOutside = (withParam,withOptionalParam?):boolean => {\n  let five = 5;\n  return true;\n}; /*addNumberButOutsideStub*/",
+    "originalContentStrAfterUpdate": "// ------- Test New Declarations Not Yet Synced -------\nvar \nvarDos = 12 /*varDosStub*/\n, varTres = 14; /*varTresStub*/\nexport let number = 12; /*numberStub*/\n  export const addNumberButOutside = (withParam: string, withOptionalParam?: any = 20, ...others): boolean => {\n  let five = 5;\n  return true;\n}; /*addNumberButOutsideStub*/\nexport const noReturnTypingCheck = (withParam,withOptionalParam?) => {\n  let five = 5;\n  return true;\n}; /*noReturnTypingCheckStub*/",
     "stubContentStr": "",
     "stubFileIsNew": true,
-    "stubContentStrAfterUpdate": "// =====================================================================;\n//                            Sync Imports                              \n// =====================================================================\n// =====================================================================\n//                            Extra Code\n// =====================================================================\n// - Write Extra File Code Here (e.g. Import { fakeJsonToReturn } from './someplace' )\n// ---------------------------------------------------------------------\n\n// =====================================================================\n//                      Sync Stub Declarations\n// =====================================================================\n// - Feel free to define values for any synced declaration logic. \n// - DO NOT RENAME ANY DECLARATION NAME BELOW inside here. The name itself\n//   is synced with the original file's /*StubNameComments*/ and all unmatched \n//   declarations will be moved to the archive section. The console will warn \n//   you if anything has been archived.\n// ---------------------------------------------------------------------;\nvar varDosStub = undefined,\nvarTresStub = undefined;\nexport let numberStub = undefined;\nexport const addNumberButOutsideStub = (withParam, withOptionalParam) => {\n\treturn undefined;\n};\n"
+    "stubContentStrAfterUpdate": "// =====================================================================;\n//                            Sync Imports                              \n// =====================================================================\n// =====================================================================\n//                            Extra Code\n// =====================================================================\n// - Write Extra File Code Here (e.g. Import { fakeJsonToReturn } from './someplace' )\n// ---------------------------------------------------------------------\n\n// =====================================================================\n//                      Sync Stub Declarations\n// =====================================================================\n// - Feel free to define values for any synced declaration logic. \n// - DO NOT RENAME ANY DECLARATION NAME BELOW inside here. The name itself\n//   is synced with the original file's /*StubNameComments*/ and all unmatched \n//   declarations will be moved to the archive section. The console will warn \n//   you if anything has been archived.\n// ---------------------------------------------------------------------;\nvar varDosStub = undefined,\nvarTresStub = undefined;\nexport let numberStub = undefined;\nexport const addNumberButOutsideStub = (withParam: string, withOptionalParam?: any = 20, ...others): boolean => {\n\treturn undefined;\n};\nexport const noReturnTypingCheckStub = (withParam, withOptionalParam) => {\n\treturn undefined;\n};\n"
   }
 ]

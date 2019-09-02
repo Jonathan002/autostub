@@ -19,6 +19,9 @@
 var varDosStub = undefined,
 varTresStub = undefined;
 export let numberStub = undefined;
-export const addNumberButOutsideStub = (withParam, withOptionalParam) => {
+export const addNumberButOutsideStub = (withParam: string, withOptionalParam?: any = 20, ...others): boolean => {
+	return undefined;
+};
+export const noReturnTypingCheckStub = (withParam, withOptionalParam) => {
 	return undefined;
 };

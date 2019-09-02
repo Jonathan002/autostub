@@ -95,6 +95,8 @@ export class TaskStubStringGenerator {
                 // Determine if Arrow Function or handle normally
                 if (oneDeclarationNameData.init && oneDeclarationNameData.init.type === 'ArrowFunctionExpression') {
                     decNamesAndValues += createParamsString(oneDeclarationNameData.init.params, contentStr);
+                    const { returnType } = oneDeclarationNameData.init;
+                    decNamesAndValues += returnType ? contentStr.substring(returnType.range[0], returnType.range[1]) : '';
                     decNamesAndValues += ' => ';
                     stubImplementation = stubImplementation ? stubImplementation : this.stubTemplate.functionDefaultImplementation();
                 } else {
