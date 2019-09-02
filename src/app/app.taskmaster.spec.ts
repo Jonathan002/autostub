@@ -70,9 +70,11 @@ describe('AppTaskMaster - Integration Testing -', () => {
             const resultStub = fs.readFileSync(jasminePath + 'tests/retain-state.test.stub.ts', 'utf-8');
 
             // Stub Archive str at bottom of file is dynamic since a new Data() timestap is added.
-            const expectationStubCut = resultOriginal.split(splitter).shift();
+            const expectationStubCut = expectationStub.split(splitter).shift();
             const resultStubCut = resultStub.split(splitter).shift();
             expect(expectationOriginal).toEqual(resultOriginal);
+            fs.writeFileSync('./exect-str.ts', expectationStubCut);
+            fs.writeFileSync('./result-str.ts', resultStubCut);
             expect(expectationStubCut).toEqual(resultStubCut);
         });
     });

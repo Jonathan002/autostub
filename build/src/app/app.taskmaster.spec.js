@@ -93,9 +93,11 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 resultOriginal = fs.readFileSync(jasminePath + 'tests/retain-state.test.ts', 'utf-8');
                 expectationStub = fs.readFileSync(jasminePath + 'expectations/retain-state.expect.stub.ts', 'utf-8');
                 resultStub = fs.readFileSync(jasminePath + 'tests/retain-state.test.stub.ts', 'utf-8');
-                expectationStubCut = resultOriginal.split(splitter).shift();
+                expectationStubCut = expectationStub.split(splitter).shift();
                 resultStubCut = resultStub.split(splitter).shift();
                 expect(expectationOriginal).toEqual(resultOriginal);
+                fs.writeFileSync('./exect-str.ts', expectationStubCut);
+                fs.writeFileSync('./result-str.ts', resultStubCut);
                 expect(expectationStubCut).toEqual(resultStubCut);
                 return [2 /*return*/];
             });
