@@ -45,6 +45,11 @@ export class PageNotFoundComponent implements OnInit {
   arrowFuncWithStubImplementation = (value: string, ...args) => {
     return { implemented: true, realImplementation: true };
   } /*arrowFuncWithStubImplementation*/
+
+  arrowFuncPropWithArgumentsUpdating = (one: number, two: number) => {
+    return one + two;
+  } /*arrowFuncPropWithArgumentsUpdating*/
+
   // Instance
   public testPublic = 'test public'; /*testPublic*/
   @public('publicHmm')
@@ -75,5 +80,10 @@ export class PageNotFoundComponent implements OnInit {
   }
   private methodTwo() {
     console.log('welcome to 404 private');
+  }
+
+  // Type and arguments should update the stub implementation..
+  argumentsShouldUpdate(one: number, two: number) {
+    return one + two;
   }
 } /*PageNotFoundComponent*/

@@ -58,7 +58,12 @@ export class PageNotFoundComponent implements OnInit {
   private static test(): string  {
     return 'testStr';
   }
-  // arrowFuncWithStubImplementation
+  arrowFuncWithStubImplementation = (value: string, ...args) => {
+    return { implemented: true, realImplementation: false };
+  };
+  arrowFuncPropWithArgumentsUpdating = (one: string) => {
+    return 'one';
+  }; /*arrowFuncPropWithArgumentsUpdating*/
   public testPublic = undefined;
   @public('publicHmm')
   public publicHmm: publicHmm = undefined;
@@ -90,4 +95,7 @@ export class PageNotFoundComponent implements OnInit {
     return undefined;
   }
 
+  argumentsShouldUpdate(one: string) {
+    return undefined;
+  }
 };

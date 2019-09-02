@@ -21,17 +21,16 @@ import { fakeJsonToReturn } from './someplace';
 //   declarations will be moved to the archive section. The console will warn 
 //   you if anything has been archived.
 // ---------------------------------------------------------------------;
-var 
-varDos = true,
-varTres = 'Three';
-export let number = 123456;
-export const addNumberButOutside = (withParam, withOptionalParam) => (withParam, withOptionalParam) =>  {
+var varDosStub = true,
+varTresStub = 'Three';
+export let numberStub = 123456;
+export const addNumberButOutsideStub = (withParam, withOptionalParam) => {
 	return { obj: 'Arrow Return'};
 };
-export function hmm(thing: string, bur: number): number {
+export function hmmStub(thing: string, bur: number): number {
 	return false;
 };
-export function test(args: number, space: string) {
+export function testStub(args: number, space: string) {
 	return 'The quick brown fox!';
 };
 @Component({
@@ -49,14 +48,17 @@ export class PageNotFoundComponentStub implements OnInit {
 
   protected static abc = undefined;
   private static abcdefg = undefined;
-  private static lostUrl(thing) {
+  private static set lostUrl(thing) {
     return '404';
   }
 
-  private static test(): string {
+  private static get test(): string {
     return 'testStr';
   }
 
+  arrowFuncWithStubImplementation = (value: string, ...args) => {
+    return { implemented: true, realImplementation: false };
+  };
   public testPublic = undefined;
   @public('publicHmm')
   public publicHmm: publicHmm = undefined;
@@ -69,19 +71,23 @@ export class PageNotFoundComponentStub implements OnInit {
     private router: Router
   ){}
 
-  public leFourOFour(statusCode?: number): string  {
+  public leFourOFour(statusCode?: number): string {
     return undefined;
   }
 
-  bur(): number  {
+  get bur(): number {
     return undefined;
   }
 
-  private methodTwo()  {
+  private methodTwo() {
     return undefined;
   }
 
+  argumentsShouldUpdate(one: number, two: number) {
+    return undefined;
+  }
 };
+
 // ====================================================================='
 //                     Archive Stub Declarations
 // =====================================================================
@@ -90,7 +96,7 @@ export class PageNotFoundComponentStub implements OnInit {
 //   files.
 // ---------------------------------------------------------------------
 /*
----------------------- 2018-11-09T10:23:38.051Z ----------------------
+---------------------- 2019-09-02T00:48:33.902Z ----------------------
 @Component({
   selector: 'app-page-not-found',
   templateUrl: './page-not-found.component.html',
@@ -98,19 +104,23 @@ export class PageNotFoundComponentStub implements OnInit {
 })
 export class PageNotFoundComponent implements OnInit {
 
-ngOnInit()  {
+  ngOnInit()  {
     return undefined;
   }
-ngOnDestroy()  {
+  ngOnDestroy()  {
     return undefined;
   }
-public leFourOFour(statusCode?: number): string  {
+  public leFourOFour(statusCode?: number): string  {
     return 'archive404';
   }
-bur(): number  {
+  bur(): number  {
     return undefined;
   }
-private methodTwo()  {
+  private methodTwo()  {
     return undefined;
   }
-};*/
+  argumentsShouldUpdate(one: string) {
+    return undefined;
+  }
+};
+*/
