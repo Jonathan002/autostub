@@ -89,13 +89,14 @@ describe('AppTaskMaster - Integration Testing -', function () {
             var splitter, expectationOriginal, resultOriginal, expectationStub, resultStub, expectationStubCut, resultStubCut;
             return tslib_1.__generator(this, function (_a) {
                 splitter = "Archive Stub Declarations";
-                expectationOriginal = fs.readFileSync(jasminePath + 'expectations/retain-state.expect.stub.ts', 'utf-8');
+                expectationOriginal = fs.readFileSync(jasminePath + 'expectations/retain-state.expect.ts', 'utf-8');
                 resultOriginal = fs.readFileSync(jasminePath + 'tests/retain-state.test.ts', 'utf-8');
                 expectationStub = fs.readFileSync(jasminePath + 'expectations/retain-state.expect.stub.ts', 'utf-8');
                 resultStub = fs.readFileSync(jasminePath + 'tests/retain-state.test.stub.ts', 'utf-8');
                 expectationStubCut = resultOriginal.split(splitter).shift();
                 resultStubCut = resultStub.split(splitter).shift();
                 expect(expectationOriginal).toEqual(resultOriginal);
+                expect(expectationStubCut).toEqual(resultStubCut);
                 return [2 /*return*/];
             });
         }); });

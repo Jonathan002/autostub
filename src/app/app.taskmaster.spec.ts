@@ -64,7 +64,7 @@ describe('AppTaskMaster - Integration Testing -', () => {
         it(`should be able to retain existing stub implementations and archive unsynced stubs`, async () => {
 
             const splitter = `Archive Stub Declarations`;
-            const expectationOriginal = fs.readFileSync(jasminePath + 'expectations/retain-state.expect.stub.ts', 'utf-8');
+            const expectationOriginal = fs.readFileSync(jasminePath + 'expectations/retain-state.expect.ts', 'utf-8');
             const resultOriginal = fs.readFileSync(jasminePath + 'tests/retain-state.test.ts', 'utf-8');
             const expectationStub = fs.readFileSync(jasminePath + 'expectations/retain-state.expect.stub.ts', 'utf-8');
             const resultStub = fs.readFileSync(jasminePath + 'tests/retain-state.test.stub.ts', 'utf-8');
@@ -73,7 +73,7 @@ describe('AppTaskMaster - Integration Testing -', () => {
             const expectationStubCut = resultOriginal.split(splitter).shift();
             const resultStubCut = resultStub.split(splitter).shift();
             expect(expectationOriginal).toEqual(resultOriginal);
-            // expect(expectationStubCut).toEqual(resultStubCut);
+            expect(expectationStubCut).toEqual(resultStubCut);
         });
     });
 
