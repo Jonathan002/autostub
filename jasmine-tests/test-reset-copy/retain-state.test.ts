@@ -3,6 +3,10 @@ import * as Events from 'events';
 import { APP_CONFIG } from '../../app-model/app-config';
 import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 
+interface TypicalObj {
+  properties: boolean
+} /*TypicalObj*/
+
 var 
 varDos = 12 /*varDos*/
 , varTres = 14; /*varTres*/
@@ -61,7 +65,7 @@ export class PageNotFoundComponent implements OnInit {
   @public('publicHmm')
   public publicHmm: publicHmm = { hmm: 12 }; /*publicHmm*/
   readonly readOnlyProperty = 42; /*readOnlyProperty*/
-  private hmmm = 'why...'; /*hmmm*/
+  private hmmm: string = 'why...'; /*hmmm*/
 
   constructor(
     nakedDependency: Router,

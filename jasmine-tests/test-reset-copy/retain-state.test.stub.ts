@@ -22,9 +22,11 @@ import { fakeJsonToReturn } from './someplace';
 //   declarations will be moved to the archive section. The console will warn 
 //   you if anything has been archived.
 // ---------------------------------------------------------------------;
+interface TypicalObj {
+  properties: boolean
+}
 var varDosStub = true,
 varTresStub = 'Three';
-
 export let numberStub = 123456;
 export const addNumberButOutsideStub = (withParam, withOptionalParam) =>  {
 	return { obj: 'Arrow Return'};
@@ -70,7 +72,7 @@ export class PageNotFoundComponentStub implements OnInit {
   @public('publicHmm')
   public publicHmm: publicHmm = undefined;
   readonly readOnlyProperty = undefined;
-  private hmmm = undefined;
+  private hmmm = 'testPropState';
   constructor(
     nakedDependency: Router,
     @Inject(APP_CONFIG) 
