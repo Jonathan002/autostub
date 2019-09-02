@@ -69,9 +69,11 @@ export class TaskFSWriter {
     tmStart(fileMetaArr: FileStubSyncMeta[]) {
         const M_backupEntryFolder = this.backupEntryFolder();
         const M_fsWriteToFiles = this.fsWriteToFiles(fileMetaArr);
-
-        console.log('fs writing??');
-        fs.writeJSONSync('./test-autostub.json', fileMetaArr, {spaces:2});
+        
+        // TODO: implment dev env better..
+        // for development.. not using global process env as most likely may be dev by user and can cause side effects.
+        // fs.writeJSONSync('./test-autostub.json', fileMetaArr, {spaces:2});
+        
         return M_fsWriteToFiles;
     }
 }

@@ -38,7 +38,8 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 }
             });
         }); });
-        it("should be able to handle and copy all import statements from  new-imports.test.ts to new-imports.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
+        // --------- Brand new without autostub yet.. ------------
+        it("should be able to handle and copy all import statements from  imports.test.ts to imports.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
             var expectation, result;
             return tslib_1.__generator(this, function (_a) {
                 expectation = fs.readFileSync(jasminePath + 'expectations/imports.expect.stub.ts', 'utf-8');
@@ -47,7 +48,7 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 return [2 /*return*/];
             });
         }); });
-        it("should be able to stub a class from new-class.test.ts to new-class.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
+        it("should be able to stub a class from class.test.ts to class.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
             var expectation, result;
             return tslib_1.__generator(this, function (_a) {
                 expectation = fs.readFileSync(jasminePath + 'expectations/class.expect.stub.ts', 'utf-8');
@@ -56,7 +57,7 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 return [2 /*return*/];
             });
         }); });
-        it("should be able to stub functions from new-functions.test.ts to new-functions.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
+        it("should be able to stub functions from functions.test.ts to functions.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
             var expectation, result;
             return tslib_1.__generator(this, function (_a) {
                 expectation = fs.readFileSync(jasminePath + 'expectations/functions.expect.stub.ts', 'utf-8');
@@ -65,7 +66,7 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 return [2 /*return*/];
             });
         }); });
-        it("should be able to stub variables from new-variables.test.ts to new-variables.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
+        it("should be able to stub variables from variables.test.ts to variables.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
             var expectation, result;
             return tslib_1.__generator(this, function (_a) {
                 expectation = fs.readFileSync(jasminePath + 'expectations/variables.expect.stub.ts', 'utf-8');
@@ -75,7 +76,7 @@ describe('AppTaskMaster - Integration Testing -', function () {
             });
         }); });
         // Failing.. Enum does not get a Stub prefix at the end..
-        it("should be able to copy enum values from new-enum.test.ts to new-enum.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
+        it("should be able to copy enum values from enum.test.ts to enum.test.stub.ts", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
             var expectation, result;
             return tslib_1.__generator(this, function (_a) {
                 expectation = fs.readFileSync(jasminePath + 'expectations/enum.expect.stub.ts', 'utf-8');
@@ -84,7 +85,7 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 return [2 /*return*/];
             });
         }); });
-        // Failing.. Can't test yet as stub-template time-stamp is dynamic..
+        // --------- Autostub .stub file exist with implemented return values ------------
         it("should be able to retain existing stub implementations and archive unsynced stubs", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
             var splitter, expectationOriginal, resultOriginal, expectationStub, resultStub, expectationStubCut, resultStubCut;
             return tslib_1.__generator(this, function (_a) {
@@ -96,11 +97,6 @@ describe('AppTaskMaster - Integration Testing -', function () {
                 expectationStubCut = expectationStub.split(splitter).shift();
                 resultStubCut = resultStub.split(splitter).shift();
                 expect(expectationOriginal).toEqual(resultOriginal);
-                // fs.writeFileSync('./exect-str.ts', expectationStubCut);
-                // fs.writeFileSync('./result-str.ts', resultStubCut);
-                // if (expectationStubCut === resultStubCut) {
-                //     console.log('yes!!!');
-                // }
                 expect(expectationStubCut).toEqual(resultStubCut);
                 return [2 /*return*/];
             });
