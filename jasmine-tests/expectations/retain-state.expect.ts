@@ -4,20 +4,20 @@ import { APP_CONFIG } from '../../app-model/app-config';
 import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 
 var 
-varDos = 12 /*varDos*/
-, varTres = 14; /*varTres*/
-export let number = 12; /*number*/
+varDos = 12 /*varDosStub*/
+, varTres = 14; /*varTresStub*/
+export let number = 12; /*numberStub*/
 export const addNumberButOutside = (withParam,withOptionalParam?):boolean => {
   let five = 5;
   return true;
-}; /*addNumberButOutside*/
+}; /*addNumberButOutsideStub*/
 
 export function hmm(thing: string, bur: number): number {
   return 
-} /*hmm*/
+} /*hmmStub*/
 export       function      test  (args: number, space: string) {
   return 'functionfunctionfunction';
-}; /*test*/
+}; /*testStub*/
 
 @Component({
   selector: 'app-page-not-found',
@@ -42,7 +42,9 @@ export class PageNotFoundComponent implements OnInit {
   private static get test(): string {
     return 'the getdocumentation() getter ....'
   } /*test*/
-
+  arrowFuncWithStubImplementation = (value: string, ...args) => {
+    return { implemented: true, realImplementation: true };
+  } /*arrowFuncWithStubImplementation*/
   // Instance
   public testPublic = 'test public'; /*testPublic*/
   @public('publicHmm')
@@ -74,4 +76,4 @@ export class PageNotFoundComponent implements OnInit {
   private methodTwo() {
     console.log('welcome to 404 private');
   } /*methodTwo*/
-} /*PageNotFoundComponent*/
+} /*PageNotFoundComponentStub*/
