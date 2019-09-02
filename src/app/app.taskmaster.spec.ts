@@ -35,7 +35,6 @@ describe('AppTaskMaster - Integration Testing -', () => {
             expect(result).toEqual(expectation);
         });
 
-        // Failing.. setters and getters not yet implemented
         it(`should be able to stub a class from new-class.test.ts to new-class.test.stub.ts`, async () => {
             const expectation = fs.readFileSync(jasminePath + 'expectations/class.expect.stub.ts', 'utf-8');
             const result = fs.readFileSync(jasminePath + 'tests/class.test.stub.ts', 'utf-8');
