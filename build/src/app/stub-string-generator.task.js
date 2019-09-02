@@ -164,7 +164,7 @@ var TaskStubStringGenerator = /** @class */ (function () {
                         var typing = checkAndExtractTyping(classItem, contentStr);
                         if (classItem.value && classItem.value.type === 'ArrowFunctionExpression') {
                             var arrowArguments = createParamsString(classItem.value.params, contentStr) + " => ";
-                            stubImplementation = stubImplementation ? stubImplementation : (arrowArguments + _this.stubTemplate.functionDefaultImplementation(tabSpace));
+                            stubImplementation = stubImplementation ? (arrowArguments + stubImplementation) : (arrowArguments + _this.stubTemplate.functionDefaultImplementation(tabSpace));
                         }
                         else {
                             stubImplementation = stubImplementation ? stubImplementation : _this.stubTemplate.variableDefaultImplementation;

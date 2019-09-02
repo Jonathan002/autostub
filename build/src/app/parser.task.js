@@ -300,6 +300,10 @@ var TaskParser = /** @class */ (function () {
                                         break;
                                     case 'ClassProperty':
                                         declarationName = stubDeclration.key.name;
+                                        if (stubDeclration.value && stubDeclration.value.type === 'ArrowFunctionExpression') {
+                                            realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.body.range[0], stubDeclration.value.body.range[1]);
+                                            break;
+                                        }
                                         realDeclaration.stubImplementation = stubSyncDeclarationsStr.substring(stubDeclration.value.range[0], stubDeclration.value.range[1]);
                                         break;
                                     default:

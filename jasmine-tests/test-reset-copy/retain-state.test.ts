@@ -8,13 +8,13 @@ interface TypicalObj {
 } /*TypicalObj*/
 
 var 
-varDos = 12 /*varDos*/
-, varTres = 14; /*varTres*/
-export let number = 12; /*number*/
+varDos = 12 /*varDosStub*/
+, varTres = 14; /*varTresStub*/
+export let number = 12; /*numberStub*/
 export const addNumberButOutside = (withParam,withOptionalParam?):boolean => {
   let five = 5;
   return true;
-}; /*addNumberButOutside*/
+}; /*addNumberButOutsideStub*/
 
 // Typing and args updated
 export const updateArrowFunArgs = (one: number, two?: number):any => {
@@ -24,10 +24,10 @@ export const updateArrowFunArgs = (one: number, two?: number):any => {
 
 export function hmm(thing: string, bur: number): number {
   return 
-} /*hmm*/
+} /*hmmStub*/
 export       function      test  (args: number, space: string) {
   return 'functionfunctionfunction';
-}; /*test*/
+}; /*testStub*/
 
 @Component({
   selector: 'app-page-not-found',
@@ -59,6 +59,7 @@ export class PageNotFoundComponent implements OnInit {
   arrowFuncPropWithArgumentsUpdating = (one: number, two: number): number => {
     return one + two;
   } /*arrowFuncPropWithArgumentsUpdating*/
+  arrowFuncWithoutBody = () => 42; /*arrowFuncWithoutBody*/
 
   // Instance
   public testPublic = 'test public'; /*testPublic*/

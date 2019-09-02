@@ -67,7 +67,8 @@ export class PageNotFoundComponentStub implements OnInit {
   };
   arrowFuncPropWithArgumentsUpdating = (one: string): string => {
     return 'one';
-  }; /*arrowFuncPropWithArgumentsUpdating*/
+  };
+  arrowFuncWithoutBody = () => 42;
   public testPublic = undefined;
   @public('publicHmm')
   public publicHmm: publicHmm = undefined;
