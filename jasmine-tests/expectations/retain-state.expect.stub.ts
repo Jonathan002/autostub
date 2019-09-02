@@ -27,10 +27,10 @@ interface TypicalObj {
 var varDosStub = true,
 varTresStub = 'Three';
 export let numberStub = 123456;
-export const addNumberButOutsideStub = (withParam, withOptionalParam) => {
+export const addNumberButOutsideStub = (withParam, withOptionalParam):boolean => {
 	return { obj: 'Arrow Return'};
 };
-export const updateArrowFunArgsStub = (one: number, two?: number) => {
+export const updateArrowFunArgsStub = (one: number, two?: number):any => {
   return true;
 };
 export function hmmStub(thing: string, bur: number): number {
@@ -107,7 +107,7 @@ export class PageNotFoundComponentStub implements OnInit {
 //   files.
 // ---------------------------------------------------------------------
 /*
----------------------- 2019-09-02T03:43:23.732Z ----------------------
+---------------------- 2019-09-02T05:35:42.774Z ----------------------
 @Component({
   selector: 'app-page-not-found',
   templateUrl: './page-not-found.component.html',
