@@ -85,13 +85,19 @@ describe('AppTaskMaster - Integration Testing -', function () {
             });
         }); });
         // Failing.. Can't test yet as stub-template time-stamp is dynamic..
-        // it(`should be able to retain existing stub implementations and archive unsynced stubs`, async () => {
-        //     const expectationOriginal = fs.readFileSync(path + 'expectations/retain-state.expect.stub.ts', 'utf-8');
-        //     const resultOriginal = fs.readFileSync(path + 'tests/retain-state.test.ts', 'utf-8');
-        //     const expectationStub = fs.readFileSync(path + 'expectations/retain-state.expect.stub.ts', 'utf-8');
-        //     const resultStub = fs.readFileSync(path + 'tests/retain-state.test.stub.ts', 'utf-8');
-        //     expect(expectationOriginal).toEqual(resultOriginal);
-        //     expect(expectationStub).toEqual(resultStub);
-        // });
+        it("should be able to retain existing stub implementations and archive unsynced stubs", function () { return tslib_1.__awaiter(_this, void 0, void 0, function () {
+            var splitter, expectationOriginal, resultOriginal, expectationStub, resultStub, expectationStubCut, resultStubCut;
+            return tslib_1.__generator(this, function (_a) {
+                splitter = "Archive Stub Declarations";
+                expectationOriginal = fs.readFileSync(jasminePath + 'expectations/retain-state.expect.stub.ts', 'utf-8');
+                resultOriginal = fs.readFileSync(jasminePath + 'tests/retain-state.test.ts', 'utf-8');
+                expectationStub = fs.readFileSync(jasminePath + 'expectations/retain-state.expect.stub.ts', 'utf-8');
+                resultStub = fs.readFileSync(jasminePath + 'tests/retain-state.test.stub.ts', 'utf-8');
+                expectationStubCut = resultOriginal.split(splitter).shift();
+                resultStubCut = resultStub.split(splitter).shift();
+                expect(expectationOriginal).toEqual(resultOriginal);
+                return [2 /*return*/];
+            });
+        }); });
     });
 });

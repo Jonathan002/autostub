@@ -6,8 +6,6 @@ import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 var 
 varDos = 12 /*varDos*/
 , varTres = 14; /*varTres*/
-var four; /*four*/
-
 export let number = 12; /*number*/
 export const addNumberButOutside = (withParam,withOptionalParam?):boolean => {
   let five = 5;
