@@ -76,7 +76,7 @@ var TaskParser = /** @class */ (function () {
                             fileMeta = {};
                             parsedPath = path.parse(filename);
                             if (parsedPath.name.substring(parsedPath.name.length - 'stub'.length) === 'stub') {
-                                throw Error("\".stub.\" Files are expected to be ignored in autostub.json.ignoreFilesRegex - Please add it to the autostub.json or copy the default autostub config values from the doucmentation in order to prevent the accidental creation of \".stub.'s\" own \".stub.stub.\" files");
+                                throw Error("\".stub.\" Files detected at " + parsedPath.dir + "/" + parsedPath.base + ". \".stub.\" files are expected to be ignored in autostub.json.ignoreFilesRegex - Please add it to the autostub.json or copy the default autostub config values from the doucmentation in order to prevent the accidental creation of \".stub.'s\" own \".stub.stub.\" files.");
                             }
                             else {
                                 parsedPath.name = parsedPath.name + '.stub';

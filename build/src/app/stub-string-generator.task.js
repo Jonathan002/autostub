@@ -162,10 +162,8 @@ var TaskStubStringGenerator = /** @class */ (function () {
                         // TODO: make arrow functions in properties update arguments and return typing.. 
                         // (property is considered implemented if there is an = sign present)
                         var typing = checkAndExtractTyping(classItem, contentStr);
-                        if (classItem.value.type === 'ArrowFunctionExpression') {
+                        if (classItem.value && classItem.value.type === 'ArrowFunctionExpression') {
                             var arrowArguments = createParamsString(classItem.value.params, contentStr) + " => ";
-                            console.log('log stubImplementation', stubImplementation);
-                            console.log('log arrow arguments', arrowArguments);
                             stubImplementation = stubImplementation ? stubImplementation : (arrowArguments + _this.stubTemplate.functionDefaultImplementation(tabSpace));
                         }
                         else {

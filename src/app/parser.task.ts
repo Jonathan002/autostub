@@ -19,9 +19,8 @@ import * as Utils from '../../lib/utility';
 import { Program } from "estree";
 import { appState_i1, AppState } from './services/app-state.service';
 import { StubTemplate } from '../models/stub-template';
-import * as esLintParser from '../../lib/typescript-eslint-parser';
 import { FileStubSyncMeta } from '../types/file-meta';
-
+import * as esLintParser from '../../lib/typescript-eslint-parser';
 
 
 // TODO: Organize later..
@@ -92,7 +91,7 @@ export class TaskParser {
                 // Add a stubPath and ensure a file is there @this.ensureStubFileAndParseItForMetadata()
                 let stubPath;
                 if (parsedPath.name.substring(parsedPath.name.length - 'stub'.length) === 'stub') {
-                    throw Error(`".stub." Files are expected to be ignored in autostub.json.ignoreFilesRegex - Please add it to the autostub.json or copy the default autostub config values from the doucmentation in order to prevent the accidental creation of ".stub.'s" own ".stub.stub." files`);
+                    throw Error(`".stub." Files detected at ${parsedPath.dir}/${parsedPath.base}. ".stub." files are expected to be ignored in autostub.json.ignoreFilesRegex - Please add it to the autostub.json or copy the default autostub config values from the doucmentation in order to prevent the accidental creation of ".stub.'s" own ".stub.stub." files.`);
                 } else {
                     parsedPath.name = parsedPath.name + '.stub';
                     parsedPath.base = parsedPath.name + parsedPath.ext;

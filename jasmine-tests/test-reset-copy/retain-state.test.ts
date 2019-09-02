@@ -96,4 +96,4 @@ export class PageNotFoundComponent implements OnInit {
   argumentsShouldUpdate(one: number, two: number) {
     return one + two;
   } /*argumentsShouldUpdate*/
-} /*PageNotFoundComponent*/
+} /*PageNotFoundComponentStub*/

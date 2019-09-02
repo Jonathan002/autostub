@@ -2,7 +2,7 @@
   "name": "autostub",
   "version": "1.0.3",
   "description": "A process to automatically generate stubs for your javascript/typescript classes and keep their api's in sync.",
-  "main": "./build/src/app.js",
+  "main": "./build/src/main.js",
   "bin": {
     "autostub": "./bin/autostub.js"
   },
@@ -13,7 +13,7 @@
     "test": "npm run build && jasmine JASMINE_CONFIG_PATH=jasmine.json",
     "copyProject": "cp -R angular-project-tester ./angular-project",
     "removeOldTestProject": "rm -r ./angular-project",
-    "start": "npm run removeOldTestProject && npm run copyProject && ts-node src/task-fs-handler.ts",
+    "start": "npm run removeOldTestProject && npm run copyProject && npm run build && cd ./angular-project && node ./../bin/autostub.js && cd ..",
     "pg": "ts-node src/playground.ts",
     "build": "tsc",
     "deploy:dev": "npm run build && npm link"
