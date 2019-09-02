@@ -21,11 +21,17 @@ import { fakeJsonToReturn } from './someplace';
 //   declarations will be moved to the archive section. The console will warn 
 //   you if anything has been archived.
 // ---------------------------------------------------------------------;
+interface TypicalObj {
+  properties: boolean
+}
 var varDosStub = true,
 varTresStub = 'Three';
 export let numberStub = 123456;
 export const addNumberButOutsideStub = (withParam, withOptionalParam) => {
 	return { obj: 'Arrow Return'};
+};
+export const updateArrowFunArgsStub = (one: number, two?: number) => {
+  return true;
 };
 export function hmmStub(thing: string, bur: number): number {
 	return false;
@@ -67,7 +73,7 @@ export class PageNotFoundComponentStub implements OnInit {
   @public('publicHmm')
   public publicHmm: publicHmm = undefined;
   readonly readOnlyProperty = undefined;
-  private hmmm = undefined;
+  private hmmm: string = 'testPropState';
   constructor(
     nakedDependency: Router,
     @Inject(APP_CONFIG) 
@@ -88,7 +94,7 @@ export class PageNotFoundComponentStub implements OnInit {
   }
 
   argumentsShouldUpdate(one: number, two: number) {
-    return undefined;
+    return { test: 'ok' };
   }
 
 };
@@ -101,13 +107,13 @@ export class PageNotFoundComponentStub implements OnInit {
 //   files.
 // ---------------------------------------------------------------------
 /*
----------------------- 2019-09-02T00:56:12.424Z ----------------------
+---------------------- 2019-09-02T03:43:23.732Z ----------------------
 @Component({
   selector: 'app-page-not-found',
   templateUrl: './page-not-found.component.html',
   styleUrls: ['./page-not-found.component.scss']
 })
-export class PageNotFoundComponent implements OnInit {
+export class PageNotFoundComponentStub implements OnInit {
 
   ngOnInit()  {
     return undefined;
@@ -122,9 +128,6 @@ export class PageNotFoundComponent implements OnInit {
     return undefined;
   }
   private methodTwo()  {
-    return undefined;
-  }
-  argumentsShouldUpdate(one: string) {
     return undefined;
   }
 };

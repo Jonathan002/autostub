@@ -163,8 +163,11 @@ var TaskStubStringGenerator = /** @class */ (function () {
                         // (property is considered implemented if there is an = sign present)
                         var typing = checkAndExtractTyping(classItem, contentStr);
                         if (classItem.value && classItem.value.type === 'ArrowFunctionExpression') {
-                            var arrowArguments = createParamsString(classItem.value.params, contentStr) + " => ";
-                            stubImplementation = stubImplementation ? (arrowArguments + stubImplementation) : (arrowArguments + _this.stubTemplate.functionDefaultImplementation(tabSpace));
+                            var returnType_1 = classItem.value.returnType;
+                            var returnTypStr = returnType_1 ? contentStr.substring(returnType_1.range[0], returnType_1.range[1]) : '';
+                            var arrowArguments = "" + createParamsString(classItem.value.params, contentStr);
+                            var arrowStrToAdd = arrowArguments + returnTypStr + " => ";
+                            stubImplementation = stubImplementation ? (arrowStrToAdd + stubImplementation) : (arrowStrToAdd + _this.stubTemplate.functionDefaultImplementation(tabSpace));
                         }
                         else {
                             stubImplementation = stubImplementation ? stubImplementation : _this.stubTemplate.variableDefaultImplementation;
