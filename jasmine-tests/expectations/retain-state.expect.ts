@@ -5,7 +5,7 @@ import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 
 interface TypicalObj {
   properties: boolean
-}
+} /*TypicalObj*/
 
 var 
 varDos = 12 /*varDosStub*/
@@ -15,9 +15,13 @@ export const addNumberButOutside = (withParam,withOptionalParam?):boolean => {
   let five = 5;
   return true;
 }; /*addNumberButOutsideStub*/
+
+// Typing and args updated
 export const updateArrowFunArgs = (one: number, two?: number):any => {
-  return true;
-}; /*addNumberButOutside*/
+  let five = 5;
+  return {};
+}; /*updateArrowFunArgsStub*/
+
 export function hmm(thing: string, bur: number): number {
   return 
 } /*hmmStub*/
@@ -51,12 +55,18 @@ export class PageNotFoundComponent implements OnInit {
   arrowFuncWithStubImplementation = (value: string, ...args) => {
     return { implemented: true, realImplementation: true };
   } /*arrowFuncWithStubImplementation*/
+
+  arrowFuncPropWithArgumentsUpdating = (one: number, two: number): number => {
+    return one + two;
+  } /*arrowFuncPropWithArgumentsUpdating*/
+  arrowFuncWithoutBody = () => 42; /*arrowFuncWithoutBody*/
+
   // Instance
   public testPublic = 'test public'; /*testPublic*/
   @public('publicHmm')
-  public publicHmm: TypicalObj = { hmm: 12 }; /*publicHmm*/
+  public publicHmm: publicHmm = { hmm: 12 }; /*publicHmm*/
   readonly readOnlyProperty = 42; /*readOnlyProperty*/
-  private hmmm = 'why...'; /*hmmm*/
+  private hmmm: string = 'why...'; /*hmmm*/
 
   constructor(
     nakedDependency: Router,
@@ -82,4 +92,9 @@ export class PageNotFoundComponent implements OnInit {
   private methodTwo() {
     console.log('welcome to 404 private');
   } /*methodTwo*/
+
+  // Type and arguments should update the stub implementation..
+  argumentsShouldUpdate(one: number, two: number) {
+    return one + two;
+  } /*argumentsShouldUpdate*/
 } /*PageNotFoundComponentStub*/

@@ -73,8 +73,11 @@ describe('AppTaskMaster - Integration Testing -', () => {
             const expectationStubCut = expectationStub.split(splitter).shift();
             const resultStubCut = resultStub.split(splitter).shift();
             expect(expectationOriginal).toEqual(resultOriginal);
-            fs.writeFileSync('./exect-str.ts', expectationStubCut);
-            fs.writeFileSync('./result-str.ts', resultStubCut);
+            // fs.writeFileSync('./exect-str.ts', expectationStubCut);
+            // fs.writeFileSync('./result-str.ts', resultStubCut);
+            // if (expectationStubCut === resultStubCut) {
+            //     console.log('yes!!!');
+            // }
             expect(expectationStubCut).toEqual(resultStubCut);
         });
     });
