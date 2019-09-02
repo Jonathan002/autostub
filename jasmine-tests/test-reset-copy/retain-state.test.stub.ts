@@ -61,7 +61,7 @@ export class PageNotFoundComponent implements OnInit {
   arrowFuncWithStubImplementation = (value: string, ...args) => {
     return { implemented: true, realImplementation: false };
   };
-  arrowFuncPropWithArgumentsUpdating = (one: string) => {
+  arrowFuncPropWithArgumentsUpdating = (one: string): string => {
     return 'one';
   }; /*arrowFuncPropWithArgumentsUpdating*/
   public testPublic = undefined;

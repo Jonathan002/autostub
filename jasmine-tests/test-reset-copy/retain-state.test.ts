@@ -46,7 +46,7 @@ export class PageNotFoundComponent implements OnInit {
     return { implemented: true, realImplementation: true };
   } /*arrowFuncWithStubImplementation*/
 
-  arrowFuncPropWithArgumentsUpdating = (one: number, two: number) => {
+  arrowFuncPropWithArgumentsUpdating = (one: number, two: number): number => {
     return one + two;
   } /*arrowFuncPropWithArgumentsUpdating*/
 

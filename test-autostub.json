@@ -10251,7 +10251,7 @@
       "type": "Program",
       "range": [
         0,
-        2581
+        2589
       ],
       "loc": {
         "start": {
@@ -11720,7 +11720,7 @@
             "type": "ClassDeclaration",
             "range": [
               753,
-              2555
+              2563
             ],
             "loc": {
               "start": {
@@ -12936,7 +12936,7 @@
                   "type": "ClassProperty",
                   "range": [
                     1509,
-                    1603
+                    1611
                   ],
                   "loc": {
                     "start": {
@@ -12970,7 +12970,7 @@
                     "type": "ArrowFunctionExpression",
                     "range": [
                       1546,
-                      1603
+                      1611
                     ],
                     "loc": {
                       "start": {
@@ -13093,13 +13093,13 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        1576,
-                        1603
+                        1584,
+                        1611
                       ],
                       "loc": {
                         "start": {
                           "line": 49,
-                          "column": 69
+                          "column": 77
                         },
                         "end": {
                           "line": 51,
@@ -13110,8 +13110,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            1582,
-                            1599
+                            1590,
+                            1607
                           ],
                           "loc": {
                             "start": {
@@ -13126,8 +13126,8 @@
                           "argument": {
                             "type": "BinaryExpression",
                             "range": [
-                              1589,
-                              1598
+                              1597,
+                              1606
                             ],
                             "loc": {
                               "start": {
@@ -13143,8 +13143,8 @@
                             "left": {
                               "type": "Identifier",
                               "range": [
-                                1589,
-                                1592
+                                1597,
+                                1600
                               ],
                               "loc": {
                                 "start": {
@@ -13161,8 +13161,8 @@
                             "right": {
                               "type": "Identifier",
                               "range": [
-                                1595,
-                                1598
+                                1603,
+                                1606
                               ],
                               "loc": {
                                 "start": {
@@ -13181,18 +13181,52 @@
                       ]
                     },
                     "async": false,
-                    "expression": false
+                    "expression": false,
+                    "returnType": {
+                      "type": "TSTypeAnnotation",
+                      "loc": {
+                        "start": {
+                          "line": 49,
+                          "column": 65
+                        },
+                        "end": {
+                          "line": 49,
+                          "column": 73
+                        }
+                      },
+                      "range": [
+                        1572,
+                        1580
+                      ],
+                      "typeAnnotation": {
+                        "type": "TSNumberKeyword",
+                        "range": [
+                          1574,
+                          1580
+                        ],
+                        "loc": {
+                          "start": {
+                            "line": 49,
+                            "column": 67
+                          },
+                          "end": {
+                            "line": 49,
+                            "column": 73
+                          }
+                        }
+                      }
+                    }
                   },
                   "computed": false,
                   "static": false,
                   "stubName": "arrowFuncPropWithArgumentsUpdating",
-                  "stubImplementation": "(one: string) => {\n    return 'one';\n  }"
+                  "stubImplementation": "(one: string): string => {\n    return 'one';\n  }"
                 },
                 {
                   "type": "ClassProperty",
                   "range": [
-                    1660,
-                    1694
+                    1668,
+                    1702
                   ],
                   "loc": {
                     "start": {
@@ -13207,8 +13241,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1667,
-                      1677
+                      1675,
+                      1685
                     ],
                     "loc": {
                       "start": {
@@ -13225,8 +13259,8 @@
                   "value": {
                     "type": "Literal",
                     "range": [
-                      1680,
-                      1693
+                      1688,
+                      1701
                     ],
                     "loc": {
                       "start": {
@@ -13250,8 +13284,8 @@
                 {
                   "type": "ClassProperty",
                   "range": [
-                    1712,
-                    1777
+                    1720,
+                    1785
                   ],
                   "loc": {
                     "start": {
@@ -13266,8 +13300,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1742,
-                      1751
+                      1750,
+                      1759
                     ],
                     "loc": {
                       "start": {
@@ -13284,8 +13318,8 @@
                   "value": {
                     "type": "ObjectExpression",
                     "range": [
-                      1765,
-                      1776
+                      1773,
+                      1784
                     ],
                     "loc": {
                       "start": {
@@ -13301,8 +13335,8 @@
                       {
                         "type": "Property",
                         "range": [
-                          1767,
-                          1774
+                          1775,
+                          1782
                         ],
                         "loc": {
                           "start": {
@@ -13317,8 +13351,8 @@
                         "key": {
                           "type": "Identifier",
                           "range": [
-                            1767,
-                            1770
+                            1775,
+                            1778
                           ],
                           "loc": {
                             "start": {
@@ -13335,8 +13369,8 @@
                         "value": {
                           "type": "Literal",
                           "range": [
-                            1772,
-                            1774
+                            1780,
+                            1782
                           ],
                           "loc": {
                             "start": {
@@ -13373,14 +13407,14 @@
                       }
                     },
                     "range": [
-                      1751,
-                      1762
+                      1759,
+                      1770
                     ],
                     "typeAnnotation": {
                       "type": "TSTypeReference",
                       "range": [
-                        1753,
-                        1762
+                        1761,
+                        1770
                       ],
                       "loc": {
                         "start": {
@@ -13395,8 +13429,8 @@
                       "typeName": {
                         "type": "Identifier",
                         "range": [
-                          1753,
-                          1762
+                          1761,
+                          1770
                         ],
                         "loc": {
                           "start": {
@@ -13416,8 +13450,8 @@
                     {
                       "type": "Decorator",
                       "range": [
-                        1712,
-                        1732
+                        1720,
+                        1740
                       ],
                       "loc": {
                         "start": {
@@ -13432,8 +13466,8 @@
                       "expression": {
                         "type": "CallExpression",
                         "range": [
-                          1713,
-                          1732
+                          1721,
+                          1740
                         ],
                         "loc": {
                           "start": {
@@ -13448,8 +13482,8 @@
                         "callee": {
                           "type": "Identifier",
                           "range": [
-                            1713,
-                            1719
+                            1721,
+                            1727
                           ],
                           "loc": {
                             "start": {
@@ -13467,8 +13501,8 @@
                           {
                             "type": "Literal",
                             "range": [
-                              1720,
-                              1731
+                              1728,
+                              1739
                             ],
                             "loc": {
                               "start": {
@@ -13494,8 +13528,8 @@
                 {
                   "type": "ClassProperty",
                   "range": [
-                    1794,
-                    1825
+                    1802,
+                    1833
                   ],
                   "loc": {
                     "start": {
@@ -13510,8 +13544,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1803,
-                      1819
+                      1811,
+                      1827
                     ],
                     "loc": {
                       "start": {
@@ -13528,8 +13562,8 @@
                   "value": {
                     "type": "Literal",
                     "range": [
-                      1822,
-                      1824
+                      1830,
+                      1832
                     ],
                     "loc": {
                       "start": {
@@ -13553,8 +13587,8 @@
                 {
                   "type": "ClassProperty",
                   "range": [
-                    1849,
-                    1873
+                    1857,
+                    1881
                   ],
                   "loc": {
                     "start": {
@@ -13569,8 +13603,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1857,
-                      1861
+                      1865,
+                      1869
                     ],
                     "loc": {
                       "start": {
@@ -13587,8 +13621,8 @@
                   "value": {
                     "type": "Literal",
                     "range": [
-                      1864,
-                      1872
+                      1872,
+                      1880
                     ],
                     "loc": {
                       "start": {
@@ -13612,8 +13646,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    1886,
-                    2125
+                    1894,
+                    2133
                   ],
                   "loc": {
                     "start": {
@@ -13629,8 +13663,8 @@
                     "type": "Identifier",
                     "name": "constructor",
                     "range": [
-                      1886,
-                      1897
+                      1894,
+                      1905
                     ],
                     "loc": {
                       "start": {
@@ -13650,8 +13684,8 @@
                       {
                         "type": "Identifier",
                         "range": [
-                          1903,
-                          1926
+                          1911,
+                          1934
                         ],
                         "loc": {
                           "start": {
@@ -13677,14 +13711,14 @@
                             }
                           },
                           "range": [
-                            1918,
-                            1926
+                            1926,
+                            1934
                           ],
                           "typeAnnotation": {
                             "type": "TSTypeReference",
                             "range": [
-                              1920,
-                              1926
+                              1928,
+                              1934
                             ],
                             "loc": {
                               "start": {
@@ -13699,8 +13733,8 @@
                             "typeName": {
                               "type": "Identifier",
                               "range": [
-                                1920,
-                                1926
+                                1928,
+                                1934
                               ],
                               "loc": {
                                 "start": {
@@ -13720,8 +13754,8 @@
                       {
                         "type": "TSParameterProperty",
                         "range": [
-                          1932,
-                          1984
+                          1940,
+                          1992
                         ],
                         "loc": {
                           "start": {
@@ -13737,8 +13771,8 @@
                         "parameter": {
                           "type": "Identifier",
                           "range": [
-                            1964,
-                            1984
+                            1972,
+                            1992
                           ],
                           "loc": {
                             "start": {
@@ -13764,14 +13798,14 @@
                               }
                             },
                             "range": [
-                              1973,
-                              1984
+                              1981,
+                              1992
                             ],
                             "typeAnnotation": {
                               "type": "TSTypeReference",
                               "range": [
-                                1975,
-                                1984
+                                1983,
+                                1992
                               ],
                               "loc": {
                                 "start": {
@@ -13786,8 +13820,8 @@
                               "typeName": {
                                 "type": "Identifier",
                                 "range": [
-                                  1975,
-                                  1984
+                                  1983,
+                                  1992
                                 ],
                                 "loc": {
                                   "start": {
@@ -13808,8 +13842,8 @@
                           {
                             "type": "Decorator",
                             "range": [
-                              1932,
-                              1951
+                              1940,
+                              1959
                             ],
                             "loc": {
                               "start": {
@@ -13824,8 +13858,8 @@
                             "expression": {
                               "type": "CallExpression",
                               "range": [
-                                1933,
-                                1951
+                                1941,
+                                1959
                               ],
                               "loc": {
                                 "start": {
@@ -13840,8 +13874,8 @@
                               "callee": {
                                 "type": "Identifier",
                                 "range": [
-                                  1933,
-                                  1939
+                                  1941,
+                                  1947
                                 ],
                                 "loc": {
                                   "start": {
@@ -13859,8 +13893,8 @@
                                 {
                                   "type": "Identifier",
                                   "range": [
-                                    1940,
-                                    1950
+                                    1948,
+                                    1958
                                   ],
                                   "loc": {
                                     "start": {
@@ -13882,8 +13916,8 @@
                       {
                         "type": "TSParameterProperty",
                         "range": [
-                          1990,
-                          2012
+                          1998,
+                          2020
                         ],
                         "loc": {
                           "start": {
@@ -13899,8 +13933,8 @@
                         "parameter": {
                           "type": "Identifier",
                           "range": [
-                            1998,
-                            2012
+                            2006,
+                            2020
                           ],
                           "loc": {
                             "start": {
@@ -13926,14 +13960,14 @@
                               }
                             },
                             "range": [
-                              2004,
-                              2012
+                              2012,
+                              2020
                             ],
                             "typeAnnotation": {
                               "type": "TSTypeReference",
                               "range": [
-                                2006,
-                                2012
+                                2014,
+                                2020
                               ],
                               "loc": {
                                 "start": {
@@ -13948,8 +13982,8 @@
                               "typeName": {
                                 "type": "Identifier",
                                 "range": [
-                                  2006,
-                                  2012
+                                  2014,
+                                  2020
                                 ],
                                 "loc": {
                                   "start": {
@@ -13974,8 +14008,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        2017,
-                        2125
+                        2025,
+                        2133
                       ],
                       "loc": {
                         "start": {
@@ -13991,8 +14025,8 @@
                         {
                           "type": "VariableDeclaration",
                           "range": [
-                            2023,
-                            2041
+                            2031,
+                            2049
                           ],
                           "loc": {
                             "start": {
@@ -14008,8 +14042,8 @@
                             {
                               "type": "VariableDeclarator",
                               "range": [
-                                2029,
-                                2040
+                                2037,
+                                2048
                               ],
                               "loc": {
                                 "start": {
@@ -14024,8 +14058,8 @@
                               "id": {
                                 "type": "Identifier",
                                 "range": [
-                                  2029,
-                                  2035
+                                  2037,
+                                  2043
                                 ],
                                 "loc": {
                                   "start": {
@@ -14042,8 +14076,8 @@
                               "init": {
                                 "type": "Literal",
                                 "range": [
-                                  2038,
-                                  2040
+                                  2046,
+                                  2048
                                 ],
                                 "loc": {
                                   "start": {
@@ -14065,8 +14099,8 @@
                         {
                           "type": "VariableDeclaration",
                           "range": [
-                            2046,
-                            2104
+                            2054,
+                            2112
                           ],
                           "loc": {
                             "start": {
@@ -14082,8 +14116,8 @@
                             {
                               "type": "VariableDeclarator",
                               "range": [
-                                2052,
-                                2103
+                                2060,
+                                2111
                               ],
                               "loc": {
                                 "start": {
@@ -14098,8 +14132,8 @@
                               "id": {
                                 "type": "Identifier",
                                 "range": [
-                                  2052,
-                                  2061
+                                  2060,
+                                  2069
                                 ],
                                 "loc": {
                                   "start": {
@@ -14116,8 +14150,8 @@
                               "init": {
                                 "type": "ArrowFunctionExpression",
                                 "range": [
-                                  2064,
-                                  2103
+                                  2072,
+                                  2111
                                 ],
                                 "loc": {
                                   "start": {
@@ -14135,8 +14169,8 @@
                                 "body": {
                                   "type": "BlockStatement",
                                   "range": [
-                                    2070,
-                                    2103
+                                    2078,
+                                    2111
                                   ],
                                   "loc": {
                                     "start": {
@@ -14152,8 +14186,8 @@
                                     {
                                       "type": "ReturnStatement",
                                       "range": [
-                                        2078,
-                                        2097
+                                        2086,
+                                        2105
                                       ],
                                       "loc": {
                                         "start": {
@@ -14168,8 +14202,8 @@
                                       "argument": {
                                         "type": "BinaryExpression",
                                         "range": [
-                                          2085,
-                                          2096
+                                          2093,
+                                          2104
                                         ],
                                         "loc": {
                                           "start": {
@@ -14185,8 +14219,8 @@
                                         "left": {
                                           "type": "Identifier",
                                           "range": [
-                                            2085,
-                                            2091
+                                            2093,
+                                            2099
                                           ],
                                           "loc": {
                                             "start": {
@@ -14203,8 +14237,8 @@
                                         "right": {
                                           "type": "Literal",
                                           "range": [
-                                            2094,
-                                            2096
+                                            2102,
+                                            2104
                                           ],
                                           "loc": {
                                             "start": {
@@ -14233,8 +14267,8 @@
                         {
                           "type": "ExpressionStatement",
                           "range": [
-                            2109,
-                            2121
+                            2117,
+                            2129
                           ],
                           "loc": {
                             "start": {
@@ -14249,8 +14283,8 @@
                           "expression": {
                             "type": "CallExpression",
                             "range": [
-                              2109,
-                              2120
+                              2117,
+                              2128
                             ],
                             "loc": {
                               "start": {
@@ -14265,8 +14299,8 @@
                             "callee": {
                               "type": "Identifier",
                               "range": [
-                                2109,
-                                2118
+                                2117,
+                                2126
                               ],
                               "loc": {
                                 "start": {
@@ -14286,8 +14320,8 @@
                       ]
                     },
                     "range": [
-                      1897,
-                      2125
+                      1905,
+                      2133
                     ],
                     "loc": {
                       "start": {
@@ -14309,8 +14343,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    2182,
-                    2299
+                    2190,
+                    2307
                   ],
                   "loc": {
                     "start": {
@@ -14325,8 +14359,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      2189,
-                      2200
+                      2197,
+                      2208
                     ],
                     "loc": {
                       "start": {
@@ -14349,8 +14383,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        2230,
-                        2299
+                        2238,
+                        2307
                       ],
                       "loc": {
                         "start": {
@@ -14366,8 +14400,8 @@
                         {
                           "type": "ExpressionStatement",
                           "range": [
-                            2236,
-                            2266
+                            2244,
+                            2274
                           ],
                           "loc": {
                             "start": {
@@ -14382,8 +14416,8 @@
                           "expression": {
                             "type": "CallExpression",
                             "range": [
-                              2236,
-                              2265
+                              2244,
+                              2273
                             ],
                             "loc": {
                               "start": {
@@ -14398,8 +14432,8 @@
                             "callee": {
                               "type": "MemberExpression",
                               "range": [
-                                2236,
-                                2247
+                                2244,
+                                2255
                               ],
                               "loc": {
                                 "start": {
@@ -14414,8 +14448,8 @@
                               "object": {
                                 "type": "Identifier",
                                 "range": [
-                                  2236,
-                                  2243
+                                  2244,
+                                  2251
                                 ],
                                 "loc": {
                                   "start": {
@@ -14432,8 +14466,8 @@
                               "property": {
                                 "type": "Identifier",
                                 "range": [
-                                  2244,
-                                  2247
+                                  2252,
+                                  2255
                                 ],
                                 "loc": {
                                   "start": {
@@ -14453,8 +14487,8 @@
                               {
                                 "type": "Literal",
                                 "range": [
-                                  2248,
-                                  2264
+                                  2256,
+                                  2272
                                 ],
                                 "loc": {
                                   "start": {
@@ -14475,8 +14509,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            2271,
-                            2295
+                            2279,
+                            2303
                           ],
                           "loc": {
                             "start": {
@@ -14491,8 +14525,8 @@
                           "argument": {
                             "type": "Literal",
                             "range": [
-                              2278,
-                              2294
+                              2286,
+                              2302
                             ],
                             "loc": {
                               "start": {
@@ -14511,8 +14545,8 @@
                       ]
                     },
                     "range": [
-                      2200,
-                      2299
+                      2208,
+                      2307
                     ],
                     "loc": {
                       "start": {
@@ -14537,14 +14571,14 @@
                         }
                       },
                       "range": [
-                        2221,
-                        2229
+                        2229,
+                        2237
                       ],
                       "typeAnnotation": {
                         "type": "TSStringKeyword",
                         "range": [
-                          2223,
-                          2229
+                          2231,
+                          2237
                         ],
                         "loc": {
                           "start": {
@@ -14562,8 +14596,8 @@
                       {
                         "type": "Identifier",
                         "range": [
-                          2201,
-                          2220
+                          2209,
+                          2228
                         ],
                         "loc": {
                           "start": {
@@ -14589,14 +14623,14 @@
                             }
                           },
                           "range": [
-                            2212,
-                            2220
+                            2220,
+                            2228
                           ],
                           "typeAnnotation": {
                             "type": "TSNumberKeyword",
                             "range": [
-                              2214,
-                              2220
+                              2222,
+                              2228
                             ],
                             "loc": {
                               "start": {
@@ -14622,8 +14656,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    2302,
-                    2339
+                    2310,
+                    2347
                   ],
                   "loc": {
                     "start": {
@@ -14638,8 +14672,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      2306,
-                      2309
+                      2314,
+                      2317
                     ],
                     "loc": {
                       "start": {
@@ -14662,8 +14696,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        2320,
-                        2339
+                        2328,
+                        2347
                       ],
                       "loc": {
                         "start": {
@@ -14679,8 +14713,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            2326,
-                            2335
+                            2334,
+                            2343
                           ],
                           "loc": {
                             "start": {
@@ -14695,8 +14729,8 @@
                           "argument": {
                             "type": "Literal",
                             "range": [
-                              2333,
-                              2334
+                              2341,
+                              2342
                             ],
                             "loc": {
                               "start": {
@@ -14715,8 +14749,8 @@
                       ]
                     },
                     "range": [
-                      2309,
-                      2339
+                      2317,
+                      2347
                     ],
                     "loc": {
                       "start": {
@@ -14741,14 +14775,14 @@
                         }
                       },
                       "range": [
-                        2311,
-                        2319
+                        2319,
+                        2327
                       ],
                       "typeAnnotation": {
                         "type": "TSNumberKeyword",
                         "range": [
-                          2313,
-                          2319
+                          2321,
+                          2327
                         ],
                         "loc": {
                           "start": {
@@ -14771,8 +14805,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    2342,
-                    2410
+                    2350,
+                    2418
                   ],
                   "loc": {
                     "start": {
@@ -14787,8 +14821,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      2350,
-                      2359
+                      2358,
+                      2367
                     ],
                     "loc": {
                       "start": {
@@ -14811,8 +14845,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        2362,
-                        2410
+                        2370,
+                        2418
                       ],
                       "loc": {
                         "start": {
@@ -14828,8 +14862,8 @@
                         {
                           "type": "ExpressionStatement",
                           "range": [
-                            2368,
-                            2406
+                            2376,
+                            2414
                           ],
                           "loc": {
                             "start": {
@@ -14844,8 +14878,8 @@
                           "expression": {
                             "type": "CallExpression",
                             "range": [
-                              2368,
-                              2405
+                              2376,
+                              2413
                             ],
                             "loc": {
                               "start": {
@@ -14860,8 +14894,8 @@
                             "callee": {
                               "type": "MemberExpression",
                               "range": [
-                                2368,
-                                2379
+                                2376,
+                                2387
                               ],
                               "loc": {
                                 "start": {
@@ -14876,8 +14910,8 @@
                               "object": {
                                 "type": "Identifier",
                                 "range": [
-                                  2368,
-                                  2375
+                                  2376,
+                                  2383
                                 ],
                                 "loc": {
                                   "start": {
@@ -14894,8 +14928,8 @@
                               "property": {
                                 "type": "Identifier",
                                 "range": [
-                                  2376,
-                                  2379
+                                  2384,
+                                  2387
                                 ],
                                 "loc": {
                                   "start": {
@@ -14915,8 +14949,8 @@
                               {
                                 "type": "Literal",
                                 "range": [
-                                  2380,
-                                  2404
+                                  2388,
+                                  2412
                                 ],
                                 "loc": {
                                   "start": {
@@ -14937,8 +14971,8 @@
                       ]
                     },
                     "range": [
-                      2359,
-                      2410
+                      2367,
+                      2418
                     ],
                     "loc": {
                       "start": {
@@ -14960,8 +14994,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    2478,
-                    2553
+                    2486,
+                    2561
                   ],
                   "loc": {
                     "start": {
@@ -14976,8 +15010,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      2478,
-                      2499
+                      2486,
+                      2507
                     ],
                     "loc": {
                       "start": {
@@ -15000,8 +15034,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        2526,
-                        2553
+                        2534,
+                        2561
                       ],
                       "loc": {
                         "start": {
@@ -15017,8 +15051,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            2532,
-                            2549
+                            2540,
+                            2557
                           ],
                           "loc": {
                             "start": {
@@ -15033,8 +15067,8 @@
                           "argument": {
                             "type": "BinaryExpression",
                             "range": [
-                              2539,
-                              2548
+                              2547,
+                              2556
                             ],
                             "loc": {
                               "start": {
@@ -15050,8 +15084,8 @@
                             "left": {
                               "type": "Identifier",
                               "range": [
-                                2539,
-                                2542
+                                2547,
+                                2550
                               ],
                               "loc": {
                                 "start": {
@@ -15068,8 +15102,8 @@
                             "right": {
                               "type": "Identifier",
                               "range": [
-                                2545,
-                                2548
+                                2553,
+                                2556
                               ],
                               "loc": {
                                 "start": {
@@ -15088,8 +15122,8 @@
                       ]
                     },
                     "range": [
-                      2499,
-                      2553
+                      2507,
+                      2561
                     ],
                     "loc": {
                       "start": {
@@ -15105,8 +15139,8 @@
                       {
                         "type": "Identifier",
                         "range": [
-                          2500,
-                          2511
+                          2508,
+                          2519
                         ],
                         "loc": {
                           "start": {
@@ -15132,14 +15166,14 @@
                             }
                           },
                           "range": [
-                            2503,
-                            2511
+                            2511,
+                            2519
                           ],
                           "typeAnnotation": {
                             "type": "TSNumberKeyword",
                             "range": [
-                              2505,
-                              2511
+                              2513,
+                              2519
                             ],
                             "loc": {
                               "start": {
@@ -15157,8 +15191,8 @@
                       {
                         "type": "Identifier",
                         "range": [
-                          2513,
-                          2524
+                          2521,
+                          2532
                         ],
                         "loc": {
                           "start": {
@@ -15184,14 +15218,14 @@
                             }
                           },
                           "range": [
-                            2516,
-                            2524
+                            2524,
+                            2532
                           ],
                           "typeAnnotation": {
                             "type": "TSNumberKeyword",
                             "range": [
-                              2518,
-                              2524
+                              2526,
+                              2532
                             ],
                             "loc": {
                               "start": {
@@ -15215,7 +15249,7 @@
               ],
               "range": [
                 799,
-                2555
+                2563
               ],
               "loc": {
                 "start": {
@@ -15538,7 +15572,7 @@
           },
           "range": [
             746,
-            2555
+            2563
           ],
           "loc": {
             "start": {
@@ -15557,7 +15591,7 @@
       "sourceType": "module"
     },
     "originalPath": "jasmine-tests/tests/retain-state.test.ts",
-    "originalContentStr": "import 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n\nvar \nvarDos = 12 /*varDos*/\n, varTres = 14; /*varTres*/\nexport let number = 12; /*number*/\nexport const addNumberButOutside = (withParam,withOptionalParam?):boolean => {\n  let five = 5;\n  return true;\n}; /*addNumberButOutside*/\n\nexport function hmm(thing: string, bur: number): number {\n  return \n} /*hmm*/\nexport       function      test  (args: number, space: string) {\n  return 'functionfunctionfunction';\n}; /*test*/\n\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {  \n\n  // Static\n  @complicatedDecorator(' css classes passed in with space ')\n  public        static       extraSpaces        =true; /*extraSpaces*/\n  static classInfo() {\n    console.log('This class helps manage the page-not found view');\n  } /*classInfo*/\n  protected static abc = 13; /*abc*/\n  private static abcdefg = 13; /*abcdefg*/\n  private static set lostUrl(thing) {\n    if (thing) {\n      console.log('etc');\n    }\n  } /*lostUrl*/\n  private static get test(): string {\n    return 'the getdocumentation() getter ....'\n  } /*test*/\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: true };\n  } /*arrowFuncWithStubImplementation*/\n\n  arrowFuncPropWithArgumentsUpdating = (one: number, two: number) => {\n    return one + two;\n  } /*arrowFuncPropWithArgumentsUpdating*/\n\n  // Instance\n  public testPublic = 'test public'; /*testPublic*/\n  @public('publicHmm')\n  public publicHmm: publicHmm = { hmm: 12 }; /*publicHmm*/\n  readonly readOnlyProperty = 42; /*readOnlyProperty*/\n  private hmmm = 'why...'; /*hmmm*/\n\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ) {\n    const varOne = 12;\n    const addNumber = () => {\n      return varOne + 44;\n    };\n    addNumber();\n  } /*constructor*/\n  \n  // This should be stub Commented\n  public leFourOFour(statusCode?: number): string {\n    console.log('welcome to 404');\n    return 'welcome to 404';\n  }\n  get bur(): number {\n    return 5;\n  }\n  private methodTwo() {\n    console.log('welcome to 404 private');\n  }\n\n  // Type and arguments should update the stub implementation..\n  argumentsShouldUpdate(one: number, two: number) {\n    return one + two;\n  }\n} /*PageNotFoundComponent*/",
+    "originalContentStr": "import 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n\nvar \nvarDos = 12 /*varDos*/\n, varTres = 14; /*varTres*/\nexport let number = 12; /*number*/\nexport const addNumberButOutside = (withParam,withOptionalParam?):boolean => {\n  let five = 5;\n  return true;\n}; /*addNumberButOutside*/\n\nexport function hmm(thing: string, bur: number): number {\n  return \n} /*hmm*/\nexport       function      test  (args: number, space: string) {\n  return 'functionfunctionfunction';\n}; /*test*/\n\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {  \n\n  // Static\n  @complicatedDecorator(' css classes passed in with space ')\n  public        static       extraSpaces        =true; /*extraSpaces*/\n  static classInfo() {\n    console.log('This class helps manage the page-not found view');\n  } /*classInfo*/\n  protected static abc = 13; /*abc*/\n  private static abcdefg = 13; /*abcdefg*/\n  private static set lostUrl(thing) {\n    if (thing) {\n      console.log('etc');\n    }\n  } /*lostUrl*/\n  private static get test(): string {\n    return 'the getdocumentation() getter ....'\n  } /*test*/\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: true };\n  } /*arrowFuncWithStubImplementation*/\n\n  arrowFuncPropWithArgumentsUpdating = (one: number, two: number): number => {\n    return one + two;\n  } /*arrowFuncPropWithArgumentsUpdating*/\n\n  // Instance\n  public testPublic = 'test public'; /*testPublic*/\n  @public('publicHmm')\n  public publicHmm: publicHmm = { hmm: 12 }; /*publicHmm*/\n  readonly readOnlyProperty = 42; /*readOnlyProperty*/\n  private hmmm = 'why...'; /*hmmm*/\n\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ) {\n    const varOne = 12;\n    const addNumber = () => {\n      return varOne + 44;\n    };\n    addNumber();\n  } /*constructor*/\n  \n  // This should be stub Commented\n  public leFourOFour(statusCode?: number): string {\n    console.log('welcome to 404');\n    return 'welcome to 404';\n  }\n  get bur(): number {\n    return 5;\n  }\n  private methodTwo() {\n    console.log('welcome to 404 private');\n  }\n\n  // Type and arguments should update the stub implementation..\n  argumentsShouldUpdate(one: number, two: number) {\n    return one + two;\n  }\n} /*PageNotFoundComponent*/",
     "imports": [
       {
         "type": "ImportDeclaration",
@@ -17000,7 +17034,7 @@
           "type": "ClassDeclaration",
           "range": [
             753,
-            2555
+            2563
           ],
           "loc": {
             "start": {
@@ -18216,7 +18250,7 @@
                 "type": "ClassProperty",
                 "range": [
                   1509,
-                  1603
+                  1611
                 ],
                 "loc": {
                   "start": {
@@ -18250,7 +18284,7 @@
                   "type": "ArrowFunctionExpression",
                   "range": [
                     1546,
-                    1603
+                    1611
                   ],
                   "loc": {
                     "start": {
@@ -18373,13 +18407,13 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1576,
-                      1603
+                      1584,
+                      1611
                     ],
                     "loc": {
                       "start": {
                         "line": 49,
-                        "column": 69
+                        "column": 77
                       },
                       "end": {
                         "line": 51,
@@ -18390,8 +18424,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1582,
-                          1599
+                          1590,
+                          1607
                         ],
                         "loc": {
                           "start": {
@@ -18406,8 +18440,8 @@
                         "argument": {
                           "type": "BinaryExpression",
                           "range": [
-                            1589,
-                            1598
+                            1597,
+                            1606
                           ],
                           "loc": {
                             "start": {
@@ -18423,8 +18457,8 @@
                           "left": {
                             "type": "Identifier",
                             "range": [
-                              1589,
-                              1592
+                              1597,
+                              1600
                             ],
                             "loc": {
                               "start": {
@@ -18441,8 +18475,8 @@
                           "right": {
                             "type": "Identifier",
                             "range": [
-                              1595,
-                              1598
+                              1603,
+                              1606
                             ],
                             "loc": {
                               "start": {
@@ -18461,18 +18495,52 @@
                     ]
                   },
                   "async": false,
-                  "expression": false
+                  "expression": false,
+                  "returnType": {
+                    "type": "TSTypeAnnotation",
+                    "loc": {
+                      "start": {
+                        "line": 49,
+                        "column": 65
+                      },
+                      "end": {
+                        "line": 49,
+                        "column": 73
+                      }
+                    },
+                    "range": [
+                      1572,
+                      1580
+                    ],
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "range": [
+                        1574,
+                        1580
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 49,
+                          "column": 67
+                        },
+                        "end": {
+                          "line": 49,
+                          "column": 73
+                        }
+                      }
+                    }
+                  }
                 },
                 "computed": false,
                 "static": false,
                 "stubName": "arrowFuncPropWithArgumentsUpdating",
-                "stubImplementation": "(one: string) => {\n    return 'one';\n  }"
+                "stubImplementation": "(one: string): string => {\n    return 'one';\n  }"
               },
               {
                 "type": "ClassProperty",
                 "range": [
-                  1660,
-                  1694
+                  1668,
+                  1702
                 ],
                 "loc": {
                   "start": {
@@ -18487,8 +18555,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1667,
-                    1677
+                    1675,
+                    1685
                   ],
                   "loc": {
                     "start": {
@@ -18505,8 +18573,8 @@
                 "value": {
                   "type": "Literal",
                   "range": [
-                    1680,
-                    1693
+                    1688,
+                    1701
                   ],
                   "loc": {
                     "start": {
@@ -18530,8 +18598,8 @@
               {
                 "type": "ClassProperty",
                 "range": [
-                  1712,
-                  1777
+                  1720,
+                  1785
                 ],
                 "loc": {
                   "start": {
@@ -18546,8 +18614,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1742,
-                    1751
+                    1750,
+                    1759
                   ],
                   "loc": {
                     "start": {
@@ -18564,8 +18632,8 @@
                 "value": {
                   "type": "ObjectExpression",
                   "range": [
-                    1765,
-                    1776
+                    1773,
+                    1784
                   ],
                   "loc": {
                     "start": {
@@ -18581,8 +18649,8 @@
                     {
                       "type": "Property",
                       "range": [
-                        1767,
-                        1774
+                        1775,
+                        1782
                       ],
                       "loc": {
                         "start": {
@@ -18597,8 +18665,8 @@
                       "key": {
                         "type": "Identifier",
                         "range": [
-                          1767,
-                          1770
+                          1775,
+                          1778
                         ],
                         "loc": {
                           "start": {
@@ -18615,8 +18683,8 @@
                       "value": {
                         "type": "Literal",
                         "range": [
-                          1772,
-                          1774
+                          1780,
+                          1782
                         ],
                         "loc": {
                           "start": {
@@ -18653,14 +18721,14 @@
                     }
                   },
                   "range": [
-                    1751,
-                    1762
+                    1759,
+                    1770
                   ],
                   "typeAnnotation": {
                     "type": "TSTypeReference",
                     "range": [
-                      1753,
-                      1762
+                      1761,
+                      1770
                     ],
                     "loc": {
                       "start": {
@@ -18675,8 +18743,8 @@
                     "typeName": {
                       "type": "Identifier",
                       "range": [
-                        1753,
-                        1762
+                        1761,
+                        1770
                       ],
                       "loc": {
                         "start": {
@@ -18696,8 +18764,8 @@
                   {
                     "type": "Decorator",
                     "range": [
-                      1712,
-                      1732
+                      1720,
+                      1740
                     ],
                     "loc": {
                       "start": {
@@ -18712,8 +18780,8 @@
                     "expression": {
                       "type": "CallExpression",
                       "range": [
-                        1713,
-                        1732
+                        1721,
+                        1740
                       ],
                       "loc": {
                         "start": {
@@ -18728,8 +18796,8 @@
                       "callee": {
                         "type": "Identifier",
                         "range": [
-                          1713,
-                          1719
+                          1721,
+                          1727
                         ],
                         "loc": {
                           "start": {
@@ -18747,8 +18815,8 @@
                         {
                           "type": "Literal",
                           "range": [
-                            1720,
-                            1731
+                            1728,
+                            1739
                           ],
                           "loc": {
                             "start": {
@@ -18774,8 +18842,8 @@
               {
                 "type": "ClassProperty",
                 "range": [
-                  1794,
-                  1825
+                  1802,
+                  1833
                 ],
                 "loc": {
                   "start": {
@@ -18790,8 +18858,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1803,
-                    1819
+                    1811,
+                    1827
                   ],
                   "loc": {
                     "start": {
@@ -18808,8 +18876,8 @@
                 "value": {
                   "type": "Literal",
                   "range": [
-                    1822,
-                    1824
+                    1830,
+                    1832
                   ],
                   "loc": {
                     "start": {
@@ -18833,8 +18901,8 @@
               {
                 "type": "ClassProperty",
                 "range": [
-                  1849,
-                  1873
+                  1857,
+                  1881
                 ],
                 "loc": {
                   "start": {
@@ -18849,8 +18917,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1857,
-                    1861
+                    1865,
+                    1869
                   ],
                   "loc": {
                     "start": {
@@ -18867,8 +18935,8 @@
                 "value": {
                   "type": "Literal",
                   "range": [
-                    1864,
-                    1872
+                    1872,
+                    1880
                   ],
                   "loc": {
                     "start": {
@@ -18892,8 +18960,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1886,
-                  2125
+                  1894,
+                  2133
                 ],
                 "loc": {
                   "start": {
@@ -18909,8 +18977,8 @@
                   "type": "Identifier",
                   "name": "constructor",
                   "range": [
-                    1886,
-                    1897
+                    1894,
+                    1905
                   ],
                   "loc": {
                     "start": {
@@ -18930,8 +18998,8 @@
                     {
                       "type": "Identifier",
                       "range": [
-                        1903,
-                        1926
+                        1911,
+                        1934
                       ],
                       "loc": {
                         "start": {
@@ -18957,14 +19025,14 @@
                           }
                         },
                         "range": [
-                          1918,
-                          1926
+                          1926,
+                          1934
                         ],
                         "typeAnnotation": {
                           "type": "TSTypeReference",
                           "range": [
-                            1920,
-                            1926
+                            1928,
+                            1934
                           ],
                           "loc": {
                             "start": {
@@ -18979,8 +19047,8 @@
                           "typeName": {
                             "type": "Identifier",
                             "range": [
-                              1920,
-                              1926
+                              1928,
+                              1934
                             ],
                             "loc": {
                               "start": {
@@ -19000,8 +19068,8 @@
                     {
                       "type": "TSParameterProperty",
                       "range": [
-                        1932,
-                        1984
+                        1940,
+                        1992
                       ],
                       "loc": {
                         "start": {
@@ -19017,8 +19085,8 @@
                       "parameter": {
                         "type": "Identifier",
                         "range": [
-                          1964,
-                          1984
+                          1972,
+                          1992
                         ],
                         "loc": {
                           "start": {
@@ -19044,14 +19112,14 @@
                             }
                           },
                           "range": [
-                            1973,
-                            1984
+                            1981,
+                            1992
                           ],
                           "typeAnnotation": {
                             "type": "TSTypeReference",
                             "range": [
-                              1975,
-                              1984
+                              1983,
+                              1992
                             ],
                             "loc": {
                               "start": {
@@ -19066,8 +19134,8 @@
                             "typeName": {
                               "type": "Identifier",
                               "range": [
-                                1975,
-                                1984
+                                1983,
+                                1992
                               ],
                               "loc": {
                                 "start": {
@@ -19088,8 +19156,8 @@
                         {
                           "type": "Decorator",
                           "range": [
-                            1932,
-                            1951
+                            1940,
+                            1959
                           ],
                           "loc": {
                             "start": {
@@ -19104,8 +19172,8 @@
                           "expression": {
                             "type": "CallExpression",
                             "range": [
-                              1933,
-                              1951
+                              1941,
+                              1959
                             ],
                             "loc": {
                               "start": {
@@ -19120,8 +19188,8 @@
                             "callee": {
                               "type": "Identifier",
                               "range": [
-                                1933,
-                                1939
+                                1941,
+                                1947
                               ],
                               "loc": {
                                 "start": {
@@ -19139,8 +19207,8 @@
                               {
                                 "type": "Identifier",
                                 "range": [
-                                  1940,
-                                  1950
+                                  1948,
+                                  1958
                                 ],
                                 "loc": {
                                   "start": {
@@ -19162,8 +19230,8 @@
                     {
                       "type": "TSParameterProperty",
                       "range": [
-                        1990,
-                        2012
+                        1998,
+                        2020
                       ],
                       "loc": {
                         "start": {
@@ -19179,8 +19247,8 @@
                       "parameter": {
                         "type": "Identifier",
                         "range": [
-                          1998,
-                          2012
+                          2006,
+                          2020
                         ],
                         "loc": {
                           "start": {
@@ -19206,14 +19274,14 @@
                             }
                           },
                           "range": [
-                            2004,
-                            2012
+                            2012,
+                            2020
                           ],
                           "typeAnnotation": {
                             "type": "TSTypeReference",
                             "range": [
-                              2006,
-                              2012
+                              2014,
+                              2020
                             ],
                             "loc": {
                               "start": {
@@ -19228,8 +19296,8 @@
                             "typeName": {
                               "type": "Identifier",
                               "range": [
-                                2006,
-                                2012
+                                2014,
+                                2020
                               ],
                               "loc": {
                                 "start": {
@@ -19254,8 +19322,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      2017,
-                      2125
+                      2025,
+                      2133
                     ],
                     "loc": {
                       "start": {
@@ -19271,8 +19339,8 @@
                       {
                         "type": "VariableDeclaration",
                         "range": [
-                          2023,
-                          2041
+                          2031,
+                          2049
                         ],
                         "loc": {
                           "start": {
@@ -19288,8 +19356,8 @@
                           {
                             "type": "VariableDeclarator",
                             "range": [
-                              2029,
-                              2040
+                              2037,
+                              2048
                             ],
                             "loc": {
                               "start": {
@@ -19304,8 +19372,8 @@
                             "id": {
                               "type": "Identifier",
                               "range": [
-                                2029,
-                                2035
+                                2037,
+                                2043
                               ],
                               "loc": {
                                 "start": {
@@ -19322,8 +19390,8 @@
                             "init": {
                               "type": "Literal",
                               "range": [
-                                2038,
-                                2040
+                                2046,
+                                2048
                               ],
                               "loc": {
                                 "start": {
@@ -19345,8 +19413,8 @@
                       {
                         "type": "VariableDeclaration",
                         "range": [
-                          2046,
-                          2104
+                          2054,
+                          2112
                         ],
                         "loc": {
                           "start": {
@@ -19362,8 +19430,8 @@
                           {
                             "type": "VariableDeclarator",
                             "range": [
-                              2052,
-                              2103
+                              2060,
+                              2111
                             ],
                             "loc": {
                               "start": {
@@ -19378,8 +19446,8 @@
                             "id": {
                               "type": "Identifier",
                               "range": [
-                                2052,
-                                2061
+                                2060,
+                                2069
                               ],
                               "loc": {
                                 "start": {
@@ -19396,8 +19464,8 @@
                             "init": {
                               "type": "ArrowFunctionExpression",
                               "range": [
-                                2064,
-                                2103
+                                2072,
+                                2111
                               ],
                               "loc": {
                                 "start": {
@@ -19415,8 +19483,8 @@
                               "body": {
                                 "type": "BlockStatement",
                                 "range": [
-                                  2070,
-                                  2103
+                                  2078,
+                                  2111
                                 ],
                                 "loc": {
                                   "start": {
@@ -19432,8 +19500,8 @@
                                   {
                                     "type": "ReturnStatement",
                                     "range": [
-                                      2078,
-                                      2097
+                                      2086,
+                                      2105
                                     ],
                                     "loc": {
                                       "start": {
@@ -19448,8 +19516,8 @@
                                     "argument": {
                                       "type": "BinaryExpression",
                                       "range": [
-                                        2085,
-                                        2096
+                                        2093,
+                                        2104
                                       ],
                                       "loc": {
                                         "start": {
@@ -19465,8 +19533,8 @@
                                       "left": {
                                         "type": "Identifier",
                                         "range": [
-                                          2085,
-                                          2091
+                                          2093,
+                                          2099
                                         ],
                                         "loc": {
                                           "start": {
@@ -19483,8 +19551,8 @@
                                       "right": {
                                         "type": "Literal",
                                         "range": [
-                                          2094,
-                                          2096
+                                          2102,
+                                          2104
                                         ],
                                         "loc": {
                                           "start": {
@@ -19513,8 +19581,8 @@
                       {
                         "type": "ExpressionStatement",
                         "range": [
-                          2109,
-                          2121
+                          2117,
+                          2129
                         ],
                         "loc": {
                           "start": {
@@ -19529,8 +19597,8 @@
                         "expression": {
                           "type": "CallExpression",
                           "range": [
-                            2109,
-                            2120
+                            2117,
+                            2128
                           ],
                           "loc": {
                             "start": {
@@ -19545,8 +19613,8 @@
                           "callee": {
                             "type": "Identifier",
                             "range": [
-                              2109,
-                              2118
+                              2117,
+                              2126
                             ],
                             "loc": {
                               "start": {
@@ -19566,8 +19634,8 @@
                     ]
                   },
                   "range": [
-                    1897,
-                    2125
+                    1905,
+                    2133
                   ],
                   "loc": {
                     "start": {
@@ -19589,8 +19657,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  2182,
-                  2299
+                  2190,
+                  2307
                 ],
                 "loc": {
                   "start": {
@@ -19605,8 +19673,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    2189,
-                    2200
+                    2197,
+                    2208
                   ],
                   "loc": {
                     "start": {
@@ -19629,8 +19697,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      2230,
-                      2299
+                      2238,
+                      2307
                     ],
                     "loc": {
                       "start": {
@@ -19646,8 +19714,8 @@
                       {
                         "type": "ExpressionStatement",
                         "range": [
-                          2236,
-                          2266
+                          2244,
+                          2274
                         ],
                         "loc": {
                           "start": {
@@ -19662,8 +19730,8 @@
                         "expression": {
                           "type": "CallExpression",
                           "range": [
-                            2236,
-                            2265
+                            2244,
+                            2273
                           ],
                           "loc": {
                             "start": {
@@ -19678,8 +19746,8 @@
                           "callee": {
                             "type": "MemberExpression",
                             "range": [
-                              2236,
-                              2247
+                              2244,
+                              2255
                             ],
                             "loc": {
                               "start": {
@@ -19694,8 +19762,8 @@
                             "object": {
                               "type": "Identifier",
                               "range": [
-                                2236,
-                                2243
+                                2244,
+                                2251
                               ],
                               "loc": {
                                 "start": {
@@ -19712,8 +19780,8 @@
                             "property": {
                               "type": "Identifier",
                               "range": [
-                                2244,
-                                2247
+                                2252,
+                                2255
                               ],
                               "loc": {
                                 "start": {
@@ -19733,8 +19801,8 @@
                             {
                               "type": "Literal",
                               "range": [
-                                2248,
-                                2264
+                                2256,
+                                2272
                               ],
                               "loc": {
                                 "start": {
@@ -19755,8 +19823,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          2271,
-                          2295
+                          2279,
+                          2303
                         ],
                         "loc": {
                           "start": {
@@ -19771,8 +19839,8 @@
                         "argument": {
                           "type": "Literal",
                           "range": [
-                            2278,
-                            2294
+                            2286,
+                            2302
                           ],
                           "loc": {
                             "start": {
@@ -19791,8 +19859,8 @@
                     ]
                   },
                   "range": [
-                    2200,
-                    2299
+                    2208,
+                    2307
                   ],
                   "loc": {
                     "start": {
@@ -19817,14 +19885,14 @@
                       }
                     },
                     "range": [
-                      2221,
-                      2229
+                      2229,
+                      2237
                     ],
                     "typeAnnotation": {
                       "type": "TSStringKeyword",
                       "range": [
-                        2223,
-                        2229
+                        2231,
+                        2237
                       ],
                       "loc": {
                         "start": {
@@ -19842,8 +19910,8 @@
                     {
                       "type": "Identifier",
                       "range": [
-                        2201,
-                        2220
+                        2209,
+                        2228
                       ],
                       "loc": {
                         "start": {
@@ -19869,14 +19937,14 @@
                           }
                         },
                         "range": [
-                          2212,
-                          2220
+                          2220,
+                          2228
                         ],
                         "typeAnnotation": {
                           "type": "TSNumberKeyword",
                           "range": [
-                            2214,
-                            2220
+                            2222,
+                            2228
                           ],
                           "loc": {
                             "start": {
@@ -19902,8 +19970,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  2302,
-                  2339
+                  2310,
+                  2347
                 ],
                 "loc": {
                   "start": {
@@ -19918,8 +19986,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    2306,
-                    2309
+                    2314,
+                    2317
                   ],
                   "loc": {
                     "start": {
@@ -19942,8 +20010,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      2320,
-                      2339
+                      2328,
+                      2347
                     ],
                     "loc": {
                       "start": {
@@ -19959,8 +20027,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          2326,
-                          2335
+                          2334,
+                          2343
                         ],
                         "loc": {
                           "start": {
@@ -19975,8 +20043,8 @@
                         "argument": {
                           "type": "Literal",
                           "range": [
-                            2333,
-                            2334
+                            2341,
+                            2342
                           ],
                           "loc": {
                             "start": {
@@ -19995,8 +20063,8 @@
                     ]
                   },
                   "range": [
-                    2309,
-                    2339
+                    2317,
+                    2347
                   ],
                   "loc": {
                     "start": {
@@ -20021,14 +20089,14 @@
                       }
                     },
                     "range": [
-                      2311,
-                      2319
+                      2319,
+                      2327
                     ],
                     "typeAnnotation": {
                       "type": "TSNumberKeyword",
                       "range": [
-                        2313,
-                        2319
+                        2321,
+                        2327
                       ],
                       "loc": {
                         "start": {
@@ -20051,8 +20119,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  2342,
-                  2410
+                  2350,
+                  2418
                 ],
                 "loc": {
                   "start": {
@@ -20067,8 +20135,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    2350,
-                    2359
+                    2358,
+                    2367
                   ],
                   "loc": {
                     "start": {
@@ -20091,8 +20159,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      2362,
-                      2410
+                      2370,
+                      2418
                     ],
                     "loc": {
                       "start": {
@@ -20108,8 +20176,8 @@
                       {
                         "type": "ExpressionStatement",
                         "range": [
-                          2368,
-                          2406
+                          2376,
+                          2414
                         ],
                         "loc": {
                           "start": {
@@ -20124,8 +20192,8 @@
                         "expression": {
                           "type": "CallExpression",
                           "range": [
-                            2368,
-                            2405
+                            2376,
+                            2413
                           ],
                           "loc": {
                             "start": {
@@ -20140,8 +20208,8 @@
                           "callee": {
                             "type": "MemberExpression",
                             "range": [
-                              2368,
-                              2379
+                              2376,
+                              2387
                             ],
                             "loc": {
                               "start": {
@@ -20156,8 +20224,8 @@
                             "object": {
                               "type": "Identifier",
                               "range": [
-                                2368,
-                                2375
+                                2376,
+                                2383
                               ],
                               "loc": {
                                 "start": {
@@ -20174,8 +20242,8 @@
                             "property": {
                               "type": "Identifier",
                               "range": [
-                                2376,
-                                2379
+                                2384,
+                                2387
                               ],
                               "loc": {
                                 "start": {
@@ -20195,8 +20263,8 @@
                             {
                               "type": "Literal",
                               "range": [
-                                2380,
-                                2404
+                                2388,
+                                2412
                               ],
                               "loc": {
                                 "start": {
@@ -20217,8 +20285,8 @@
                     ]
                   },
                   "range": [
-                    2359,
-                    2410
+                    2367,
+                    2418
                   ],
                   "loc": {
                     "start": {
@@ -20240,8 +20308,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  2478,
-                  2553
+                  2486,
+                  2561
                 ],
                 "loc": {
                   "start": {
@@ -20256,8 +20324,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    2478,
-                    2499
+                    2486,
+                    2507
                   ],
                   "loc": {
                     "start": {
@@ -20280,8 +20348,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      2526,
-                      2553
+                      2534,
+                      2561
                     ],
                     "loc": {
                       "start": {
@@ -20297,8 +20365,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          2532,
-                          2549
+                          2540,
+                          2557
                         ],
                         "loc": {
                           "start": {
@@ -20313,8 +20381,8 @@
                         "argument": {
                           "type": "BinaryExpression",
                           "range": [
-                            2539,
-                            2548
+                            2547,
+                            2556
                           ],
                           "loc": {
                             "start": {
@@ -20330,8 +20398,8 @@
                           "left": {
                             "type": "Identifier",
                             "range": [
-                              2539,
-                              2542
+                              2547,
+                              2550
                             ],
                             "loc": {
                               "start": {
@@ -20348,8 +20416,8 @@
                           "right": {
                             "type": "Identifier",
                             "range": [
-                              2545,
-                              2548
+                              2553,
+                              2556
                             ],
                             "loc": {
                               "start": {
@@ -20368,8 +20436,8 @@
                     ]
                   },
                   "range": [
-                    2499,
-                    2553
+                    2507,
+                    2561
                   ],
                   "loc": {
                     "start": {
@@ -20385,8 +20453,8 @@
                     {
                       "type": "Identifier",
                       "range": [
-                        2500,
-                        2511
+                        2508,
+                        2519
                       ],
                       "loc": {
                         "start": {
@@ -20412,14 +20480,14 @@
                           }
                         },
                         "range": [
-                          2503,
-                          2511
+                          2511,
+                          2519
                         ],
                         "typeAnnotation": {
                           "type": "TSNumberKeyword",
                           "range": [
-                            2505,
-                            2511
+                            2513,
+                            2519
                           ],
                           "loc": {
                             "start": {
@@ -20437,8 +20505,8 @@
                     {
                       "type": "Identifier",
                       "range": [
-                        2513,
-                        2524
+                        2521,
+                        2532
                       ],
                       "loc": {
                         "start": {
@@ -20464,14 +20532,14 @@
                           }
                         },
                         "range": [
-                          2516,
-                          2524
+                          2524,
+                          2532
                         ],
                         "typeAnnotation": {
                           "type": "TSNumberKeyword",
                           "range": [
-                            2518,
-                            2524
+                            2526,
+                            2532
                           ],
                           "loc": {
                             "start": {
@@ -20495,7 +20563,7 @@
             ],
             "range": [
               799,
-              2555
+              2563
             ],
             "loc": {
               "start": {
@@ -20818,7 +20886,7 @@
         },
         "range": [
           746,
-          2555
+          2563
         ],
         "loc": {
           "start": {
@@ -20834,17 +20902,17 @@
         "source": null
       }
     ],
-    "originalContentStrAfterUpdate": "import 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n\nvar \nvarDos = 12 /*varDosStub*/\n, varTres = 14; /*varTresStub*/\nexport let number = 12; /*numberStub*/\nexport const addNumberButOutside = (withParam,withOptionalParam?):boolean => {\n  let five = 5;\n  return true;\n}; /*addNumberButOutsideStub*/\n\nexport function hmm(thing: string, bur: number): number {\n  return \n} /*hmmStub*/\nexport       function      test  (args: number, space: string) {\n  return 'functionfunctionfunction';\n}; /*testStub*/\n\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {  \n\n  // Static\n  @complicatedDecorator(' css classes passed in with space ')\n  public        static       extraSpaces        =true; /*extraSpaces*/\n  static classInfo() {\n    console.log('This class helps manage the page-not found view');\n  } /*classInfo*/\n  protected static abc = 13; /*abc*/\n  private static abcdefg = 13; /*abcdefg*/\n  private static set lostUrl(thing) {\n    if (thing) {\n      console.log('etc');\n    }\n  } /*lostUrl*/\n  private static get test(): string {\n    return 'the getdocumentation() getter ....'\n  } /*test*/\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: true };\n  } /*arrowFuncWithStubImplementation*/\n\n  arrowFuncPropWithArgumentsUpdating = (one: number, two: number) => {\n    return one + two;\n  } /*arrowFuncPropWithArgumentsUpdating*/\n\n  // Instance\n  public testPublic = 'test public'; /*testPublic*/\n  @public('publicHmm')\n  public publicHmm: publicHmm = { hmm: 12 }; /*publicHmm*/\n  readonly readOnlyProperty = 42; /*readOnlyProperty*/\n  private hmmm = 'why...'; /*hmmm*/\n\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ) {\n    const varOne = 12;\n    const addNumber = () => {\n      return varOne + 44;\n    };\n    addNumber();\n  } /*constructor*/\n  \n  // This should be stub Commented\n  public leFourOFour(statusCode?: number): string {\n    console.log('welcome to 404');\n    return 'welcome to 404';\n  } /*leFourOFour*/\n  get bur(): number {\n    return 5;\n  } /*bur*/\n  private methodTwo() {\n    console.log('welcome to 404 private');\n  } /*methodTwo*/\n\n  // Type and arguments should update the stub implementation..\n  argumentsShouldUpdate(one: number, two: number) {\n    return one + two;\n  } /*argumentsShouldUpdate*/\n} /*PageNotFoundComponentStub*/",
-    "stubContentStr": "// =====================================================================;\n//                            Sync Imports                              \n// =====================================================================\nimport 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n\n// =====================================================================\n//                            Extra Code\n// =====================================================================\n// - Write Extra File Code Here (e.g. Import { fakeJsonToReturn } from './someplace' )\n// ---------------------------------------------------------------------\nimport { fakeJsonToReturn } from './someplace';\n\n// =====================================================================\n//                      Sync Stub Declarations\n// =====================================================================\n// - Feel free to define values for any synced declaration logic. \n// - DO NOT RENAME ANY DECLARATION NAME BELOW inside here. The name itself\n//   is synced with the original file's /*StubNameComments*/ and all unmatched \n//   declarations will be moved to the archive section. The console will warn \n//   you if anything has been archived.\n// ---------------------------------------------------------------------;\nvar \nvarDos = true,\nvarTres = 'Three';\n\nexport let number = 123456;\nexport const addNumberButOutside = (withParam, withOptionalParam) =>  {\n\treturn { obj: 'Arrow Return'};\n};\nexport function hmm(thing: string, bur: number): number  {\n\treturn false;\n};\nexport function test(args: number, space: string)  {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo()  {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static lostUrl(thing)  {\n    return '404';\n  }\n\n  private static test(): string  {\n    return 'testStr';\n  }\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: string) => {\n    return 'one';\n  }; /*arrowFuncPropWithArgumentsUpdating*/\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm = undefined;\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  ngOnInit()  {\n    return undefined;\n  }\n\n  ngOnDestroy()  {\n    return undefined;\n  }\n\n  // These 3 should be archived since no stub comments exist\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: string) {\n    return undefined;\n  }\n};\n",
+    "originalContentStrAfterUpdate": "import 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n\nvar \nvarDos = 12 /*varDosStub*/\n, varTres = 14; /*varTresStub*/\nexport let number = 12; /*numberStub*/\nexport const addNumberButOutside = (withParam,withOptionalParam?):boolean => {\n  let five = 5;\n  return true;\n}; /*addNumberButOutsideStub*/\n\nexport function hmm(thing: string, bur: number): number {\n  return \n} /*hmmStub*/\nexport       function      test  (args: number, space: string) {\n  return 'functionfunctionfunction';\n}; /*testStub*/\n\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {  \n\n  // Static\n  @complicatedDecorator(' css classes passed in with space ')\n  public        static       extraSpaces        =true; /*extraSpaces*/\n  static classInfo() {\n    console.log('This class helps manage the page-not found view');\n  } /*classInfo*/\n  protected static abc = 13; /*abc*/\n  private static abcdefg = 13; /*abcdefg*/\n  private static set lostUrl(thing) {\n    if (thing) {\n      console.log('etc');\n    }\n  } /*lostUrl*/\n  private static get test(): string {\n    return 'the getdocumentation() getter ....'\n  } /*test*/\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: true };\n  } /*arrowFuncWithStubImplementation*/\n\n  arrowFuncPropWithArgumentsUpdating = (one: number, two: number): number => {\n    return one + two;\n  } /*arrowFuncPropWithArgumentsUpdating*/\n\n  // Instance\n  public testPublic = 'test public'; /*testPublic*/\n  @public('publicHmm')\n  public publicHmm: publicHmm = { hmm: 12 }; /*publicHmm*/\n  readonly readOnlyProperty = 42; /*readOnlyProperty*/\n  private hmmm = 'why...'; /*hmmm*/\n\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ) {\n    const varOne = 12;\n    const addNumber = () => {\n      return varOne + 44;\n    };\n    addNumber();\n  } /*constructor*/\n  \n  // This should be stub Commented\n  public leFourOFour(statusCode?: number): string {\n    console.log('welcome to 404');\n    return 'welcome to 404';\n  } /*leFourOFour*/\n  get bur(): number {\n    return 5;\n  } /*bur*/\n  private methodTwo() {\n    console.log('welcome to 404 private');\n  } /*methodTwo*/\n\n  // Type and arguments should update the stub implementation..\n  argumentsShouldUpdate(one: number, two: number) {\n    return one + two;\n  } /*argumentsShouldUpdate*/\n} /*PageNotFoundComponentStub*/",
+    "stubContentStr": "// =====================================================================;\n//                            Sync Imports                              \n// =====================================================================\nimport 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n\n// =====================================================================\n//                            Extra Code\n// =====================================================================\n// - Write Extra File Code Here (e.g. Import { fakeJsonToReturn } from './someplace' )\n// ---------------------------------------------------------------------\nimport { fakeJsonToReturn } from './someplace';\n\n// =====================================================================\n//                      Sync Stub Declarations\n// =====================================================================\n// - Feel free to define values for any synced declaration logic. \n// - DO NOT RENAME ANY DECLARATION NAME BELOW inside here. The name itself\n//   is synced with the original file's /*StubNameComments*/ and all unmatched \n//   declarations will be moved to the archive section. The console will warn \n//   you if anything has been archived.\n// ---------------------------------------------------------------------;\nvar \nvarDos = true,\nvarTres = 'Three';\n\nexport let number = 123456;\nexport const addNumberButOutside = (withParam, withOptionalParam) =>  {\n\treturn { obj: 'Arrow Return'};\n};\nexport function hmm(thing: string, bur: number): number  {\n\treturn false;\n};\nexport function test(args: number, space: string)  {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo()  {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static lostUrl(thing)  {\n    return '404';\n  }\n\n  private static test(): string  {\n    return 'testStr';\n  }\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: string): string => {\n    return 'one';\n  }; /*arrowFuncPropWithArgumentsUpdating*/\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm = undefined;\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  ngOnInit()  {\n    return undefined;\n  }\n\n  ngOnDestroy()  {\n    return undefined;\n  }\n\n  // These 3 should be archived since no stub comments exist\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: string) {\n    return undefined;\n  }\n};\n",
     "stubFileIsNew": false,
     "stubArchiveCodeStr": "",
     "stubExtraCodeStr": "\nimport { fakeJsonToReturn } from './someplace';\n\n",
-    "stubSyncDeclarationsStr": "\nvar \nvarDos = true,\nvarTres = 'Three';\n\nexport let number = 123456;\nexport const addNumberButOutside = (withParam, withOptionalParam) =>  {\n\treturn { obj: 'Arrow Return'};\n};\nexport function hmm(thing: string, bur: number): number  {\n\treturn false;\n};\nexport function test(args: number, space: string)  {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo()  {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static lostUrl(thing)  {\n    return '404';\n  }\n\n  private static test(): string  {\n    return 'testStr';\n  }\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: string) => {\n    return 'one';\n  }; /*arrowFuncPropWithArgumentsUpdating*/\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm = undefined;\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  ngOnInit()  {\n    return undefined;\n  }\n\n  ngOnDestroy()  {\n    return undefined;\n  }\n\n  // These 3 should be archived since no stub comments exist\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: string) {\n    return undefined;\n  }\n};\n",
+    "stubSyncDeclarationsStr": "\nvar \nvarDos = true,\nvarTres = 'Three';\n\nexport let number = 123456;\nexport const addNumberButOutside = (withParam, withOptionalParam) =>  {\n\treturn { obj: 'Arrow Return'};\n};\nexport function hmm(thing: string, bur: number): number  {\n\treturn false;\n};\nexport function test(args: number, space: string)  {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo()  {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static lostUrl(thing)  {\n    return '404';\n  }\n\n  private static test(): string  {\n    return 'testStr';\n  }\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: string): string => {\n    return 'one';\n  }; /*arrowFuncPropWithArgumentsUpdating*/\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm = undefined;\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  ngOnInit()  {\n    return undefined;\n  }\n\n  ngOnDestroy()  {\n    return undefined;\n  }\n\n  // These 3 should be archived since no stub comments exist\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: string) {\n    return undefined;\n  }\n};\n",
     "stubSyncDeclarationsParsed": {
       "type": "Program",
       "range": [
         1,
-        1885
+        1893
       ],
       "loc": {
         "start": {
@@ -21462,7 +21530,7 @@
             "type": "ClassDeclaration",
             "range": [
               497,
-              1883
+              1891
             ],
             "loc": {
               "start": {
@@ -21498,8 +21566,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    1490,
-                    1529
+                    1498,
+                    1537
                   ],
                   "loc": {
                     "start": {
@@ -21514,8 +21582,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1490,
-                      1498
+                      1498,
+                      1506
                     ],
                     "loc": {
                       "start": {
@@ -21538,8 +21606,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        1502,
-                        1529
+                        1510,
+                        1537
                       ],
                       "loc": {
                         "start": {
@@ -21555,8 +21623,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            1508,
-                            1525
+                            1516,
+                            1533
                           ],
                           "loc": {
                             "start": {
@@ -21571,8 +21639,8 @@
                           "argument": {
                             "type": "Identifier",
                             "range": [
-                              1515,
-                              1524
+                              1523,
+                              1532
                             ],
                             "loc": {
                               "start": {
@@ -21590,8 +21658,8 @@
                       ]
                     },
                     "range": [
-                      1498,
-                      1529
+                      1506,
+                      1537
                     ],
                     "loc": {
                       "start": {
@@ -21612,8 +21680,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    1533,
-                    1575
+                    1541,
+                    1583
                   ],
                   "loc": {
                     "start": {
@@ -21628,8 +21696,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1533,
-                      1544
+                      1541,
+                      1552
                     ],
                     "loc": {
                       "start": {
@@ -21652,8 +21720,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        1548,
-                        1575
+                        1556,
+                        1583
                       ],
                       "loc": {
                         "start": {
@@ -21669,8 +21737,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            1554,
-                            1571
+                            1562,
+                            1579
                           ],
                           "loc": {
                             "start": {
@@ -21685,8 +21753,8 @@
                           "argument": {
                             "type": "Identifier",
                             "range": [
-                              1561,
-                              1570
+                              1569,
+                              1578
                             ],
                             "loc": {
                               "start": {
@@ -21704,8 +21772,8 @@
                       ]
                     },
                     "range": [
-                      1544,
-                      1575
+                      1552,
+                      1583
                     ],
                     "loc": {
                       "start": {
@@ -21726,8 +21794,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    1640,
-                    1719
+                    1648,
+                    1727
                   ],
                   "loc": {
                     "start": {
@@ -21742,8 +21810,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1647,
-                      1658
+                      1655,
+                      1666
                     ],
                     "loc": {
                       "start": {
@@ -21766,8 +21834,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        1689,
-                        1719
+                        1697,
+                        1727
                       ],
                       "loc": {
                         "start": {
@@ -21783,8 +21851,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            1695,
-                            1715
+                            1703,
+                            1723
                           ],
                           "loc": {
                             "start": {
@@ -21799,8 +21867,8 @@
                           "argument": {
                             "type": "Literal",
                             "range": [
-                              1702,
-                              1714
+                              1710,
+                              1722
                             ],
                             "loc": {
                               "start": {
@@ -21819,8 +21887,8 @@
                       ]
                     },
                     "range": [
-                      1658,
-                      1719
+                      1666,
+                      1727
                     ],
                     "loc": {
                       "start": {
@@ -21845,14 +21913,14 @@
                         }
                       },
                       "range": [
-                        1679,
-                        1687
+                        1687,
+                        1695
                       ],
                       "typeAnnotation": {
                         "type": "TSStringKeyword",
                         "range": [
-                          1681,
-                          1687
+                          1689,
+                          1695
                         ],
                         "loc": {
                           "start": {
@@ -21870,8 +21938,8 @@
                       {
                         "type": "Identifier",
                         "range": [
-                          1659,
-                          1678
+                          1667,
+                          1686
                         ],
                         "loc": {
                           "start": {
@@ -21897,14 +21965,14 @@
                             }
                           },
                           "range": [
-                            1670,
-                            1678
+                            1678,
+                            1686
                           ],
                           "typeAnnotation": {
                             "type": "TSNumberKeyword",
                             "range": [
-                              1672,
-                              1678
+                              1680,
+                              1686
                             ],
                             "loc": {
                               "start": {
@@ -21930,8 +21998,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    1722,
-                    1764
+                    1730,
+                    1772
                   ],
                   "loc": {
                     "start": {
@@ -21946,8 +22014,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1722,
-                      1725
+                      1730,
+                      1733
                     ],
                     "loc": {
                       "start": {
@@ -21970,8 +22038,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        1737,
-                        1764
+                        1745,
+                        1772
                       ],
                       "loc": {
                         "start": {
@@ -21987,8 +22055,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            1743,
-                            1760
+                            1751,
+                            1768
                           ],
                           "loc": {
                             "start": {
@@ -22003,8 +22071,8 @@
                           "argument": {
                             "type": "Identifier",
                             "range": [
-                              1750,
-                              1759
+                              1758,
+                              1767
                             ],
                             "loc": {
                               "start": {
@@ -22022,8 +22090,8 @@
                       ]
                     },
                     "range": [
-                      1725,
-                      1764
+                      1733,
+                      1772
                     ],
                     "loc": {
                       "start": {
@@ -22048,14 +22116,14 @@
                         }
                       },
                       "range": [
-                        1727,
-                        1735
+                        1735,
+                        1743
                       ],
                       "typeAnnotation": {
                         "type": "TSNumberKeyword",
                         "range": [
-                          1729,
-                          1735
+                          1737,
+                          1743
                         ],
                         "loc": {
                           "start": {
@@ -22078,8 +22146,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    1767,
-                    1815
+                    1775,
+                    1823
                   ],
                   "loc": {
                     "start": {
@@ -22094,8 +22162,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1775,
-                      1784
+                      1783,
+                      1792
                     ],
                     "loc": {
                       "start": {
@@ -22118,8 +22186,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        1788,
-                        1815
+                        1796,
+                        1823
                       ],
                       "loc": {
                         "start": {
@@ -22135,8 +22203,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            1794,
-                            1811
+                            1802,
+                            1819
                           ],
                           "loc": {
                             "start": {
@@ -22151,8 +22219,8 @@
                           "argument": {
                             "type": "Identifier",
                             "range": [
-                              1801,
-                              1810
+                              1809,
+                              1818
                             ],
                             "loc": {
                               "start": {
@@ -22170,8 +22238,8 @@
                       ]
                     },
                     "range": [
-                      1784,
-                      1815
+                      1792,
+                      1823
                     ],
                     "loc": {
                       "start": {
@@ -22193,8 +22261,8 @@
                 {
                   "type": "MethodDefinition",
                   "range": [
-                    1819,
-                    1881
+                    1827,
+                    1889
                   ],
                   "loc": {
                     "start": {
@@ -22209,8 +22277,8 @@
                   "key": {
                     "type": "Identifier",
                     "range": [
-                      1819,
-                      1840
+                      1827,
+                      1848
                     ],
                     "loc": {
                       "start": {
@@ -22233,8 +22301,8 @@
                     "body": {
                       "type": "BlockStatement",
                       "range": [
-                        1854,
-                        1881
+                        1862,
+                        1889
                       ],
                       "loc": {
                         "start": {
@@ -22250,8 +22318,8 @@
                         {
                           "type": "ReturnStatement",
                           "range": [
-                            1860,
-                            1877
+                            1868,
+                            1885
                           ],
                           "loc": {
                             "start": {
@@ -22266,8 +22334,8 @@
                           "argument": {
                             "type": "Identifier",
                             "range": [
-                              1867,
-                              1876
+                              1875,
+                              1884
                             ],
                             "loc": {
                               "start": {
@@ -22285,8 +22353,8 @@
                       ]
                     },
                     "range": [
-                      1840,
-                      1881
+                      1848,
+                      1889
                     ],
                     "loc": {
                       "start": {
@@ -22302,8 +22370,8 @@
                       {
                         "type": "Identifier",
                         "range": [
-                          1841,
-                          1852
+                          1849,
+                          1860
                         ],
                         "loc": {
                           "start": {
@@ -22329,14 +22397,14 @@
                             }
                           },
                           "range": [
-                            1844,
-                            1852
+                            1852,
+                            1860
                           ],
                           "typeAnnotation": {
                             "type": "TSStringKeyword",
                             "range": [
-                              1846,
-                              1852
+                              1854,
+                              1860
                             ],
                             "loc": {
                               "start": {
@@ -22360,7 +22428,7 @@
               ],
               "range": [
                 543,
-                1883
+                1891
               ],
               "loc": {
                 "start": {
@@ -22682,7 +22750,7 @@
           },
           "range": [
             490,
-            1883
+            1891
           ],
           "loc": {
             "start": {
@@ -22700,8 +22768,8 @@
         {
           "type": "EmptyStatement",
           "range": [
-            1883,
-            1884
+            1891,
+            1892
           ],
           "loc": {
             "start": {
@@ -22716,7 +22784,7 @@
         }
       ],
       "sourceType": "module",
-      "content": "\nvar \nvarDos = true,\nvarTres = 'Three';\n\nexport let number = 123456;\nexport const addNumberButOutside = (withParam, withOptionalParam) =>  {\n\treturn { obj: 'Arrow Return'};\n};\nexport function hmm(thing: string, bur: number): number  {\n\treturn false;\n};\nexport function test(args: number, space: string)  {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo()  {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static lostUrl(thing)  {\n    return '404';\n  }\n\n  private static test(): string  {\n    return 'testStr';\n  }\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: string) => {\n    return 'one';\n  }; /*arrowFuncPropWithArgumentsUpdating*/\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm = undefined;\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  ngOnInit()  {\n    return undefined;\n  }\n\n  ngOnDestroy()  {\n    return undefined;\n  }\n\n  // These 3 should be archived since no stub comments exist\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: string) {\n    return undefined;\n  }\n};\n"
+      "content": "\nvar \nvarDos = true,\nvarTres = 'Three';\n\nexport let number = 123456;\nexport const addNumberButOutside = (withParam, withOptionalParam) =>  {\n\treturn { obj: 'Arrow Return'};\n};\nexport function hmm(thing: string, bur: number): number  {\n\treturn false;\n};\nexport function test(args: number, space: string)  {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo()  {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static lostUrl(thing)  {\n    return '404';\n  }\n\n  private static test(): string  {\n    return 'testStr';\n  }\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: string): string => {\n    return 'one';\n  }; /*arrowFuncPropWithArgumentsUpdating*/\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm = undefined;\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  ngOnInit()  {\n    return undefined;\n  }\n\n  ngOnDestroy()  {\n    return undefined;\n  }\n\n  // These 3 should be archived since no stub comments exist\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: string) {\n    return undefined;\n  }\n};\n"
     },
     "stubDeclarations": [
       {
@@ -23290,7 +23358,7 @@
           "type": "ClassDeclaration",
           "range": [
             497,
-            1883
+            1891
           ],
           "loc": {
             "start": {
@@ -23326,8 +23394,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1490,
-                  1529
+                  1498,
+                  1537
                 ],
                 "loc": {
                   "start": {
@@ -23342,8 +23410,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1490,
-                    1498
+                    1498,
+                    1506
                   ],
                   "loc": {
                     "start": {
@@ -23366,8 +23434,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1502,
-                      1529
+                      1510,
+                      1537
                     ],
                     "loc": {
                       "start": {
@@ -23383,8 +23451,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1508,
-                          1525
+                          1516,
+                          1533
                         ],
                         "loc": {
                           "start": {
@@ -23399,8 +23467,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1515,
-                            1524
+                            1523,
+                            1532
                           ],
                           "loc": {
                             "start": {
@@ -23418,8 +23486,8 @@
                     ]
                   },
                   "range": [
-                    1498,
-                    1529
+                    1506,
+                    1537
                   ],
                   "loc": {
                     "start": {
@@ -23440,8 +23508,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1533,
-                  1575
+                  1541,
+                  1583
                 ],
                 "loc": {
                   "start": {
@@ -23456,8 +23524,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1533,
-                    1544
+                    1541,
+                    1552
                   ],
                   "loc": {
                     "start": {
@@ -23480,8 +23548,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1548,
-                      1575
+                      1556,
+                      1583
                     ],
                     "loc": {
                       "start": {
@@ -23497,8 +23565,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1554,
-                          1571
+                          1562,
+                          1579
                         ],
                         "loc": {
                           "start": {
@@ -23513,8 +23581,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1561,
-                            1570
+                            1569,
+                            1578
                           ],
                           "loc": {
                             "start": {
@@ -23532,8 +23600,8 @@
                     ]
                   },
                   "range": [
-                    1544,
-                    1575
+                    1552,
+                    1583
                   ],
                   "loc": {
                     "start": {
@@ -23554,8 +23622,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1640,
-                  1719
+                  1648,
+                  1727
                 ],
                 "loc": {
                   "start": {
@@ -23570,8 +23638,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1647,
-                    1658
+                    1655,
+                    1666
                   ],
                   "loc": {
                     "start": {
@@ -23594,8 +23662,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1689,
-                      1719
+                      1697,
+                      1727
                     ],
                     "loc": {
                       "start": {
@@ -23611,8 +23679,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1695,
-                          1715
+                          1703,
+                          1723
                         ],
                         "loc": {
                           "start": {
@@ -23627,8 +23695,8 @@
                         "argument": {
                           "type": "Literal",
                           "range": [
-                            1702,
-                            1714
+                            1710,
+                            1722
                           ],
                           "loc": {
                             "start": {
@@ -23647,8 +23715,8 @@
                     ]
                   },
                   "range": [
-                    1658,
-                    1719
+                    1666,
+                    1727
                   ],
                   "loc": {
                     "start": {
@@ -23673,14 +23741,14 @@
                       }
                     },
                     "range": [
-                      1679,
-                      1687
+                      1687,
+                      1695
                     ],
                     "typeAnnotation": {
                       "type": "TSStringKeyword",
                       "range": [
-                        1681,
-                        1687
+                        1689,
+                        1695
                       ],
                       "loc": {
                         "start": {
@@ -23698,8 +23766,8 @@
                     {
                       "type": "Identifier",
                       "range": [
-                        1659,
-                        1678
+                        1667,
+                        1686
                       ],
                       "loc": {
                         "start": {
@@ -23725,14 +23793,14 @@
                           }
                         },
                         "range": [
-                          1670,
-                          1678
+                          1678,
+                          1686
                         ],
                         "typeAnnotation": {
                           "type": "TSNumberKeyword",
                           "range": [
-                            1672,
-                            1678
+                            1680,
+                            1686
                           ],
                           "loc": {
                             "start": {
@@ -23758,8 +23826,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1722,
-                  1764
+                  1730,
+                  1772
                 ],
                 "loc": {
                   "start": {
@@ -23774,8 +23842,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1722,
-                    1725
+                    1730,
+                    1733
                   ],
                   "loc": {
                     "start": {
@@ -23798,8 +23866,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1737,
-                      1764
+                      1745,
+                      1772
                     ],
                     "loc": {
                       "start": {
@@ -23815,8 +23883,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1743,
-                          1760
+                          1751,
+                          1768
                         ],
                         "loc": {
                           "start": {
@@ -23831,8 +23899,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1750,
-                            1759
+                            1758,
+                            1767
                           ],
                           "loc": {
                             "start": {
@@ -23850,8 +23918,8 @@
                     ]
                   },
                   "range": [
-                    1725,
-                    1764
+                    1733,
+                    1772
                   ],
                   "loc": {
                     "start": {
@@ -23876,14 +23944,14 @@
                       }
                     },
                     "range": [
-                      1727,
-                      1735
+                      1735,
+                      1743
                     ],
                     "typeAnnotation": {
                       "type": "TSNumberKeyword",
                       "range": [
-                        1729,
-                        1735
+                        1737,
+                        1743
                       ],
                       "loc": {
                         "start": {
@@ -23906,8 +23974,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1767,
-                  1815
+                  1775,
+                  1823
                 ],
                 "loc": {
                   "start": {
@@ -23922,8 +23990,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1775,
-                    1784
+                    1783,
+                    1792
                   ],
                   "loc": {
                     "start": {
@@ -23946,8 +24014,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1788,
-                      1815
+                      1796,
+                      1823
                     ],
                     "loc": {
                       "start": {
@@ -23963,8 +24031,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1794,
-                          1811
+                          1802,
+                          1819
                         ],
                         "loc": {
                           "start": {
@@ -23979,8 +24047,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1801,
-                            1810
+                            1809,
+                            1818
                           ],
                           "loc": {
                             "start": {
@@ -23998,8 +24066,8 @@
                     ]
                   },
                   "range": [
-                    1784,
-                    1815
+                    1792,
+                    1823
                   ],
                   "loc": {
                     "start": {
@@ -24021,8 +24089,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1819,
-                  1881
+                  1827,
+                  1889
                 ],
                 "loc": {
                   "start": {
@@ -24037,8 +24105,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1819,
-                    1840
+                    1827,
+                    1848
                   ],
                   "loc": {
                     "start": {
@@ -24061,8 +24129,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1854,
-                      1881
+                      1862,
+                      1889
                     ],
                     "loc": {
                       "start": {
@@ -24078,8 +24146,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1860,
-                          1877
+                          1868,
+                          1885
                         ],
                         "loc": {
                           "start": {
@@ -24094,8 +24162,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1867,
-                            1876
+                            1875,
+                            1884
                           ],
                           "loc": {
                             "start": {
@@ -24113,8 +24181,8 @@
                     ]
                   },
                   "range": [
-                    1840,
-                    1881
+                    1848,
+                    1889
                   ],
                   "loc": {
                     "start": {
@@ -24130,8 +24198,8 @@
                     {
                       "type": "Identifier",
                       "range": [
-                        1841,
-                        1852
+                        1849,
+                        1860
                       ],
                       "loc": {
                         "start": {
@@ -24157,14 +24225,14 @@
                           }
                         },
                         "range": [
-                          1844,
-                          1852
+                          1852,
+                          1860
                         ],
                         "typeAnnotation": {
                           "type": "TSStringKeyword",
                           "range": [
-                            1846,
-                            1852
+                            1854,
+                            1860
                           ],
                           "loc": {
                             "start": {
@@ -24188,7 +24256,7 @@
             ],
             "range": [
               543,
-              1883
+              1891
             ],
             "loc": {
               "start": {
@@ -24510,7 +24578,7 @@
         },
         "range": [
           490,
-          1883
+          1891
         ],
         "loc": {
           "start": {
@@ -24533,7 +24601,7 @@
           "type": "ClassDeclaration",
           "range": [
             497,
-            1883
+            1891
           ],
           "loc": {
             "start": {
@@ -24569,8 +24637,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1490,
-                  1529
+                  1498,
+                  1537
                 ],
                 "loc": {
                   "start": {
@@ -24585,8 +24653,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1490,
-                    1498
+                    1498,
+                    1506
                   ],
                   "loc": {
                     "start": {
@@ -24609,8 +24677,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1502,
-                      1529
+                      1510,
+                      1537
                     ],
                     "loc": {
                       "start": {
@@ -24626,8 +24694,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1508,
-                          1525
+                          1516,
+                          1533
                         ],
                         "loc": {
                           "start": {
@@ -24642,8 +24710,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1515,
-                            1524
+                            1523,
+                            1532
                           ],
                           "loc": {
                             "start": {
@@ -24661,8 +24729,8 @@
                     ]
                   },
                   "range": [
-                    1498,
-                    1529
+                    1506,
+                    1537
                   ],
                   "loc": {
                     "start": {
@@ -24683,8 +24751,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1533,
-                  1575
+                  1541,
+                  1583
                 ],
                 "loc": {
                   "start": {
@@ -24699,8 +24767,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1533,
-                    1544
+                    1541,
+                    1552
                   ],
                   "loc": {
                     "start": {
@@ -24723,8 +24791,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1548,
-                      1575
+                      1556,
+                      1583
                     ],
                     "loc": {
                       "start": {
@@ -24740,8 +24808,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1554,
-                          1571
+                          1562,
+                          1579
                         ],
                         "loc": {
                           "start": {
@@ -24756,8 +24824,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1561,
-                            1570
+                            1569,
+                            1578
                           ],
                           "loc": {
                             "start": {
@@ -24775,8 +24843,8 @@
                     ]
                   },
                   "range": [
-                    1544,
-                    1575
+                    1552,
+                    1583
                   ],
                   "loc": {
                     "start": {
@@ -24797,8 +24865,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1640,
-                  1719
+                  1648,
+                  1727
                 ],
                 "loc": {
                   "start": {
@@ -24813,8 +24881,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1647,
-                    1658
+                    1655,
+                    1666
                   ],
                   "loc": {
                     "start": {
@@ -24837,8 +24905,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1689,
-                      1719
+                      1697,
+                      1727
                     ],
                     "loc": {
                       "start": {
@@ -24854,8 +24922,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1695,
-                          1715
+                          1703,
+                          1723
                         ],
                         "loc": {
                           "start": {
@@ -24870,8 +24938,8 @@
                         "argument": {
                           "type": "Literal",
                           "range": [
-                            1702,
-                            1714
+                            1710,
+                            1722
                           ],
                           "loc": {
                             "start": {
@@ -24890,8 +24958,8 @@
                     ]
                   },
                   "range": [
-                    1658,
-                    1719
+                    1666,
+                    1727
                   ],
                   "loc": {
                     "start": {
@@ -24916,14 +24984,14 @@
                       }
                     },
                     "range": [
-                      1679,
-                      1687
+                      1687,
+                      1695
                     ],
                     "typeAnnotation": {
                       "type": "TSStringKeyword",
                       "range": [
-                        1681,
-                        1687
+                        1689,
+                        1695
                       ],
                       "loc": {
                         "start": {
@@ -24941,8 +25009,8 @@
                     {
                       "type": "Identifier",
                       "range": [
-                        1659,
-                        1678
+                        1667,
+                        1686
                       ],
                       "loc": {
                         "start": {
@@ -24968,14 +25036,14 @@
                           }
                         },
                         "range": [
-                          1670,
-                          1678
+                          1678,
+                          1686
                         ],
                         "typeAnnotation": {
                           "type": "TSNumberKeyword",
                           "range": [
-                            1672,
-                            1678
+                            1680,
+                            1686
                           ],
                           "loc": {
                             "start": {
@@ -25001,8 +25069,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1722,
-                  1764
+                  1730,
+                  1772
                 ],
                 "loc": {
                   "start": {
@@ -25017,8 +25085,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1722,
-                    1725
+                    1730,
+                    1733
                   ],
                   "loc": {
                     "start": {
@@ -25041,8 +25109,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1737,
-                      1764
+                      1745,
+                      1772
                     ],
                     "loc": {
                       "start": {
@@ -25058,8 +25126,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1743,
-                          1760
+                          1751,
+                          1768
                         ],
                         "loc": {
                           "start": {
@@ -25074,8 +25142,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1750,
-                            1759
+                            1758,
+                            1767
                           ],
                           "loc": {
                             "start": {
@@ -25093,8 +25161,8 @@
                     ]
                   },
                   "range": [
-                    1725,
-                    1764
+                    1733,
+                    1772
                   ],
                   "loc": {
                     "start": {
@@ -25119,14 +25187,14 @@
                       }
                     },
                     "range": [
-                      1727,
-                      1735
+                      1735,
+                      1743
                     ],
                     "typeAnnotation": {
                       "type": "TSNumberKeyword",
                       "range": [
-                        1729,
-                        1735
+                        1737,
+                        1743
                       ],
                       "loc": {
                         "start": {
@@ -25149,8 +25217,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1767,
-                  1815
+                  1775,
+                  1823
                 ],
                 "loc": {
                   "start": {
@@ -25165,8 +25233,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1775,
-                    1784
+                    1783,
+                    1792
                   ],
                   "loc": {
                     "start": {
@@ -25189,8 +25257,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1788,
-                      1815
+                      1796,
+                      1823
                     ],
                     "loc": {
                       "start": {
@@ -25206,8 +25274,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1794,
-                          1811
+                          1802,
+                          1819
                         ],
                         "loc": {
                           "start": {
@@ -25222,8 +25290,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1801,
-                            1810
+                            1809,
+                            1818
                           ],
                           "loc": {
                             "start": {
@@ -25241,8 +25309,8 @@
                     ]
                   },
                   "range": [
-                    1784,
-                    1815
+                    1792,
+                    1823
                   ],
                   "loc": {
                     "start": {
@@ -25264,8 +25332,8 @@
               {
                 "type": "MethodDefinition",
                 "range": [
-                  1819,
-                  1881
+                  1827,
+                  1889
                 ],
                 "loc": {
                   "start": {
@@ -25280,8 +25348,8 @@
                 "key": {
                   "type": "Identifier",
                   "range": [
-                    1819,
-                    1840
+                    1827,
+                    1848
                   ],
                   "loc": {
                     "start": {
@@ -25304,8 +25372,8 @@
                   "body": {
                     "type": "BlockStatement",
                     "range": [
-                      1854,
-                      1881
+                      1862,
+                      1889
                     ],
                     "loc": {
                       "start": {
@@ -25321,8 +25389,8 @@
                       {
                         "type": "ReturnStatement",
                         "range": [
-                          1860,
-                          1877
+                          1868,
+                          1885
                         ],
                         "loc": {
                           "start": {
@@ -25337,8 +25405,8 @@
                         "argument": {
                           "type": "Identifier",
                           "range": [
-                            1867,
-                            1876
+                            1875,
+                            1884
                           ],
                           "loc": {
                             "start": {
@@ -25356,8 +25424,8 @@
                     ]
                   },
                   "range": [
-                    1840,
-                    1881
+                    1848,
+                    1889
                   ],
                   "loc": {
                     "start": {
@@ -25373,8 +25441,8 @@
                     {
                       "type": "Identifier",
                       "range": [
-                        1841,
-                        1852
+                        1849,
+                        1860
                       ],
                       "loc": {
                         "start": {
@@ -25400,14 +25468,14 @@
                           }
                         },
                         "range": [
-                          1844,
-                          1852
+                          1852,
+                          1860
                         ],
                         "typeAnnotation": {
                           "type": "TSStringKeyword",
                           "range": [
-                            1846,
-                            1852
+                            1854,
+                            1860
                           ],
                           "loc": {
                             "start": {
@@ -25431,7 +25499,7 @@
             ],
             "range": [
               543,
-              1883
+              1891
             ],
             "loc": {
               "start": {
@@ -25754,8 +25822,8 @@
             {
               "type": "MethodDefinition",
               "range": [
-                1490,
-                1529
+                1498,
+                1537
               ],
               "loc": {
                 "start": {
@@ -25770,8 +25838,8 @@
               "key": {
                 "type": "Identifier",
                 "range": [
-                  1490,
-                  1498
+                  1498,
+                  1506
                 ],
                 "loc": {
                   "start": {
@@ -25794,8 +25862,8 @@
                 "body": {
                   "type": "BlockStatement",
                   "range": [
-                    1502,
-                    1529
+                    1510,
+                    1537
                   ],
                   "loc": {
                     "start": {
@@ -25811,8 +25879,8 @@
                     {
                       "type": "ReturnStatement",
                       "range": [
-                        1508,
-                        1525
+                        1516,
+                        1533
                       ],
                       "loc": {
                         "start": {
@@ -25827,8 +25895,8 @@
                       "argument": {
                         "type": "Identifier",
                         "range": [
-                          1515,
-                          1524
+                          1523,
+                          1532
                         ],
                         "loc": {
                           "start": {
@@ -25846,8 +25914,8 @@
                   ]
                 },
                 "range": [
-                  1498,
-                  1529
+                  1506,
+                  1537
                 ],
                 "loc": {
                   "start": {
@@ -25868,8 +25936,8 @@
             {
               "type": "MethodDefinition",
               "range": [
-                1533,
-                1575
+                1541,
+                1583
               ],
               "loc": {
                 "start": {
@@ -25884,8 +25952,8 @@
               "key": {
                 "type": "Identifier",
                 "range": [
-                  1533,
-                  1544
+                  1541,
+                  1552
                 ],
                 "loc": {
                   "start": {
@@ -25908,8 +25976,8 @@
                 "body": {
                   "type": "BlockStatement",
                   "range": [
-                    1548,
-                    1575
+                    1556,
+                    1583
                   ],
                   "loc": {
                     "start": {
@@ -25925,8 +25993,8 @@
                     {
                       "type": "ReturnStatement",
                       "range": [
-                        1554,
-                        1571
+                        1562,
+                        1579
                       ],
                       "loc": {
                         "start": {
@@ -25941,8 +26009,8 @@
                       "argument": {
                         "type": "Identifier",
                         "range": [
-                          1561,
-                          1570
+                          1569,
+                          1578
                         ],
                         "loc": {
                           "start": {
@@ -25960,8 +26028,8 @@
                   ]
                 },
                 "range": [
-                  1544,
-                  1575
+                  1552,
+                  1583
                 ],
                 "loc": {
                   "start": {
@@ -25982,8 +26050,8 @@
             {
               "type": "MethodDefinition",
               "range": [
-                1640,
-                1719
+                1648,
+                1727
               ],
               "loc": {
                 "start": {
@@ -25998,8 +26066,8 @@
               "key": {
                 "type": "Identifier",
                 "range": [
-                  1647,
-                  1658
+                  1655,
+                  1666
                 ],
                 "loc": {
                   "start": {
@@ -26022,8 +26090,8 @@
                 "body": {
                   "type": "BlockStatement",
                   "range": [
-                    1689,
-                    1719
+                    1697,
+                    1727
                   ],
                   "loc": {
                     "start": {
@@ -26039,8 +26107,8 @@
                     {
                       "type": "ReturnStatement",
                       "range": [
-                        1695,
-                        1715
+                        1703,
+                        1723
                       ],
                       "loc": {
                         "start": {
@@ -26055,8 +26123,8 @@
                       "argument": {
                         "type": "Literal",
                         "range": [
-                          1702,
-                          1714
+                          1710,
+                          1722
                         ],
                         "loc": {
                           "start": {
@@ -26075,8 +26143,8 @@
                   ]
                 },
                 "range": [
-                  1658,
-                  1719
+                  1666,
+                  1727
                 ],
                 "loc": {
                   "start": {
@@ -26101,14 +26169,14 @@
                     }
                   },
                   "range": [
-                    1679,
-                    1687
+                    1687,
+                    1695
                   ],
                   "typeAnnotation": {
                     "type": "TSStringKeyword",
                     "range": [
-                      1681,
-                      1687
+                      1689,
+                      1695
                     ],
                     "loc": {
                       "start": {
@@ -26126,8 +26194,8 @@
                   {
                     "type": "Identifier",
                     "range": [
-                      1659,
-                      1678
+                      1667,
+                      1686
                     ],
                     "loc": {
                       "start": {
@@ -26153,14 +26221,14 @@
                         }
                       },
                       "range": [
-                        1670,
-                        1678
+                        1678,
+                        1686
                       ],
                       "typeAnnotation": {
                         "type": "TSNumberKeyword",
                         "range": [
-                          1672,
-                          1678
+                          1680,
+                          1686
                         ],
                         "loc": {
                           "start": {
@@ -26186,8 +26254,8 @@
             {
               "type": "MethodDefinition",
               "range": [
-                1722,
-                1764
+                1730,
+                1772
               ],
               "loc": {
                 "start": {
@@ -26202,8 +26270,8 @@
               "key": {
                 "type": "Identifier",
                 "range": [
-                  1722,
-                  1725
+                  1730,
+                  1733
                 ],
                 "loc": {
                   "start": {
@@ -26226,8 +26294,8 @@
                 "body": {
                   "type": "BlockStatement",
                   "range": [
-                    1737,
-                    1764
+                    1745,
+                    1772
                   ],
                   "loc": {
                     "start": {
@@ -26243,8 +26311,8 @@
                     {
                       "type": "ReturnStatement",
                       "range": [
-                        1743,
-                        1760
+                        1751,
+                        1768
                       ],
                       "loc": {
                         "start": {
@@ -26259,8 +26327,8 @@
                       "argument": {
                         "type": "Identifier",
                         "range": [
-                          1750,
-                          1759
+                          1758,
+                          1767
                         ],
                         "loc": {
                           "start": {
@@ -26278,8 +26346,8 @@
                   ]
                 },
                 "range": [
-                  1725,
-                  1764
+                  1733,
+                  1772
                 ],
                 "loc": {
                   "start": {
@@ -26304,14 +26372,14 @@
                     }
                   },
                   "range": [
-                    1727,
-                    1735
+                    1735,
+                    1743
                   ],
                   "typeAnnotation": {
                     "type": "TSNumberKeyword",
                     "range": [
-                      1729,
-                      1735
+                      1737,
+                      1743
                     ],
                     "loc": {
                       "start": {
@@ -26334,8 +26402,8 @@
             {
               "type": "MethodDefinition",
               "range": [
-                1767,
-                1815
+                1775,
+                1823
               ],
               "loc": {
                 "start": {
@@ -26350,8 +26418,8 @@
               "key": {
                 "type": "Identifier",
                 "range": [
-                  1775,
-                  1784
+                  1783,
+                  1792
                 ],
                 "loc": {
                   "start": {
@@ -26374,8 +26442,8 @@
                 "body": {
                   "type": "BlockStatement",
                   "range": [
-                    1788,
-                    1815
+                    1796,
+                    1823
                   ],
                   "loc": {
                     "start": {
@@ -26391,8 +26459,8 @@
                     {
                       "type": "ReturnStatement",
                       "range": [
-                        1794,
-                        1811
+                        1802,
+                        1819
                       ],
                       "loc": {
                         "start": {
@@ -26407,8 +26475,8 @@
                       "argument": {
                         "type": "Identifier",
                         "range": [
-                          1801,
-                          1810
+                          1809,
+                          1818
                         ],
                         "loc": {
                           "start": {
@@ -26426,8 +26494,8 @@
                   ]
                 },
                 "range": [
-                  1784,
-                  1815
+                  1792,
+                  1823
                 ],
                 "loc": {
                   "start": {
@@ -26449,8 +26517,8 @@
             {
               "type": "MethodDefinition",
               "range": [
-                1819,
-                1881
+                1827,
+                1889
               ],
               "loc": {
                 "start": {
@@ -26465,8 +26533,8 @@
               "key": {
                 "type": "Identifier",
                 "range": [
-                  1819,
-                  1840
+                  1827,
+                  1848
                 ],
                 "loc": {
                   "start": {
@@ -26489,8 +26557,8 @@
                 "body": {
                   "type": "BlockStatement",
                   "range": [
-                    1854,
-                    1881
+                    1862,
+                    1889
                   ],
                   "loc": {
                     "start": {
@@ -26506,8 +26574,8 @@
                     {
                       "type": "ReturnStatement",
                       "range": [
-                        1860,
-                        1877
+                        1868,
+                        1885
                       ],
                       "loc": {
                         "start": {
@@ -26522,8 +26590,8 @@
                       "argument": {
                         "type": "Identifier",
                         "range": [
-                          1867,
-                          1876
+                          1875,
+                          1884
                         ],
                         "loc": {
                           "start": {
@@ -26541,8 +26609,8 @@
                   ]
                 },
                 "range": [
-                  1840,
-                  1881
+                  1848,
+                  1889
                 ],
                 "loc": {
                   "start": {
@@ -26558,8 +26626,8 @@
                   {
                     "type": "Identifier",
                     "range": [
-                      1841,
-                      1852
+                      1849,
+                      1860
                     ],
                     "loc": {
                       "start": {
@@ -26585,14 +26653,14 @@
                         }
                       },
                       "range": [
-                        1844,
-                        1852
+                        1852,
+                        1860
                       ],
                       "typeAnnotation": {
                         "type": "TSStringKeyword",
                         "range": [
-                          1846,
-                          1852
+                          1854,
+                          1860
                         ],
                         "loc": {
                           "start": {
@@ -26617,7 +26685,7 @@
         },
         "range": [
           490,
-          1883
+          1891
         ],
         "loc": {
           "start": {
@@ -26633,7 +26701,7 @@
         "source": null
       }
     ],
-    "stubContentStrAfterUpdate": "// =====================================================================;\n//                            Sync Imports                              \n// =====================================================================\nimport 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n// =====================================================================\n//                            Extra Code\n// =====================================================================\n// - Write Extra File Code Here (e.g. Import { fakeJsonToReturn } from './someplace' )\n// ---------------------------------------------------------------------\nimport { fakeJsonToReturn } from './someplace';\n\n// =====================================================================\n//                      Sync Stub Declarations\n// =====================================================================\n// - Feel free to define values for any synced declaration logic. \n// - DO NOT RENAME ANY DECLARATION NAME BELOW inside here. The name itself\n//   is synced with the original file's /*StubNameComments*/ and all unmatched \n//   declarations will be moved to the archive section. The console will warn \n//   you if anything has been archived.\n// ---------------------------------------------------------------------;\nvar varDosStub = true,\nvarTresStub = 'Three';\nexport let numberStub = 123456;\nexport const addNumberButOutsideStub = (withParam, withOptionalParam) => {\n\treturn { obj: 'Arrow Return'};\n};\nexport function hmmStub(thing: string, bur: number): number {\n\treturn false;\n};\nexport function testStub(args: number, space: string) {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponentStub implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo() {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static set lostUrl(thing) {\n    return '404';\n  }\n\n  private static get test(): string {\n    return 'testStr';\n  }\n\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: string) => {\n    return 'one';\n  };\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm = undefined;\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  public leFourOFour(statusCode?: number): string {\n    return undefined;\n  }\n\n  get bur(): number {\n    return undefined;\n  }\n\n  private methodTwo() {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: number, two: number) {\n    return undefined;\n  }\n\n};\n\n// ====================================================================='\n//                     Archive Stub Declarations\n// =====================================================================\n// - The code below is archived.\n// - Use the --cleanStubTrash to remove all archive code from your stub\n//   files.\n// ---------------------------------------------------------------------\n/*\n---------------------- 2019-09-02T00:56:12.424Z ----------------------\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {\n\n  ngOnInit()  {\n    return undefined;\n  }\n  ngOnDestroy()  {\n    return undefined;\n  }\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n  argumentsShouldUpdate(one: string) {\n    return undefined;\n  }\n};\n*/\n"
+    "stubContentStrAfterUpdate": "// =====================================================================;\n//                            Sync Imports                              \n// =====================================================================\nimport 'fs';\nimport * as Events from 'events';\nimport { APP_CONFIG } from '../../app-model/app-config';\nimport { Component, OnInit, OnDestroy, Inject } from '@angular/core';\n// =====================================================================\n//                            Extra Code\n// =====================================================================\n// - Write Extra File Code Here (e.g. Import { fakeJsonToReturn } from './someplace' )\n// ---------------------------------------------------------------------\nimport { fakeJsonToReturn } from './someplace';\n\n// =====================================================================\n//                      Sync Stub Declarations\n// =====================================================================\n// - Feel free to define values for any synced declaration logic. \n// - DO NOT RENAME ANY DECLARATION NAME BELOW inside here. The name itself\n//   is synced with the original file's /*StubNameComments*/ and all unmatched \n//   declarations will be moved to the archive section. The console will warn \n//   you if anything has been archived.\n// ---------------------------------------------------------------------;\nvar varDosStub = true,\nvarTresStub = 'Three';\nexport let numberStub = 123456;\nexport const addNumberButOutsideStub = (withParam, withOptionalParam) => {\n\treturn { obj: 'Arrow Return'};\n};\nexport function hmmStub(thing: string, bur: number): number {\n\treturn false;\n};\nexport function testStub(args: number, space: string) {\n\treturn 'The quick brown fox!';\n};\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponentStub implements OnInit {\n\n  @complicatedDecorator(' css classes passed in with space ')\n  public static extraSpaces = undefined;\n  static classInfo() {\n    return 'This class handles page not found situations..';\n  }\n\n  protected static abc = undefined;\n  private static abcdefg = undefined;\n  private static set lostUrl(thing) {\n    return '404';\n  }\n\n  private static get test(): string {\n    return 'testStr';\n  }\n\n  arrowFuncWithStubImplementation = (value: string, ...args) => {\n    return { implemented: true, realImplementation: false };\n  };\n  arrowFuncPropWithArgumentsUpdating = (one: string): string => {\n    return 'one';\n  };\n  public testPublic = undefined;\n  @public('publicHmm')\n  public publicHmm: publicHmm = undefined;\n  readonly readOnlyProperty = undefined;\n  private hmmm = undefined;\n  constructor(\n    nakedDependency: Router,\n    @Inject(APP_CONFIG) \n    public appConfig: AppConfig,\n    private router: Router\n  ){}\n\n  public leFourOFour(statusCode?: number): string {\n    return undefined;\n  }\n\n  get bur(): number {\n    return undefined;\n  }\n\n  private methodTwo() {\n    return undefined;\n  }\n\n  argumentsShouldUpdate(one: number, two: number) {\n    return undefined;\n  }\n\n};\n\n// ====================================================================='\n//                     Archive Stub Declarations\n// =====================================================================\n// - The code below is archived.\n// - Use the --cleanStubTrash to remove all archive code from your stub\n//   files.\n// ---------------------------------------------------------------------\n/*\n---------------------- 2019-09-02T00:57:42.056Z ----------------------\n@Component({\n  selector: 'app-page-not-found',\n  templateUrl: './page-not-found.component.html',\n  styleUrls: ['./page-not-found.component.scss']\n})\nexport class PageNotFoundComponent implements OnInit {\n\n  ngOnInit()  {\n    return undefined;\n  }\n  ngOnDestroy()  {\n    return undefined;\n  }\n  public leFourOFour(statusCode?: number): string  {\n    return 'archive404';\n  }\n  bur(): number  {\n    return undefined;\n  }\n  private methodTwo()  {\n    return undefined;\n  }\n  argumentsShouldUpdate(one: string) {\n    return undefined;\n  }\n};\n*/\n"
   },
   {
     "stubPath": "jasmine-tests/tests/variables.test.stub.ts",

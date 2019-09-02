@@ -59,6 +59,9 @@ export class PageNotFoundComponentStub implements OnInit {
   arrowFuncWithStubImplementation = (value: string, ...args) => {
     return { implemented: true, realImplementation: false };
   };
+  arrowFuncPropWithArgumentsUpdating = (one: number, two: number): number => {
+    return 'one';
+  };
   public testPublic = undefined;
   @public('publicHmm')
   public publicHmm: publicHmm = undefined;
@@ -86,6 +89,7 @@ export class PageNotFoundComponentStub implements OnInit {
   argumentsShouldUpdate(one: number, two: number) {
     return undefined;
   }
+
 };
 
 // ====================================================================='
@@ -96,7 +100,7 @@ export class PageNotFoundComponentStub implements OnInit {
 //   files.
 // ---------------------------------------------------------------------
 /*
----------------------- 2019-09-02T00:48:33.902Z ----------------------
+---------------------- 2019-09-02T00:56:12.424Z ----------------------
 @Component({
   selector: 'app-page-not-found',
   templateUrl: './page-not-found.component.html',

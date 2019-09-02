@@ -393,15 +393,10 @@ export class TaskParser {
                 fileMeta.stubExtraCodeStr = extraCodeStr;
                 fileMeta.stubSyncDeclarationsStr = stubSyncDeclarationsStr;
                 try {
-                    console.log('start parse');
                     fileMeta.stubSyncDeclarationsParsed = await this.esLintParser.parse(stubSyncDeclarationsStr);
-                    console.log('parse happened');
                     fileMeta.stubSyncDeclarationsParsed.content = stubSyncDeclarationsStr;
-                    console.log('stubSyncDeclarationsStr happened');
                     fileMeta.stubDeclarations = fileMeta.stubSyncDeclarationsParsed.body.filter(this.declarationFilter); // TODO: do test and try to find errors to handle - (e.g. import statement placed in the Sync Stub Declarations area..)
-                    console.log('filter happened');
                     fileMeta.stubArchiveDeclarations = updateRealDeclarationWithStubImplementationAndReturnArchive(fileMeta.stubDeclarations, fileMeta.declarations, stubSyncDeclarationsStr);
-                    console.log('updateRealDeclarationWithStubImplementationAndReturnArchive happened');
                 } catch (e) {
                     throw Error(`The file "${fileMeta.stubPath}" could not be parsed correctly. Please check to see if the code is formated correctly. \n${e}`);
                 }
