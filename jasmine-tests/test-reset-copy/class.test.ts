@@ -21,10 +21,6 @@ export class PageNotFoundComponent implements OnInit {
     return 'static =>';
   }
 
-  arrowFuncWithStubImplementation = (value) => {
-    return { implemented: true };
-  }
-
   protected static abc = 13;
   private static abcdefg = 13;
   private static set lostUrl(thing) {

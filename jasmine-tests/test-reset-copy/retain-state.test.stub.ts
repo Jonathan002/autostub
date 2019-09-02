@@ -25,8 +25,6 @@ import { fakeJsonToReturn } from './someplace';
 var 
 varDos = true,
 varTres = 'Three';
-var four;
-var five = 25;
 
 export let number = 123456;
 export const addNumberButOutside = (withParam, withOptionalParam) =>  {
