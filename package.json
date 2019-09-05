@@ -2,7 +2,7 @@
   "name": "autostub",
   "version": "1.0.3",
   "description": "A process to automatically generate stubs for your javascript/typescript classes and keep their api's in sync.",
-  "main": "./build/src/main.js",
+  "main": "./build/src/app.js",
   "bin": {
     "autostub": "./bin/autostub.js"
   },
@@ -16,7 +16,8 @@
     "start": "npm run removeOldTestProject && npm run copyProject && npm run build && cd ./angular-project && node ./../bin/autostub.js && cd ..",
     "pg": "ts-node src/playground.ts",
     "build": "tsc",
-    "deploy:dev": "npm run build && npm link"
+    "deploy:dev": "npm run build && npm pack && npm link",
+    "deploy:prod": "npm run build && npm pack && npm publish"
   },
   "repository": {
     "type": "git",
