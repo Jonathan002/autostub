@@ -1,6 +1,6 @@
 {
-  "name": "package-tester-thing-zero-zero-one",
-  "version": "0.0.6",
+  "name": "autostub",
+  "version": "1.0.6",
   "description": "A process to automatically generate stubs for your javascript/typescript classes and keep their api's in sync.",
   "main": "./build/src/app.js",
   "bin": {

@@ -71,9 +71,11 @@ dll/
 *.shim.ngstyle.ts
 
 
-## Compiled JavaScript files
-**/*.js
-**/*.js.map
+# DO NOT UNCOMMENT THIS.. IT PREVENTS PACKAGE FROM PROPERLY BEING PUBLISHED!
+# (Still considering .npmignore)
+# ## Compiled JavaScript files
+# **/*.js
+# **/*.js.map
 
 # Test Generated Output
 /jasmine-tests/tests/**/*
