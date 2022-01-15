@@ -55,7 +55,7 @@
     "jasmine-spec-reporter": "^4.2.1",
     "jest": "23.1.0",
     "npm-license": "0.3.3",
-    "shelljs": "0.8.2",
+    "shelljs": "0.8.5",
     "shelljs-nodecli": "0.1.1",
     "ts-node": "^7.0.1",
     "typescript": "~3.1.1"
